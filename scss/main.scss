@@ -1,11 +1,9 @@
-@import "_variables.scss";
-@import "_layouts.scss";
-@import "_components.scss";
-@import "_settings.scss";
-
-// Página de portada (Alba y Anna)
-
-
-.uppercase {
-  text-transform: uppercase;
-}
+@import "core/variables";
+@import "core/functions";
+@import "components/buttons";
+@import "components/forms";
+@import "layouts/header";
+@import "layouts/footer";
+@import "pages/index";
+@import "pages/index2";
+@import "core/helpers";

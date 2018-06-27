@@ -1,8 +1,16 @@
-.main {
+body {
+  margin: 0;
+}
 
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: $gray;
+  align-items: center;
 }
 
 .main__logo {
+  margin: 94px 0 36px 0;
 
 }
 

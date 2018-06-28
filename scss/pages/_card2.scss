@@ -1,0 +1,33 @@
+.div__rellena{
+margin-left: 20px;
+margin-right: 20px;
+border-top: solid 1px black;
+}
+.fieldset__rellena--title{
+margin-top: 10px;
+margin-bottom: 25px;
+font-size: $x_large;
+font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+}
+.fieldset__rellena--input{
+width: 281px;
+}
+.fieldset__rellena--label{
+display: block;
+}
+.div__imagen{
+display: flex;
+}
+.mini{
+width: 30px;
+height: 30px;
+border: solid 1px black;
+box-sizing: border-box;
+margin-left: 20px;
+}
+.añadir{
+width: 140px;
+height: 30px;
+background: $dull-orange;
+
+}

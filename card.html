@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <div>
@@ -26,20 +27,21 @@
       </div>
     </fieldset>
   </div>
-  <div>
-    <fieldset class="fieldset--rellena">
-      <h2>Rellena</h2>
-      <label for="nombre">Nombre completo</label><input type="text" name="name" value="Ej: Sally Jill">
-      <label for="puesto">Puesto</label><input type="text" name="puesto" value="Ej: Front-end unicorn">
-      <div class="">añadir imagen</div><div class="">miniatura</div>
-      <label for="email">Email</label><input type="email" name="email" value="Ej: sally-hill@gmail.com">
-      <label for="telefono">Teléfono</label><input type="text" name="telefono" value="Ej: 555-55-55-55">
-      <label for="linkedin">Linkedin</label><input type="text" name="linkedin" value="Ej: linkedin.com/in/Sally.hill">
-      <label for="github">Github</label><input type="text" name="github" value="Ej: @sally-hill">
-      <label for="habilidades">Habilidades (máximo 3)</label><input type="text" name="html" value="HTML"><input type="text" name="css" value="CSS">
-      <div class="">+</div>
-      <div class="">-</div>
-    </div>
+    <div class="div__rellena">
+      <fieldset class="fieldset__rellena">
+        <h2 class="fieldset__rellena--title">Rellena</h2>
+        <div class=""><label class="fieldset__rellena--label" for="nombre">Nombre completo</label><input class="fieldset__rellena--input" type="text" name="name" value="Ej: Sally Jill"></div>
+        <div class=""><label class="fieldset__rellena--label" for="puesto">Puesto</label><input class="fieldset__rellena--input" type="text" name="puesto" value="Ej: Front-end unicorn"></div>
+        <div class="div__imagen"><div class="añadir">añadir imagen</div><div class="mini"></div></div>
+        <div class=""><label class="fieldset__rellena--label" for="email">Email</label><input class="fieldset__rellena--input" type="email" name="email" value="Ej: sally-hill@gmail.com"></div>
+        <div class=""><label class="fieldset__rellena--label" for="telefono">Teléfono</label><input class="fieldset__rellena--input" type="text" name="telefono" value="Ej: 555-55-55-55"></div>
+        <div class=""><label class="fieldset__rellena--label" for="linkedin">Linkedin</label><input class="fieldset__rellena--input" type="text" name="linkedin" value="Ej: linkedin.com/in/Sally.hill"></div>
+        <div class=""><label class="fieldset__rellena--label" for="github">Github</label><input class="fieldset__rellena--input" type="text" name="github" value="Ej: @sally-hill"></div>
+        <div class=""><label class="fieldset__rellena--label" for="habilidades">Habilidades (máximo 3)</label><input type="text" name="html" value="HTML"><input type="text" name="css" value="CSS"></div>
+        <div class="">+</div>
+        <div class="">-</div>
+</fieldset>
+      </div>
     <script type="text/javascript" src="js/main.js">
     </script>
   </body>

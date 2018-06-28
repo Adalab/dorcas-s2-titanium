@@ -1,8 +1,21 @@
-.fieldset__share--button{
-background: $dull-orange;
-color: $white;
-width: 199px;
-height: 50px;
-border-radius: 12px;
-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-}
+ .fieldset__share--button{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ background: $dull-orange;
+ color: $white;
+ width: 199px;
+ height: 50px;
+ border-radius: 12px;
+ box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+ }
+ .fieldset__share--button--text{
+     font-size: 18px;
+     margin-left: 10px;
+
+     
+ }
+ .fieldset__share--button--icon{
+     font-size: 22px;
+     margin-left: 10px;
+ }

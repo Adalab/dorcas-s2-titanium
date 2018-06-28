@@ -163,16 +163,6 @@ body {
   width: 103px;
 }
 
-
-.fieldset__share--button {
-  background: #e17334;
-  color: #ffffff;
-  width: 199px;
-  height: 50px;
-  border-radius: 12px;
-  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-
 .diseña__coloresfuentes {
   width: 62px;
   height: 19px;
@@ -239,6 +229,35 @@ body {
   width: 30px;
   height: 25px;
   background-color: #a0c0cf;
+}
+
+.fieldset__share--button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #e17334;
+  color: #ffffff;
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+}
+
+.fieldset__share--button--text {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.fieldset__share--button--icon {
+  font-size: 22px;
+  margin-left: 10px;
 }
 
 .uppercase {

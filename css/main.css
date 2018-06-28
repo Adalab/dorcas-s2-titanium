@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Open+Sans|Ubuntu");/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -162,6 +164,7 @@ body {
   width: 103px;
 }
 
+
 .fieldset__share--button {
   background: #e17334;
   color: #ffffff;
@@ -170,6 +173,73 @@ body {
   border-radius: 12px;
   -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+
+.diseña__coloresfuentes {
+  width: 62px;
+  height: 19px;
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #54585a;
+}
+
+.diseña__colores--colores1 {
+  width: 30px;
+  height: 25px;
+  background-color: #114e4e;
+}
+
+.diseña__colores--colores2 {
+  width: 30px;
+  height: 25px;
+  background-color: #438792;
+}
+
+.diseña__colores--colores3 {
+  width: 30px;
+  height: 25px;
+  background-color: #a2deaf;
+  height: 25px;
+}
+
+.diseña__colores--colores4 {
+  width: 30px;
+  height: 25px;
+  background-color: #420101;
+}
+
+.diseña__colores--colores5 {
+  width: 30px;
+  height: 25px;
+  background-color: #bd1010;
+}
+
+.diseña__colores--colores6 {
+  width: 30px;
+  height: 25px;
+  background-color: #e95626;
+}
+
+.diseña__colores--colores7 {
+  width: 30px;
+  height: 25px;
+  background-color: #3e5b65;
+}
+
+.diseña__colores--colores8 {
+  width: 30px;
+  height: 25px;
+  background-color: #dfe5eb;
+}
+
+.diseña__colores--colores9 {
+  width: 30px;
+  height: 25px;
+  background-color: #a0c0cf;
 }
 
 .uppercase {

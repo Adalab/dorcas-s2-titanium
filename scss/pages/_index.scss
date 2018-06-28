@@ -8,12 +8,23 @@ body {
   background-color: $gray;
   align-items: center;
   padding: 0 28px;
+
+@media all and (min-width: 768px) {
+  padding: 0 174px;
+  }
 }
 
 .main__logo {
   height: 64px;
   width: 250px;
   margin: 94px 0 36px 0;
+
+  @media all and (min-width: 768px) {
+    height: 107px;
+    width: 419px;
+    margin: 348px 0 31px 0;
+
+  }
 }
 
 .main__title {
@@ -23,6 +34,10 @@ body {
   color: $dull-orange;
   margin-bottom: 4px;
 
+  @media all and (min-width: 768px) {
+    font-size: $xxx_large;
+    margin: 0 71px 4px 71px;
+  }
 }
 
 .main__text {
@@ -32,11 +47,16 @@ body {
   margin-bottom: 14px;
   text-align: center;
 
+  @media all and (min-width: 768px) {
+    font-size: $large;
+    margin: 8px 44px 21px 44px;
+
+  }
 }
 
 .main__list--container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 74px;
   width: 100%;
@@ -44,8 +64,16 @@ body {
   border: 2px solid rgba(225, 115, 52, 0.21);
   border-radius: 4px;
 
+    @media all and (min-width: 768px) {
+      height: 86px;
+      width: 325px;
+      margin: 0 90px;
+      border-radius: 5px;
+    }
 
 }
+
+/* SEGUIMOS A PARTIR DE AQUI */
 
 .main__list--item {
   text-align: center;
@@ -76,8 +104,6 @@ body {
   font-weight: $semibold;
   font-size: $large;
   color: $white;
-
-
 }
 
 .footer {

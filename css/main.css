@@ -162,6 +162,16 @@ body {
   width: 103px;
 }
 
+.fieldset__share--button {
+  background: #e17334;
+  color: #ffffff;
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+}
+
 .uppercase {
   text-transform: uppercase;
 }

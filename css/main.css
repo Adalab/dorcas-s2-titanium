@@ -234,7 +234,8 @@ body {
 .div__rellena {
   margin-left: 20px;
   margin-right: 20px;
-  border-top: solid 1px black;
+  border-top: solid 1px #d8d8d8;
+  margin-bottom: 5px;
 }
 
 .fieldset__rellena--title {
@@ -242,20 +243,30 @@ body {
   margin-bottom: 25px;
   font-size: 18px;
   font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+  color: #54585a;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .fieldset__rellena--input {
+  margin-top: 5px;
   width: 281px;
+  height: 30px;
+  border: solid 1px #a2deaf;
+  color: #c5c5c5;
 }
 
 .fieldset__rellena--label {
   display: block;
+  color: #114e4e;
+  margin-top: 20px;
 }
 
 .div__imagen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 5px;
 }
 
 .mini {
@@ -271,6 +282,76 @@ body {
   width: 140px;
   height: 30px;
   background: #e17334;
+}
+
+.label__habilidades {
+  margin-top: 40px;
+}
+
+.input--html {
+  display: block;
+  width: 165px;
+  height: 30px;
+  margin-top: 5px;
+  border: solid 1px #a2deaf;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.input--css {
+  width: 165px;
+  height: 30px;
+  margin-top: 21px;
+  border: solid 1px #a2deaf;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.fieldset__div--habilidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.formulario__div--habilidades {
+  margin-left: 20px;
+}
+
+.more {
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin-top: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.less {
+  background-color: aqua;
+  width: 30px;
+  height: 30px;
+  margin-top: 25px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .fieldset__share--button {

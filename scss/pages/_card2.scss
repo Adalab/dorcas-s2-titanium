@@ -4,14 +4,27 @@ margin-right: 20px;
 border-top: solid 1px #d8d8d8;
 margin-bottom: 5px;
 }
-.fieldset__rellena--title{
-margin-top: 10px;
-margin-bottom: 25px;
+.fieldset__container--title{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 78px;
+}
+.fieldset__title{
 font-size: $x_large;
-font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+font-family:$main;
 color:$gunmetal;
 text-transform: uppercase;
 font-weight: $semibold;
+margin-left: 10px;
+
+}
+.fieldset__rellena--icon{
+    font-size: 18px;
+    color: $dull-orange;
+    
+   
 }
 .fieldset__rellena--input{
 margin-top: 5px;

@@ -56,13 +56,16 @@ body {
 
 .main__list--container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 74px;
   width: 100%;
+  max-width: 325px;
   margin: 0;
   border: 2px solid rgba(225, 115, 52, 0.21);
   border-radius: 4px;
+  padding: 15px 20px 10px 20px;
+  box-sizing: border-box;
 
     @media all and (min-width: 768px) {
       height: 86px;
@@ -70,7 +73,22 @@ body {
       margin: 0 90px;
       border-radius: 5px;
     }
+}
+.main__list--box {
+  height: 49px;
+  width: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+&:first-child{
+  margin-left: -9px;
 
+}
+  @media all and (min-width: 768px) {
+    height: 61px;
+    width: 75px;
+}
 }
 
 /* SEGUIMOS A PARTIR DE AQUI */
@@ -78,7 +96,8 @@ body {
 .main__list--item {
   text-align: center;
   font-family: $main;
-  font-size: $large;
+  font-size: $normal;
+  line-height: 1.5rem;
   color: $gunmetal;
 }
 
@@ -104,6 +123,10 @@ body {
   font-weight: $semibold;
   font-size: $large;
   color: $white;
+  @media all and (min-width: 768px) {
+    margin: 186px 0 59px 0;
+  }
+
 }
 
 .footer {
@@ -111,7 +134,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-border-top: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+@media all and (min-width: 768px) {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
 }
 
 .footer__copyright {
@@ -120,14 +148,24 @@ font-family: $main;
 font-size: $normal;
 color: #6B6B6B;
 opacity: 0.5;
+display: block;
+@media all and (min-width: 768px) {
+  margin: 0;
 }
-
+}
 .footer__logo--titanium {
 margin-bottom: 10px;
+display: block;
+@media all and (min-width: 768px) {
+  margin: 0;
 }
-
+}
 .footer__logo--adalab {
+display: block;
 margin-bottom: 20px;
 height: 40px;
 width: 103px;
+@media all and (min-width: 768px) {
+  margin: 0;
+}
 }

@@ -1,83 +1,111 @@
- .div__rellena{
- margin-left: 20px;
- margin-right: 20px;
- border-top: solid 1px #d8d8d8;
- margin-bottom: 5px;
- }
- .fieldset__rellena--title{
- margin-top: 10px;
- margin-bottom: 25px;
- font-size: $x_large;
- font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
- color:$gunmetal;
- text-transform: uppercase;
- font-weight: $semibold;
- }
- .fieldset__rellena--input{
- margin-top: 5px;
- width: 281px;
- height: 30px;
- border: solid 1px $hospital-green;
- color: #c5c5c5;
- }
- .fieldset__rellena--label{
- display: block;
- color:$dark-green-blue;
- margin-top: 20px;
- }
- .div__imagen{
- display: flex;
- margin-top: 5px;
- }
- .mini{
- width: 30px;
- height: 30px;
- border: solid 1px black;
- box-sizing: border-box;
- margin-left: 20px;
- 
- }
- .añadir{
- width: 140px;
- height: 30px;
- background: $dull-orange;
- 
- }
- .label__habilidades{
- margin-top:40px;
- }
- .input--html{
-     display: block;
-     width: 165px;
-     height: 30px;
-     margin-top: 5px;
-     border: solid 1px $hospital-green;
-     font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
-     line-height: 20px;
-     font-size: 14px;
- }
- .input--css{
-     width: 165px;
-     height: 30px;
-     margin-top: 21px;
-     border: solid 1px $hospital-green;
-     font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
-     line-height: 20px;
-     font-size: 14px;
- }
- .fieldset__div--habilidades{
-     display: flex;
-     margin-bottom: 30px;
- }
- .formulario__div--habilidades{
-     margin-left: 20px;
- }
- .more{
-     background-color: red;
-     width: 30px;
-     height: 30px;
-     border-radius: 50px;
-     margin-top: 7px;
+.div__rellena{
+margin-left: 20px;
+margin-right: 20px;
+border-top: solid 1px #d8d8d8;
+margin-bottom: 5px;
+}
+.fieldset__container--title{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 78px;
+}
+.fieldset__title{
+font-size: $x_large;
+font-family:$main;
+color:$gunmetal;
+text-transform: uppercase;
+font-weight: $semibold;
+margin-left: 10px;
+
+}
+.fieldset__rellena--icon{
+    font-size: 18px;
+    color: $dull-orange;
+    
+   
+}
+.fieldset__rellena--input{
+margin-top: 5px;
+width: 281px;
+height: 30px;
+border: solid 1px $hospital-green;
+color: #c5c5c5;
+}
+.fieldset__rellena--label{
+display: block;
+color:$dark-green-blue;
+margin-top: 20px;
+}
+.div__imagen{
+display: flex;
+margin-top: 5px;
+}
+.mini{
+width: 30px;
+height: 30px;
+border: solid 1px black;
+box-sizing: border-box;
+margin-left: 20px;
+
+}
+.añadir{
+width: 140px;
+height: 30px;
+background: $dull-orange;
+
+}
+.label__habilidades{
+margin-top:40px;
+}
+.input--html{
+    display: block;
+    width: 165px;
+    height: 30px;
+    margin-top: 5px;
+    border: solid 1px $hospital-green;
+    font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+    line-height: 20px;
+    font-size: 14px;
+}
+.input--css{
+    width: 165px;
+    height: 30px;
+    margin-top: 21px;
+    border: solid 1px $hospital-green;
+    font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+    line-height: 20px;
+    font-size: 14px;
+}
+.fieldset__div--habilidades{
+    display: flex;
+    margin-bottom: 30px;
+}
+.formulario__div--habilidades{
+    margin-left: 20px;
+}
+.more{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.less{
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .fieldset__share--button{
      display: flex;
      align-items: center;
      justify-content: center;

@@ -36,6 +36,64 @@ table {
   border-spacing: 0;
 }
 
+.visor {
+  background-color: #dde9ed;
+  padding: 10px 35px 30px 45px;
+}
+
+.reset {
+  width: 75px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.reset__icon {
+  color: #54585a;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 1.67px;
+}
+
+.reset__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #54585a;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.card {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.card__head {
+  padding: 23px 0 10px 0;
+}
+
+.card__head--border {
+  width: 5px;
+  height: 42px;
+  background-color: #a2deaf;
+}
+
+.card__head--name {
+  font-family: "Comic Sans";
+}
+
 body {
   margin: 0;
 }

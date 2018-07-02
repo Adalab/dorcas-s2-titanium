@@ -78,20 +78,28 @@ table {
   width: 100%;
   background-color: #ffffff;
   border-radius: 2px;
-}
-
-.card__head {
-  padding: 23px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .card__head--border {
   width: 5px;
   height: 42px;
   background-color: #a2deaf;
+  margin: 0px;
 }
 
-.card__head--name {
-  font-family: "Comic Sans";
+.card__box {
+  height: 200px;
+}
+
+.card__foot {
+  border-bottom: 2px solid #438792;
 }
 
 body {
@@ -446,18 +454,6 @@ body {
   height: 30px;
   margin-top: 25px;
   border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.fieldset__share--button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

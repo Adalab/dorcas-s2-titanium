@@ -116,7 +116,6 @@ table {
   align-items: center;
   padding-left: 40px;
   height: 111px;
-  border-bottom: solid 1px #d8d8d8;
 }
 
 .header__logo {
@@ -284,6 +283,11 @@ body {
   color: #ffffff;
 }
 
+.page__main {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(white));
+  background-image: linear-gradient(#f5f5f5, white);
+}
+
 .diseña__coloresfuentes {
   width: 82px;
   height: 19px;
@@ -422,6 +426,9 @@ body {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 25px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .fieldset__rellena--keyboard {
@@ -460,6 +467,7 @@ body {
 .fieldset__rellena--arrow {
   display: block;
   text-align: right;
+  font-size: 18px;
 }
 
 .div__imagen {
@@ -611,8 +619,7 @@ body {
   border-radius: 12px;
   -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  margin-top: 30px;
-  margin-bottom: 61px;
+  margin: auto;
 }
 
 .fieldset__share--button--text {

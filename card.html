@@ -67,7 +67,7 @@
         <label class="fieldset__rellena--label" for="imagen">Imagen de perfil</label>
         <div class="div__imagen">
           <div class="añadir">añadir imagen</div>
-          <div placeholder="mini"></div>
+          <div class="mini"></div>
         </div>
       </div>
       <div class="">
@@ -88,7 +88,7 @@
       </div>
       <div class="">
         <label class="fieldset__rellena--label label__habilidades" for="habilidades">Habilidades (máximo 3)</label>
-        <div class= "fieldset__div--habilidades">
+        <div class="fieldset__div--habilidades">
           <div class="div__habilidades">
             <input class="input--html" type="text" name="html" value="   HTML">
             <div class="more"><i class="fas fa-plus"></i></div>
@@ -105,12 +105,19 @@
   <!-- Claudia -->
   <div>
     <fieldset>
-      <h2>Comparte</h2>
-      <input type="button" value="Crea tu tarjeta">
+      <h2 class="fieldset__title">
+         <!-- Cambiar clase de los estilos de iconos comunes en los h2 "fieldset__rellena_icon"-->
+          <span class="fieldset__rellena--icon"><i class="fas fa-share-alt"></i></span>
+          <span><h2>Comparte</h2><span>
+      <button type="button" class="fieldset__share--button">
+        <span class="fieldset__share--button--icon">
+          <i class="far fa-address-card"></i>
+        </span>
+        <span class="fieldset__share--button--text">Crea tu tarjeta</span>
+      </button>
     </fieldset>
   </div>
-  <script type="text/javascript" src="js/main.js">
+  <script type=" text/javascript " src="js/main.js ">
   </script>
 </body>
-
 </html>

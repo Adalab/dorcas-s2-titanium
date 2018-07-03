@@ -1,0 +1,75 @@
+.visor {
+  background-color: $palegrey;
+  padding: 10px 35px 30px 45px;
+}
+.reset{
+  width: 75px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.reset__icon{
+  color: $gunmetal;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: $x_small;
+  line-height: 1.67px;
+
+}
+.reset__text{
+  font-family: $main;
+  font-size: $x_small;
+  color: $gunmetal;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+
+
+}
+.card {
+  width: 100%;
+  background-color: $white;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+}
+.card__head {
+}
+.card__head--border {
+  width: 5px;
+  height: 42px;
+  background-color: $hospital-green;
+  margin: 0px;
+}
+.card__name {
+
+}
+.card__job {
+
+}
+.card__box {
+  height: 200px;
+
+}
+.card__foot{
+border-bottom: 2px solid $dirty-blue;
+}
+.card__foot--social{
+
+}
+.card__foot--icon{
+
+}
+.card__foot--skills{
+
+}
+.card__foot--box{
+
+}
+.card__foot--text{
+
+}

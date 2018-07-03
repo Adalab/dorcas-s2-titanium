@@ -1,12 +1,14 @@
 @import "core/reset";
 @import "core/variables";
 @import "core/functions";
+@import "components/visor";
 @import "components/buttons";
 @import "components/forms";
 @import "layouts/header";
 @import "layouts/footer";
 @import "pages/index";
 // @import "pages/index2";
+
 @import "pages/card1";
 @import "pages/card2";
 @import "core/helpers";

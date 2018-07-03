@@ -78,13 +78,19 @@ table {
   width: 100%;
   background-color: #ffffff;
   border-radius: 2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+}
+
+.card__head {
+  width: 100%;
+  padding: 20px 0 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card__head--border {
@@ -94,12 +100,27 @@ table {
   margin: 0px;
 }
 
+.card__name {
+  font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.11;
+  color: #114e4e;
+}
+
+.card__job {
+  font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #54585a;
+}
+
 .card__box {
   height: 200px;
 }
 
 .card__foot {
-  border-bottom: 2px solid #438792;
+  border-bottom: 1px solid #438792;
 }
 
 body {
@@ -258,6 +279,12 @@ body {
   width: 103px;
 }
 
+.diseña__tarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .diseña__coloresfuentes {
   width: 62px;
   height: 19px;
@@ -269,6 +296,10 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: #54585a;
+}
+
+.diseña__colores--paleta {
+  display: inline;
 }
 
 .diseña__colores--colores1 {
@@ -324,6 +355,29 @@ body {
   width: 30px;
   height: 25px;
   background-color: #a0c0cf;
+}
+
+.diseña--texto1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #54585a;
+}
+
+.diseña--texto2 {
+  font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
+  font-size: 16px;
+  color: #54585a;
+}
+
+.diseña--texto3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #54585a;
+}
+
+.listadiseño {
+  list-style: none;
 }
 
 .div__rellena {
@@ -417,13 +471,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 5px;
-<<<<<<< HEAD
-  border: solid 1px #a2deaf;
-  font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic", san-serif;
-  line-height: 20px;
-  font-size: 14px;
-=======
->>>>>>> 46aff5d3386e92d4331e9ff55c2b2ad104dcbe43
 }
 
 .input--html {
@@ -467,7 +514,7 @@ body {
   width: 165px;
   height: 30px;
   border: solid 1px #a2deaf;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+  font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic", san-serif;
   line-height: 20px;
   font-size: 14px;
   -webkit-box-sizing: border-box;
@@ -524,11 +571,6 @@ body {
 .fieldset__share--button--icon {
   font-size: 22px;
   margin-left: 10px;
-}
-
-.fieldset__icon--share {
-  font-size: 18px;
-  color: #e17334;
 }
 
 .uppercase {

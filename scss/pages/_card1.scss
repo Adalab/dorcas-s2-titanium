@@ -1,3 +1,6 @@
+.diseña__tarjeta{
+    display: flex;
+}
 .diseña__coloresfuentes{
  width: 62px;
  height: 19px;
@@ -11,7 +14,7 @@
  color: $gunmetal;
 }
 .diseña__colores--paleta{
-
+    display: inline;
 }
 .diseña__colores--colores1{
  width: 30px;

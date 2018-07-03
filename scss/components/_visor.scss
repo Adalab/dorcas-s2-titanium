@@ -34,10 +34,14 @@
   width: 100%;
   background-color: $white;
   border-radius: 2px;
-  display: flex;
+  display: block;
   flex-direction: row;
 }
 .card__head {
+  width: 100%;
+  padding:20px 0 20px 20px;
+  display: flex;
+
 }
 .card__head--border {
   width: 5px;
@@ -47,18 +51,24 @@
 }
 .card__name {
 font-family: $option2;
-
+font-size: $x_large;
+font-weight: $bold;
+line-height: 1.11;
+color: $dark-green-blue;
 
 }
 .card__job {
-
+  font-family: $option2;
+  font-size: $large;
+  line-height: 1.25;
+  color: $gunmetal;
 }
 .card__box {
   height: 200px;
 
 }
 .card__foot{
-border-bottom: 2px solid $dirty-blue;
+border-bottom: 1px solid $dirty-blue;
 }
 .card__foot--social{
 

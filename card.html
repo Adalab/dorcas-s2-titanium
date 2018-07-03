@@ -4,11 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <<<<<<< HEAD <link rel="stylesheet" href="css/main.css">
-    =======
-    <link rel="stylesheet" href="css/main.css"> >>>>>>> d1b3484130c3950b419b4bcc207d436388d8eb53
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
 </head>
 
 <body>
@@ -49,18 +47,21 @@
   <div class="div__rellena">
     <fieldset class="fieldset__rellena">
       <div class="fieldset__container--title">
-        <span class="fieldset__rellena--icon">
+        <span class="fieldset__rellena--keyboard">
           <i class="far fa-keyboard"></i>
         </span>
         <h2 class="fieldset__title">Rellena</h2>
+        <span class="fieldset__rellena--arrow">
+          <i class="fas fa-angle-up"></i>
+        </span>
       </div>
       <div class="">
         <label class="fieldset__rellena--label" for="nombre">Nombre completo</label>
-        <input class="fieldset__rellena--input" type="text" name="name" value="Ej: Sally Jill">
+        <input class="fieldset__rellena--input" type="text" name="name" placeholder="Ej: Sally Jill">
       </div>
       <div class="">
         <label class="fieldset__rellena--label" for="puesto">Puesto</label>
-        <input class="fieldset__rellena--input" type="text" name="puesto" value="Ej: Front-end unicorn">
+        <input class="fieldset__rellena--input" type="text" name="puesto" placeholder="Ej: Front-end unicorn">
       </div>
       <div class="">
         <label class="fieldset__rellena--label" for="imagen">Imagen de perfil</label>
@@ -71,31 +72,32 @@
       </div>
       <div class="">
         <label class="fieldset__rellena--label" for="email">Email</label>
-        <input class="fieldset__rellena--input" type="email" name="email" value="Ej: sally-hill@gmail.com">
+        <input class="fieldset__rellena--input" type="email" name="email" placeholder="Ej: sally-hill@gmail.com">
       </div>
       <div class="">
         <label class="fieldset__rellena--label" for="telefono">Teléfono</label>
-        <input class="fieldset__rellena--input" type="text" name="telefono" value="Ej: 555-55-55-55">
+        <input class="fieldset__rellena--input" type="text" name="telefono" placeholder="Ej: 555-55-55-55">
       </div>
       <div class="">
         <label class="fieldset__rellena--label" for="linkedin">Linkedin</label>
-        <input class="fieldset__rellena--input" type="text" name="linkedin" value="Ej: linkedin.com/in/Sally.hill">
+        <input class="fieldset__rellena--input" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/Sally.hill">
       </div>
       <div class="">
         <label class="fieldset__rellena--label" for="github">Github</label>
-        <input class="fieldset__rellena--input" type="text" name="github" value="Ej: @sally-hill">
+        <input class="fieldset__rellena--input" type="text" name="github" placeholder="Ej: @sally-hill">
       </div>
       <div class="">
         <label class="fieldset__rellena--label label__habilidades" for="habilidades">Habilidades (máximo 3)</label>
         <div class="fieldset__div--habilidades">
           <div class="div__habilidades">
             <input class="input--html" type="text" name="html" value="   HTML">
-            <input class="input--css" type="text" name="css" value="   CSS">
+            <div class="more"><i class="fas fa-plus"></i></div>
           </div>
           <div class="formulario__div--habilidades">
-            <div class="more">+</div>
-            <div class="less">-</div>
+            <input class="input--css" type="text" name="css" value="   CSS">
+            <div class="less"><i class="fas fa-minus"></i></div>
           </div>
+        </div>
         </div>
       </div>
     </fieldset>

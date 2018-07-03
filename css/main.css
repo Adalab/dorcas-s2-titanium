@@ -330,7 +330,7 @@ body {
   margin-left: 20px;
   margin-right: 20px;
   border-top: solid 1px #d8d8d8;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 }
 
 .fieldset__container--title {
@@ -342,21 +342,22 @@ body {
   align-items: center;
   margin-top: 10px;
   margin-bottom: 25px;
-  width: 78px;
+}
+
+.fieldset__rellena--keyboard {
+  font-size: 18px;
+  color: #e17334;
+  display: inline;
 }
 
 .fieldset__title {
+  display: inline;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   color: #54585a;
   text-transform: uppercase;
   font-weight: 600;
   margin-left: 10px;
-}
-
-.fieldset__rellena--icon {
-  font-size: 18px;
-  color: #e17334;
 }
 
 .fieldset__rellena--input {
@@ -371,6 +372,11 @@ body {
   display: block;
   color: #114e4e;
   margin-top: 20px;
+}
+
+.fieldset__rellena--arrow {
+  display: block;
+  text-align: right;
 }
 
 .div__imagen {
@@ -399,87 +405,96 @@ body {
   margin-top: 40px;
 }
 
-.input--html {
-  display: block;
-  width: 165px;
-  height: 30px;
+.label__habilidades {
+  margin-top: 40px;
+}
+
+.div__habilidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 5px;
+<<<<<<< HEAD
   border: solid 1px #a2deaf;
   font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic", san-serif;
   line-height: 20px;
   font-size: 14px;
+=======
+>>>>>>> 46aff5d3386e92d4331e9ff55c2b2ad104dcbe43
+}
+
+.input--html {
+  width: 165px;
+  height: 30px;
+  border: solid 1px #a2deaf;
+  font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic", san-serif;
+  line-height: 20px;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.more {
+  border: solid 1px #e17334;
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.formulario__div--habilidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 21px;
 }
 
 .input--css {
   width: 165px;
   height: 30px;
-  margin-top: 21px;
   border: solid 1px #a2deaf;
-  font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic", san-serif;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
   line-height: 20px;
   font-size: 14px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.fieldset__div--habilidades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 30px;
-}
-
-.formulario__div--habilidades {
+.less {
+  border: solid 1px #e17334;
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   margin-left: 20px;
-}
-
-.more {
-  background-color: red;
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-  margin-top: 7px;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.less {
-  background-color: aqua;
-  width: 30px;
-  height: 30px;
-  margin-top: 25px;
-  border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.less {
-  background-color: aqua;
-  width: 30px;
-  height: 30px;
-  margin-top: 25px;
-  border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.fas {
+  color: #e17334;
 }
 
 .fieldset__share--button {

@@ -39,23 +39,28 @@
 }
 .card__head {
   width: 100%;
-  padding:20px 0 20px 20px;
+  padding-top: 23px;
+  padding-bottom: 10px;
   display: flex;
+  flex-direction: row;
+
 
 }
 .card__head--border {
-  width: 5px;
+  border-left: 5px solid $hospital-green;
   height: 42px;
-  background-color: $hospital-green;
-  margin: 0px;
 }
+.card__head--container {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
 .card__name {
 font-family: $option2;
 font-size: $x_large;
 font-weight: $bold;
 line-height: 1.11;
 color: $dark-green-blue;
-
 }
 .card__job {
   font-family: $option2;
@@ -63,9 +68,9 @@ color: $dark-green-blue;
   line-height: 1.25;
   color: $gunmetal;
 }
-.card__box {
-  height: 200px;
-
+.card__pic {
+  width: 100%;
+  align-items: center;
 }
 .card__foot{
 border-bottom: 1px solid $dirty-blue;

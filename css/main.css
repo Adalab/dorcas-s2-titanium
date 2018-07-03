@@ -87,17 +87,25 @@ table {
 
 .card__head {
   width: 100%;
-  padding: 20px 0 20px 20px;
+  padding-top: 23px;
+  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .card__head--border {
-  width: 5px;
+  border-left: 5px solid #a2deaf;
   height: 42px;
-  background-color: #a2deaf;
-  margin: 0px;
+}
+
+.card__head--container {
+  margin-left: 15px;
+  margin-top: 5px;
 }
 
 .card__name {
@@ -115,8 +123,11 @@ table {
   color: #54585a;
 }
 
-.card__box {
-  height: 200px;
+.card__pic {
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .card__foot {
@@ -596,19 +607,6 @@ body {
 .fieldset__share--button--icon {
   font-size: 22px;
   margin-left: 10px;
-}
-
-.fieldset__share__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0;
 }
 
 .uppercase {

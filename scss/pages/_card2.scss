@@ -1,124 +1,125 @@
-.div__rellena{
-margin-left: 20px;
-margin-right: 20px;
-border-top: solid 1px #d8d8d8;
-margin-bottom: 5px;
+.div__rellena {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: solid 1px #d8d8d8;
+  margin-bottom: 30px;
 }
-.fieldset__container--title{
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    width: 78px;
+.fieldset__rellena {
 }
-.fieldset__title{
-font-size: $x_large;
-font-family:$main;
-color:$gunmetal;
-text-transform: uppercase;
-font-weight: $semibold;
-margin-left: 10px;
-
+.fieldset__container--title {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
-.fieldset__rellena--icon{
-    font-size: 18px;
-    color: $dull-orange;
-
-
+.fieldset__rellena--keyboard {
+  font-size: 18px;
+  color: $dull-orange;
+  display: inline;
 }
-.fieldset__rellena--input{
-margin-top: 5px;
-width: 281px;
-height: 30px;
-border: solid 1px $hospital-green;
-color: #c5c5c5;
+.fieldset__title {
+  display: inline;
+  font-size: $x_large;
+  font-family: $main;
+  color: $gunmetal;
+  text-transform: uppercase;
+  font-weight: $semibold;
+  margin-left: 10px;
 }
-.fieldset__rellena--label{
-display: block;
-color:$dark-green-blue;
-margin-top: 20px;
+.fieldset__rellena--input {
+  margin-top: 5px;
+  width: 281px;
+  height: 30px;
+  border: solid 1px $hospital-green;
+  color: #c5c5c5;
 }
-.div__imagen{
-display: flex;
-margin-top: 5px;
+.fieldset__rellena--label {
+  display: block;
+  color: $dark-green-blue;
+  margin-top: 20px;
 }
-.mini{
-width: 30px;
-height: 30px;
-border: solid 1px black;
-box-sizing: border-box;
-margin-left: 20px;
-
+.fieldset__rellena--arrow {
+  display: block;
+  text-align: right;
 }
-.añadir{
-width: 140px;
-height: 30px;
-background: $dull-orange;
-
+.div__imagen {
+  display: flex;
+  margin-top: 5px;
 }
-.label__habilidades{
-margin-top:40px;
+.mini {
+  width: 30px;
+  height: 30px;
+  border: solid 1px black;
+  box-sizing: border-box;
+  margin-left: 20px;
 }
-.input--html{
-    display: block;
-    width: 165px;
-    height: 30px;
-    margin-top: 5px;
-    border: solid 1px $hospital-green;
-    font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
-    line-height: 20px;
-    font-size: 14px;
+.añadir {
+  width: 140px;
+  height: 30px;
+  background: $dull-orange;
 }
-.input--css{
-    width: 165px;
-    height: 30px;
-    margin-top: 21px;
-    border: solid 1px $hospital-green;
-    font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
-    line-height: 20px;
-    font-size: 14px;
+.label__habilidades {
+  margin-top: 40px;
 }
-.fieldset__div--habilidades{
-    display: flex;
-    margin-bottom: 30px;
+.label__habilidades {
+  margin-top: 40px;
 }
-.formulario__div--habilidades{
-    margin-left: 20px;
+.div__habilidades {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
 }
-.more{
-    background-color: red;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    margin-top: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.input--html {
+  width: 165px;
+  height: 30px;
+  border: solid 1px $hospital-green;
+  font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic", san-serif;
+  line-height: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
 }
-.less{
-    background-color: aqua;
-    width: 30px;
-    height: 30px;
-    margin-top: 25px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- .less{
-     background-color: aqua;
-     width: 30px;
-     height: 30px;
-     margin-top: 25px;
-     border-radius: 50px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
-  .fieldset__share--button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.more {
+  border: solid 1px $dull-orange;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulario__div--habilidades {
+  display: flex;
+  margin-top: 21px;
+}
+.input--css {
+  width: 165px;
+  height: 30px;
+  border: solid 1px $hospital-green;
+  font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic", san-serif;
+  line-height: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.less {
+  border: solid 1px $dull-orange;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fas {
+  color: $dull-orange;
+}
+.fieldset__share--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $dull-orange;
   color: $white;
   width: 199px;

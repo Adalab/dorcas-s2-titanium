@@ -20,9 +20,9 @@ margin-bottom: 30px;
  display: inline;
 }
 .fieldset__title{
-display: inline;
- font-size: $x_large;
- font-family:$main;
+	display: inline;
+ 	font-size: $x_large;
+	font-family:$main;
  color:$gunmetal;
  text-transform: uppercase;
  font-weight: $semibold;
@@ -124,9 +124,8 @@ margin-top:40px;
 	}
 	.fa-angle-up{
 		color: $gunmetal;
-
 	}
-	@media all and (min){
+	@media all and (min-width:768px){
 		.fieldset__rellena--input{
 			width: 329px;
 		}

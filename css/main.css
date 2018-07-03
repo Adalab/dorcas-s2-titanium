@@ -94,6 +94,10 @@ table {
   margin: 0px;
 }
 
+.card__name {
+  font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
+}
+
 .card__box {
   height: 200px;
 }
@@ -326,6 +330,29 @@ body {
   background-color: #a0c0cf;
 }
 
+.diseña--texto1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #54585a;
+}
+
+.diseña--texto2 {
+  font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
+  font-size: 16px;
+  color: #54585a;
+}
+
+.diseña--texto3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #54585a;
+}
+
+.listadiseño {
+  list-style: none;
+}
+
 .div__rellena {
   margin-left: 20px;
   margin-right: 20px;
@@ -527,12 +554,6 @@ body {
   text-transform: uppercase;
 }
 
-@media all and (min) {
-  .fieldset__rellena--input {
-    width: 329px;
-  }
-}
-
 @media all and (min-width: 768px) {
   .main {
     padding: 0 174px;
@@ -591,6 +612,10 @@ body {
 
   .footer__logo--adalab {
     margin: 0;
+  }
+
+  .fieldset__rellena--input {
+    width: 329px;
   }
 }
 

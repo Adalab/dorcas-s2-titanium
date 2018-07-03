@@ -30,7 +30,7 @@ font-size: 14px;
  color:$gunmetal;
  text-transform: uppercase;
  font-weight: $semibold;
- margin-left: 10px;
+ margin-left: 12px;
  
  }
 .fieldset__rellena--input{
@@ -131,12 +131,22 @@ color: white;
 	.fieldset__rellena--input{
 		width: 329px;
 	}
+<<<<<<< HEAD
 	.div__rellena{
 		padding-top: 30px;
 		padding-bottom: 21px;
 		padding-left: 40px;
 	}
 }
+=======
+	.share{
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+>>>>>>> a53e16959db6dd9b7b50375b65e9e229305af11a
  .fieldset__share--button{
 	 display: flex;
 	 justify-content: center;
@@ -147,14 +157,27 @@ color: white;
  height: 50px;
  border-radius: 12px;
  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+ margin-top: 30px;
+ margin-bottom: 61px;
  }
  .fieldset__share--button--text{
 	 font-size: 18px;
-	 margin-left: 10px;
-
+	 margin-left: 4px;
+	 font-family:$main;
+	 font-weight: $semibold;
+	
 	 
  }
  .fieldset__share--button--icon{
 	 font-size: 22px;
-	 margin-left: 10px;
+justify-content: center;
+padding: auto;
  }
+.fieldset__icon--share{
+	margin:0 0 0 23px;
+	
+}
+.fieldset__rellena--icon-arrow{
+	margin-right: 20px;
+	align-self: flex-end;
+}

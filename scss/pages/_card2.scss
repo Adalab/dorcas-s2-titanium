@@ -2,30 +2,34 @@
 margin-left: 20px;
 margin-right: 20px;
 border-top: solid 1px #d8d8d8;
-margin-bottom: 5px;
+margin-bottom: 30px;
 }
-.fieldset__container--title{
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    width: 78px;
-}
-.fieldset__title{
-font-size: $x_large;
-font-family:$main;
-color:$gunmetal;
-text-transform: uppercase;
-font-weight: $semibold;
-margin-left: 10px;
+.fieldset__rellena{
 
 }
-.fieldset__rellena--icon{
-    font-size: 18px;
-    color: $dull-orange;
-    
+.fieldset__container--title{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 25px;
+
+}
+.fieldset__rellena--keyboard{
+	font-size: 18px;
+ color: $dull-orange;
+ display: inline;
    
 }
+.fieldset__title{
+display: inline;
+ font-size: $x_large;
+ font-family:$main;
+ color:$gunmetal;
+ text-transform: uppercase;
+ font-weight: $semibold;
+ margin-left: 10px;
+ 
+ }
 .fieldset__rellena--input{
 margin-top: 5px;
 width: 281px;
@@ -37,6 +41,10 @@ color: #c5c5c5;
 display: block;
 color:$dark-green-blue;
 margin-top: 20px;
+}
+.fieldset__rellena--arrow{
+ display: block;
+ text-align: right;
 }
 .div__imagen{
 display: flex;
@@ -59,56 +67,66 @@ background: $dull-orange;
 .label__habilidades{
 margin-top:40px;
 }
-.input--html{
-    display: block;
-    width: 165px;
-    height: 30px;
-    margin-top: 5px;
-    border: solid 1px $hospital-green;
-    font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
-    line-height: 20px;
-    font-size: 14px;
-}
-.input--css{
-    width: 165px;
-    height: 30px;
-    margin-top: 21px;
-    border: solid 1px $hospital-green;
-    font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
-    line-height: 20px;
-    font-size: 14px;
-}
-.fieldset__div--habilidades{
-    display: flex;
-    margin-bottom: 30px;
-}
-.formulario__div--habilidades{
-    margin-left: 20px;
-}
-.more{
-    background-color: red;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    margin-top: 7px;
-    display: flex;
-    align-items: center;
+.label__habilidades{
+	margin-top:40px;
+	}
+	.div__habilidades{
+		display: flex;
+		align-items: center;
+		margin-top: 5px;
+	}
+	.input--html{
+		width: 165px;
+		height: 30px;
+		border: solid 1px $hospital-green;
+		font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+		line-height: 20px;
+		font-size: 14px;
+		box-sizing: border-box;
+	}
+	.more{
+	border: solid 1px $dull-orange;
+	width: 30px;
+	height: 30px;
+	box-sizing: border-box;
+	margin-left: 20px;
+	border-radius: 15px;
+	display: flex;
     justify-content: center;
-}
-.less{
-    background-color: aqua;
-    width: 30px;
-    height: 30px;
-    margin-top: 25px;
-    border-radius: 50px;
-    display: flex;
     align-items: center;
+	}
+	.formulario__div--habilidades{
+		display: flex;
+		margin-top: 21px;
+		
+	}
+	.input--css{
+		width: 165px;
+		height: 30px;
+		border: solid 1px $hospital-green;
+		font-family:'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+		line-height: 20px;
+		font-size: 14px;
+		box-sizing:border-box;
+	}
+	.less{
+	border: solid 1px $dull-orange;
+	width: 30px;
+	height: 30px;
+	box-sizing: border-box;
+	margin-left: 20px;
+	border-radius: 15px;
+	display: flex;
     justify-content: center;
-}
+    align-items: center;
+	}
+	.fas{
+		color: $dull-orange;
+	}
  .fieldset__share--button{
-     display: flex;
-     justify-content: center;
-     align-items: center;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
  background: $dull-orange;
  color: $white;
  width: 199px;
@@ -117,11 +135,12 @@ margin-top:40px;
  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
  }
  .fieldset__share--button--text{
-     font-size: 18px;
-     margin-left: 10px;
-     
+	 font-size: 18px;
+	 margin-left: 10px;
+
+	 
  }
  .fieldset__share--button--icon{
-     font-size: 22px;
-     margin-left: 10px;
+	 font-size: 22px;
+	 margin-left: 10px;
  }

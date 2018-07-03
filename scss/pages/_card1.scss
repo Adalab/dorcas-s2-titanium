@@ -1,10 +1,15 @@
 .diseña__coloresfuentes{
- width: 183px;
+ width: 82px;
  height: 19px;
  font-family: OpenSans, sans-serif;
  font-size: 14px;
  color: $gunmetal;
  margin-left: 39px;
+
+ @media all and (min-width: 768px) {
+   width: 151px;
+
+ }
 
 }
 .diseña__colores--paleta{

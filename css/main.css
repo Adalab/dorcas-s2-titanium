@@ -284,7 +284,7 @@ body {
 }
 
 .diseña__coloresfuentes {
-  width: 183px;
+  width: 82px;
   height: 19px;
   font-family: OpenSans, sans-serif;
   font-size: 14px;
@@ -662,6 +662,10 @@ body {
 
   .main__button {
     margin: 186px 0 59px 0;
+  }
+
+  .diseña__coloresfuentes {
+    width: 151px;
   }
 
   .fieldset__rellena--input {

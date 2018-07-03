@@ -284,16 +284,12 @@ body {
 }
 
 .diseña__coloresfuentes {
-  width: 62px;
+  width: 183px;
   height: 19px;
   font-family: OpenSans, sans-serif;
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #54585a;
+  margin-left: 39px;
 }
 
 .diseña__colores--colores1 {
@@ -352,7 +348,7 @@ body {
 }
 
 .diseña--texto1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #54585a;
@@ -372,6 +368,39 @@ body {
 
 .listadiseño {
   list-style: none;
+}
+
+.diseña__colores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 13px;
+}
+
+.diseña__colores--option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.diseña__colores--option-fuentes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.diseña--radio {
+  margin-right: 10px;
 }
 
 .div__rellena {

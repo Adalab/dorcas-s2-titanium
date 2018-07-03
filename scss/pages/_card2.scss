@@ -1,12 +1,11 @@
 .div__rellena{
-padding-left: 20px;
-padding-right: 20px;
-border-top: solid 1px #d8d8d8;
-border-bottom: solid 1px #d8d8d8;
+margin-left: 20px;
+margin-right: 20px;
 padding-bottom: 30px;
 padding-top: 10px;
 font-family: $main;
 font-size: 14px;
+border-bottom: solid 1px #d8d8d8;
 }
 .fieldset__rellena{
 
@@ -131,14 +130,14 @@ color: white;
 	.fieldset__rellena--input{
 		width: 329px;
 	}
-<<<<<<< HEAD
+
 	.div__rellena{
 		padding-top: 30px;
 		padding-bottom: 21px;
-		padding-left: 40px;
+	
 	}
 }
-=======
+
 	.share{
 		width: auto;
 		display: flex;
@@ -146,7 +145,7 @@ color: white;
 		align-items: center;
 		
 	}
->>>>>>> a53e16959db6dd9b7b50375b65e9e229305af11a
+
  .fieldset__share--button{
 	 display: flex;
 	 justify-content: center;

@@ -18,7 +18,6 @@ margin-bottom: 30px;
 	font-size: 18px;
  color: $dull-orange;
  display: inline;
-   
 }
 .fieldset__title{
 display: inline;
@@ -122,6 +121,15 @@ margin-top:40px;
 	}
 	.fas{
 		color: $dull-orange;
+	}
+	.fa-angle-up{
+		color: $gunmetal;
+
+	}
+	@media all and (min){
+		.fieldset__rellena--input{
+			width: 329px;
+		}
 	}
  .fieldset__share--button{
 	 display: flex;

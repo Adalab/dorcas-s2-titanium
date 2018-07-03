@@ -490,6 +490,10 @@ body {
   color: #e17334;
 }
 
+.fa-angle-up {
+  color: #54585a;
+}
+
 .fieldset__share--button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,6 +525,12 @@ body {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+@media all and (min) {
+  .fieldset__rellena--input {
+    width: 329px;
+  }
 }
 
 @media all and (min-width: 768px) {

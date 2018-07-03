@@ -405,7 +405,7 @@ body {
   height: 30px;
   margin-top: 5px;
   border: solid 1px #a2deaf;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+  font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic", san-serif;
   line-height: 20px;
   font-size: 14px;
 }
@@ -415,7 +415,7 @@ body {
   height: 30px;
   margin-top: 21px;
   border: solid 1px #a2deaf;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+  font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic", san-serif;
   line-height: 20px;
   font-size: 14px;
 }
@@ -509,6 +509,11 @@ body {
 .fieldset__share--button--icon {
   font-size: 22px;
   margin-left: 10px;
+}
+
+.fieldset__icon--share {
+  font-size: 18px;
+  color: #e17334;
 }
 
 .uppercase {

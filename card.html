@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Awesome Profile-Cards</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
 </head>
 <body>
 <header class="header">
@@ -22,17 +23,35 @@
           <div>
             <h3 class="diseña__coloresfuentes">Colores</h3>
             <ul class="listadiseño">
-              <li><input type="radio" class="diseña__colores--paleta" name="elección"/><div class="diseña__colores--colores1"></div><div class="diseña__colores--colores2"></div><div class="diseña__colores--colores3"></div></li>
-              <li><input type="radio" class="diseña__colores--paleta" name="elección"/><div class="diseña__colores--colores4"></div><div class="diseña__colores--colores5"></div><div class="diseña__colores--colores6"></div></li>
-              <li><input type="radio" class="diseña__colores--paleta" name="elección"/><div class="diseña__colores--colores7"></div><div class="diseña__colores--colores8"></div><div class="diseña__colores--colores9"></div></li>
+              <li>
+                <input type="radio" class="diseña__colores--paleta" name="elección" />
+                <div class="diseña__colores--colores1"></div>
+                <div class="diseña__colores--colores2"></div>
+                <div class="diseña__colores--colores3"></div>
+              </li>
+              <li>
+                <input type="radio" class="diseña__colores--paleta" name="elección" />
+                <div class="diseña__colores--colores4"></div>
+                <div class="diseña__colores--colores5"></div>
+                <div class="diseña__colores--colores6"></div>
+              </li>
+              <li>
+                <input type="radio" class="diseña__colores--paleta" name="elección" />
+                <div class="diseña__colores--colores7"></div>
+                <div class="diseña__colores--colores8"></div>
+                <div class="diseña__colores--colores9"></div>
+              </li>
             </ul>
           </div>
           <div>
             <h3 class="diseña__coloresfuentes">Fuentes</h3>
             <ul class="listadiseño">
-             <li><input type="radio" class="diseña--texto1" name="elecciónText"/>Ubuntu</li>
-             <li><input type="radio" class="diseña--texto2" name="elecciónText"/>Comic Sans</li>
-             <li><input type="radio" class="diseña--texto3" name="elecciónText"/>Montserrat</li>
+              <li>
+                <input type="radio" class="diseña--texto1" name="elecciónText" />Ubuntu</li>
+              <li>
+                <input type="radio" class="diseña--texto2" name="elecciónText" />Comic Sans</li>
+              <li>
+                <input type="radio" class="diseña--texto3" name="elecciónText" />Montserrat</li>
             </ul>
           </div>
     </fieldset>
@@ -87,25 +106,52 @@
             <input class="input--html" type="text" name="html" value="   HTML">
             <div class="more"><i class="fas fa-plus"></i></div>
           </div>
-          <div class="formulario__div--habilidades">
-            <input class="input--css" type="text" name="css" value="   CSS">
-            <div class="less"><i class="fas fa-minus"></i></div>
+          <div class="">
+            <label class="fieldset__rellena--label" for="linkedin">Linkedin</label>
+            <input class="fieldset__rellena--input" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/Sally.hill">
           </div>
-        </div>
-        </div>
+          <div class="">
+            <label class="fieldset__rellena--label" for="github">Github</label>
+            <input class="fieldset__rellena--input" type="text" name="github" placeholder="Ej: @sally-hill">
+          </div>
+          <div class="">
+            <label class="fieldset__rellena--label label__habilidades" for="habilidades">Habilidades (máximo 3)</label>
+            <div class="fieldset__div--habilidades">
+              <div class="div__habilidades">
+                <input class="input--html" type="text" name="html" value="   HTML">
+                <div class="more">
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+              <div class="formulario__div--habilidades">
+                <input class="input--css" type="text" name="css" value="   CSS">
+                <div class="less">
+                  <i class="fas fa-minus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
-    </fieldset>
+      </fieldset>
   </div>
   <!-- Rellena -->
   <div>
     <fieldset>
-        <!-- Cambiar clase de los estilos de iconos comunes en los h2 "fieldset__rellena_icon"-->
-        <span class="fieldset__icon--share">
-          <i class="fas fa-share-alt"></i>
-        </span>
-        <h2 class="fieldset__title">Comparte</h2>
-            <span class="fieldset__rellena--icon-arrow"></span>
-            <i class="fas fa-angle-down"></i>
+      <span class="fieldset__icon--share">
+        <i class="fas fa-share-alt"></i>
+      </span>
+      <h2 class="fieldset__title">Comparte</h2>
+      <span class="fieldset__rellena--icon-arrow"></span>
+      <i class="fas fa-angle-down"></i>
+      </span>
+      <div class="fieldset__share__button">
+        <button type="button" class="fieldset__share--button">
+          <span class="fieldset__share--button--icon">
+            <i class="far fa-address-card"></i>
+          </span>
+          <h2 class="fieldset__title">Comparte</h2>
+          <span class="fieldset__rellena--icon-arrow"></span>
+          <i class="fas fa-angle-down"></i>
           </span>
           <button type="button" class="fieldset__share--button">
             <span class="fieldset__share--button--icon">
@@ -121,9 +167,8 @@
 		<img class="footer__logo--titanium" src="" alt="Logotipo de Titanium">
 		<a href="http://www.adalab.es" target="_Blank"><img class="footer__logo--adalab" src="images/logo-adalab-80px.png" alt="Logotipo de Adalab"></a>
 	</footer>
-
-
-  <script type=" text/javascript " src="js/main.js ">
+    <script type=" text/javascript " src="js/main.js ">
   </script>
 </body>
+
 </html>

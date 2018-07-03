@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Awesome Profile-Cards</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous">
 </head>
 
 <body>
+
+<header class="header">
+  <img src="images/awesomecards.svg" alt="Logo de Awesome Cards" class="header__logo">
+</header>
+
   <div>
     <fieldset>
       <div>
@@ -95,14 +101,11 @@
   <!-- Claudia -->
   <div>
     <fieldset>
-      <h2 class="fieldset__title">
         <!-- Cambiar clase de los estilos de iconos comunes en los h2 "fieldset__rellena_icon"-->
         <span class="fieldset__icon--share">
           <i class="fas fa-share-alt"></i>
         </span>
-        <span>
-          <h2>Comparte</h2>
-          <span>
+        <h2 class="fieldset__title">Comparte</h2>
             <span class="fieldset__rellena--icon-arrow"></span>
             <i class="fas fa-angle-down"></i>
           </span>
@@ -110,12 +113,19 @@
             <span class="fieldset__share--button--icon">
               <i class="far fa-address-card"></i>
             </span>
-            <span class="fieldset__share--button--text">Crea tu tarjeta</span>
+            <span class="fieldset__share--button--text uppercase">Crear tarjeta</span>
           </button>
     </fieldset>
   </div>
+
+  <footer class="footer">
+		<p class="footer__copyright">Awesome profile-cards ©2018</p>
+		<img class="footer__logo--titanium" src="" alt="Logotipo de Titanium">
+		<a href="http://www.adalab.es" target="_Blank"><img class="footer__logo--adalab" src="images/logo-adalab-80px.png" alt="Logotipo de Adalab"></a>
+	</footer>
+
+
   <script type=" text/javascript " src="js/main.js ">
   </script>
 </body>
-
 </html>

@@ -119,53 +119,16 @@ body {
   border-radius: 21px;
   background-color: $dirty-blue;
   border: 1px solid #979797;
+
+  @media all and (min-width: 768px) {
+    margin: 186px 0 59px 0;
+  }
+}
+
+.main__button--link {
+  text-decoration: none;
   font-family: $main;
   font-weight: $semibold;
   font-size: $large;
   color: $white;
-  @media all and (min-width: 768px) {
-    margin: 186px 0 59px 0;
-  }
-
-}
-
-.footer {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-top: 1px solid #d8d8d8;
-@media all and (min-width: 768px) {
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 40px;
-}
-}
-
-.footer__copyright {
-  margin: 20px 0 10px 0;
-font-family: $main;
-font-size: $normal;
-color: #6B6B6B;
-opacity: 0.5;
-display: block;
-@media all and (min-width: 768px) {
-  margin: 0;
-}
-}
-.footer__logo--titanium {
-margin-bottom: 10px;
-display: block;
-@media all and (min-width: 768px) {
-  margin: 0;
-}
-}
-.footer__logo--adalab {
-display: block;
-margin-bottom: 20px;
-height: 40px;
-width: 103px;
-@media all and (min-width: 768px) {
-  margin: 0;
-}
 }

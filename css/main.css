@@ -417,13 +417,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 5px;
-<<<<<<< HEAD
-  border: solid 1px #a2deaf;
-  font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic", san-serif;
-  line-height: 20px;
-  font-size: 14px;
-=======
->>>>>>> 46aff5d3386e92d4331e9ff55c2b2ad104dcbe43
 }
 
 .input--html {
@@ -467,7 +460,7 @@ body {
   width: 165px;
   height: 30px;
   border: solid 1px #a2deaf;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
+  font-family: "Comic Sans MS", "Comic Sans", "TSCu_Comic", san-serif;
   line-height: 20px;
   font-size: 14px;
   -webkit-box-sizing: border-box;
@@ -524,11 +517,6 @@ body {
 .fieldset__share--button--icon {
   font-size: 22px;
   margin-left: 10px;
-}
-
-.fieldset__icon--share {
-  font-size: 18px;
-  color: #e17334;
 }
 
 .uppercase {

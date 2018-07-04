@@ -1,7 +1,16 @@
-.visor {
-  background-color: $palegrey;
-  padding: 10px 35px 30px 45px;
+.page__main {
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
 }
+.visor {
+  background: linear-gradient(to bottom, $silver, $palegrey);
+  padding: 10px 35px 30px 45px;
+  
+}
+
 .reset{
   width: 75px;
   height: 30px;
@@ -27,24 +36,20 @@
   text-align: center;
   display: inline-block;
   margin-right: 10px;
-
-
 }
 .card {
-  width: 100%;
   background-color: $white;
   border-radius: 2px;
   display: block;
   flex-direction: row;
+  box-shadow: 0.5px 2px 2px 0.5px rgba(0, 0, 0, 0.35);
 }
 .card__head {
-  width: 100%;
+  
   padding-top: 23px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
-
-
 }
 .card__head--border {
   border-left: 5px solid $hospital-green;
@@ -68,29 +73,47 @@ line-height: 1.11;
   line-height: 1.25;
   color: $gunmetal;
 }
-.card__pic {
-  width: 100%;
-  display: block;
-}
 .card__pic--pic {
-//  poner auqi lo de card__pic
-}
-.card__foot{
-
+  width: 100%;
 }
 .card__foot--social{
-
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px 62px 10px 20px;
+  align-items: center;
+  border-bottom: 1px solid rgba(67, 135, 146, 0.2);
 }
 .card__foot--icon{
-
-
+  width: 32px;
+  height: 27px;
+  border-radius: 16px;
+  border: solid 2px $hospital-green;
+  text-align: center;
+  margin-right: 10px;
+}
+.card__foot--icon:last-child{
+margin-right:0;
+}
+#iconsocial {
+  margin-top: 4px;
+  font-size: $x_large;
+  color: $dark-green-blue;
 }
 .card__foot--skills{
-
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 10px 92px 10px 15px;
 }
 .card__foot--box{
-
+  
+  border-radius: 4px;
+  background-color: $dirty-blue;
 }
 .card__foot--text{
-
+  margin: 2px 2px;
+  font-family: $main;
+  font-size: $small;
+  color: $white;
 }

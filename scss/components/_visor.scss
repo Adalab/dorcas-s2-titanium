@@ -60,7 +60,7 @@ font-family: $option2;
 font-size: $x_large;
 font-weight: $bold;
 line-height: 1.11;
-color: $dark-green-blue;
+
 }
 .card__job {
   font-family: $option2;
@@ -72,13 +72,17 @@ color: $dark-green-blue;
   width: 100%;
   align-items: center;
 }
+.card__pic--pic {
+ 
+}
 .card__foot{
-border-bottom: 1px solid $dirty-blue;
+
 }
 .card__foot--social{
 
 }
 .card__foot--icon{
+
 
 }
 .card__foot--skills{

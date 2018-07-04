@@ -8,135 +8,141 @@
   <title>Awesome Profile-Cards</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
+  crossorigin="anonymous">
 </head>
 
 <body>
-<header class="header">
-  <img src="images/awesomecards.svg" alt="Logo de Awesome Cards" class="header__logo">
-</header>
+  <header class="header">
+    <img src="images/awesomecards.svg" alt="Logo de Awesome Cards" class="header__logo">
+  </header>
 
-<main class="page__main">
-          <div class="div__rellena">
-            <fieldset class="fieldset__rellena">
-              <div class="fieldset__container--title">
-                <span class="fieldset__rellena--keyboard">
-                  <i class="far fa-object-ungroup"></i>
-                  <h2 class="fieldset__title">Diseña</h2>
-                </span>
-                <span class="fieldset__rellena--arrow">
-                  <i class="fas fa-angle-up"></i>
-                </span>
-              </div>
-          <div class="diseña__colores">
-            <h3 class="diseña__coloresfuentes uppercase">Colores</h3>
-            <ul class="listadiseño">
-              <li class="diseña__colores--option"><input type="radio" class="diseña__colores--paleta diseña--radio" name="elección"/><div class="diseña__colores--colores1"></div><div class="diseña__colores--colores2"></div><div class="diseña__colores--colores3"></div></li>
-              <li class="diseña__colores--option"><input type="radio" class="diseña__colores--paleta diseña--radio" name="elección"/><div class="diseña__colores--colores4"></div><div class="diseña__colores--colores5"></div><div class="diseña__colores--colores6"></div></li>
-              <li class="diseña__colores--option"><input type="radio" class="diseña__colores--paleta diseña--radio" name="elección"/><div class="diseña__colores--colores7"></div><div class="diseña__colores--colores8"></div><div class="diseña__colores--colores9"></div></li>
-            </ul>
-          </div>
-          <div class="diseña__colores">
-            <h3 class="diseña__coloresfuentes uppercase">Fuentes</h3>
-            <ul class="listadiseño">
-             <li class="diseña__colores--option-fuentes diseña--texto1"><input type="radio" class=" diseña--radio" name="elecciónText"/>Ubuntu</li>
-             <li class="diseña__colores--option-fuentes diseña--texto2"><input type="radio" class=" diseña--radio" name="elecciónText"/>Comic Sans</li>
-             <li class="diseña__colores--option-fuentes diseña--texto3"><input type="radio" class="diseña--radio" name="elecciónText"/>Montserrat</li>
-            </ul>
-          </div>
-    </fieldset>
-  </div>
-        <!-- Rellena -->
-        <div class="div__rellena">
-          <fieldset class="fieldset__rellena">
-            <div class="fieldset__container--title">
-              <span class="fieldset__rellena--keyboard">
-                <i class="far fa-keyboard"></i>
-                <h2 class="fieldset__title">Rellena</h2>
-              </span>
-              <span class="fieldset__rellena--arrow">
-                <i class="fas fa-angle-up"></i>
-              </span>
-            </div>
-            <div class="">
-              <label class="fieldset__rellena--label" for="nombre">Nombre completo</label>
-              <input class="fieldset__rellena--input" type="text" name="name" placeholder="Ej: Sally Jill">
-            </div>
-            <div class="">
-              <label class="fieldset__rellena--label" for="puesto">Puesto</label>
-              <input class="fieldset__rellena--input" type="text" name="puesto" placeholder="Ej: Front-end unicorn">
-            </div>
-            <div class="">
-              <label class="fieldset__rellena--label" for="imagen">Imagen de perfil</label>
-              <div class="div__imagen">
-                <div class="añadir">Añadir imagen</div>
-                <div class="mini"></div>
-              </div>
-            </div>
-            <div class="">
-              <label class="fieldset__rellena--label" for="email">Email</label>
-              <input class="fieldset__rellena--input" type="email" name="email" placeholder="Ej: sally-hill@gmail.com">
-            </div>
-            <div class="">
-              <label class="fieldset__rellena--label" for="telefono">Teléfono</label>
-              <input class="fieldset__rellena--input" type="text" name="telefono" placeholder="Ej: 555-55-55-55">
-            </div>
-            <div class="">
-              <label class="fieldset__rellena--label" for="linkedin">Linkedin</label>
-              <input class="fieldset__rellena--input" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/Sally.hill">
-            </div>
-            <div class="">
-              <label class="fieldset__rellena--label" for="github">Github</label>
-              <input class="fieldset__rellena--input" type="text" name="github" placeholder="Ej: @sally-hill">
-            </div>
-            <div class="">
-              <label class="fieldset__rellena--label" for="linkedin">Linkedin</label>
-              <input class="fieldset__rellena--input" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/Sally.hill">
-            </div>
-            <div class="">
-              <label class="fieldset__rellena--label label__habilidades" for="habilidades">Habilidades (máximo 3)</label>
-              <div class="fieldset__div--habilidades">
-                <div class="div__habilidades">
-                  <input class="input--html" type="text" name="html" value="   HTML">
-                  <div class="more">
-                    <i class="fas fa-plus"></i>
-                  </div>
-                </div>
-                <div class="formulario__div--habilidades">
-                  <input class="input--css" type="text" name="css" value="   CSS">
-                  <div class="less">
-                    <i class="fas fa-minus"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        </fieldset>
+  <main class="page__main">
+
+    <div class="icons">
+      <div class="mobile"><i class="fas fa-mobile-alt icon"></i></div>
+      <div class="email"><i class="far fa-envelope icon"></i></div>
+      <div class="linkedin"><i class="fab fa-linkedin-in icon"></i></div>
+      <div class="github"><i class="fab fa-github-alt icon"></i></div>
     </div>
-    <!-- Rellena -->
-    <!-- Comparte -->
 
     <div class="div__rellena">
       <fieldset class="fieldset__rellena">
         <div class="fieldset__container--title">
           <span class="fieldset__rellena--keyboard">
-            <i class="fas fa-share-alt"></i>
-            <h2 class="fieldset__title">Comparte</h2>
+            <i class="far fa-object-ungroup"></i>
+            <h2 class="fieldset__title">Diseña</h2>
           </span>
           <span class="fieldset__rellena--arrow">
             <i class="fas fa-angle-up"></i>
           </span>
         </div>
-
-        <div class="fieldset__share--button">
-          <button type="button" class="fieldset__share--button">
-            <span class="fieldset__share--button--icon">
-              <i class="far fa-address-card"></i>
-            </span>
-            <span class="fieldset__share--button--text uppercase">Crear tarjeta</span>
-          </button>
+        <div class="diseña__colores">
+          <h3 class="diseña__coloresfuentes uppercase">Colores</h3>
+          <ul class="listadiseño">
+            <li class="diseña__colores--option"><input type="radio" class="diseña__colores--paleta diseña--radio" name="elección"/><div class="diseña__colores--colores1"></div><div class="diseña__colores--colores2"></div><div class="diseña__colores--colores3"></div></li>
+            <li class="diseña__colores--option"><input type="radio" class="diseña__colores--paleta diseña--radio" name="elección"/><div class="diseña__colores--colores4"></div><div class="diseña__colores--colores5"></div><div class="diseña__colores--colores6"></div></li>
+            <li class="diseña__colores--option"><input type="radio" class="diseña__colores--paleta diseña--radio" name="elección"/><div class="diseña__colores--colores7"></div><div class="diseña__colores--colores8"></div><div class="diseña__colores--colores9"></div></li>
+          </ul>
+        </div>
+        <div class="diseña__colores">
+          <h3 class="diseña__coloresfuentes uppercase">Fuentes</h3>
+          <ul class="listadiseño">
+            <li class="diseña__colores--option-fuentes diseña--texto1"><input type="radio" class=" diseña--radio" name="elecciónText"/>Ubuntu</li>
+            <li class="diseña__colores--option-fuentes diseña--texto2"><input type="radio" class=" diseña--radio" name="elecciónText"/>Comic Sans</li>
+            <li class="diseña__colores--option-fuentes diseña--texto3"><input type="radio" class="diseña--radio" name="elecciónText"/>Montserrat</li>
+          </ul>
+        </div>
       </fieldset>
+    </div>
+    <!-- Rellena -->
+    <div class="div__rellena">
+      <fieldset class="fieldset__rellena">
+        <div class="fieldset__container--title">
+          <span class="fieldset__rellena--keyboard">
+            <i class="far fa-keyboard"></i>
+            <h2 class="fieldset__title">Rellena</h2>
+          </span>
+          <span class="fieldset__rellena--arrow">
+            <i class="fas fa-angle-up"></i>
+          </span>
+        </div>
+        <div class="">
+          <label class="fieldset__rellena--label" for="nombre">Nombre completo</label>
+          <input class="fieldset__rellena--input" type="text" name="name" placeholder="Ej: Sally Jill">
+        </div>
+        <div class="">
+          <label class="fieldset__rellena--label" for="puesto">Puesto</label>
+          <input class="fieldset__rellena--input" type="text" name="puesto" placeholder="Ej: Front-end unicorn">
+        </div>
+        <div class="">
+          <label class="fieldset__rellena--label" for="imagen">Imagen de perfil</label>
+          <div class="div__imagen">
+            <div class="añadir">Añadir imagen</div>
+            <div class="mini"></div>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="">
+            <label class="fieldset__rellena--label" for="email">Email</label>
+            <input class="fieldset__rellena--input fieldset__rellena--input-email" type="email" name="email" placeholder="Ej: sally-hill@gmail.com" autocomplete="email">
+          </div>
+          <div class="">
+            <label class="fieldset__rellena--label" for="telefono">Teléfono</label>
+            <input class="fieldset__rellena--input fieldset__rellena--input-mobile" type="text" name="telefono" placeholder="Ej: 555-55-55-55" autocomplete="tel-national">
+          </div>
+          <div class="">
+            <label class="fieldset__rellena--label" for="linkedin">Linkedin</label>
+            <input class="fieldset__rellena--input fieldset__rellena--input-linkedin" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/Sally.hill">
+          </div>
+          <div class="">
+            <label class="fieldset__rellena--label" for="github">Github</label>
+            <input class="fieldset__rellena--input fieldset__rellena--input-github" type="text" name="github" placeholder="Ej: @sally-hill">
+          </div>
+        </div>
+        <div class="">
+          <label class="fieldset__rellena--label label__habilidades" for="habilidades">Habilidades (máximo 3)</label>
+          <div class="fieldset__div--habilidades">
+            <div class="div__habilidades">
+              <input class="input--html" type="text" name="html" value="   HTML">
+              <div class="more">
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+            <div class="formulario__div--habilidades">
+              <input class="input--css" type="text" name="css" value="   CSS">
+              <div class="less">
+                <i class="fas fa-minus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </fieldset>
+  </div>
+  <!-- Rellena -->
+  <!-- Comparte -->
+
+  <div class="div__rellena">
+    <fieldset class="fieldset__rellena">
+      <div class="fieldset__container--title">
+        <span class="fieldset__rellena--keyboard">
+          <i class="fas fa-share-alt"></i>
+          <h2 class="fieldset__title">Comparte</h2>
+        </span>
+        <span class="fieldset__rellena--arrow">
+          <i class="fas fa-angle-up"></i>
+        </span>
+      </div>
+
+      <div class="fieldset__share--button">
+        <button type="button" class="fieldset__share--button">
+          <span class="fieldset__share--button--icon">
+            <i class="far fa-address-card"></i>
+          </span>
+          <span class="fieldset__share--button--text uppercase">Crear tarjeta</span>
+        </button>
+      </fieldset>
+    </div>
   </main>
   <footer class="footer">
     <p class="footer__copyright">Awesome profile-cards ©2018</p>

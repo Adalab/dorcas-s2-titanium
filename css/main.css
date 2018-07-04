@@ -668,8 +668,6 @@ body {
 
 .fieldset__rellena--icon-arrow {
   margin-right: 20px;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
 }
 
 .uppercase {

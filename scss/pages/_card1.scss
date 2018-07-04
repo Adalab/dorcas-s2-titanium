@@ -1,14 +1,19 @@
+.page__main {
+background-image: linear-gradient(#f5f5f5, white);
+}
+
 .diseña__coloresfuentes{
- width: 62px;
+ width: 82px;
  height: 19px;
  font-family: OpenSans, sans-serif;
  font-size: 14px;
- font-weight: normal;
- font-style: normal;
- font-stretch: normal;
- line-height: normal;
- letter-spacing: normal;
  color: $gunmetal;
+ margin-left: 39px;
+
+ @media all and (min-width: 768px) {
+   width: 151px;
+ }
+
 }
 .diseña__colores--paleta{
 
@@ -60,7 +65,7 @@
  background-color: $blue-grey-medium;
 }
 .diseña--texto1{
-    font-family: $main;
+    font-family: $option1;
     font-size: 16px;
     font-weight: 600;
     color: $gunmetal;
@@ -77,4 +82,28 @@
 }
 .listadiseño{
     list-style: none;
+
+}
+
+.diseña__colores {
+display: flex;
+margin-bottom: 13px;
+}
+
+.diseña__colores--option {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+}
+
+.diseña__colores--option-fuentes {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.diseña--radio {
+  margin-right: 10px;
+
 }

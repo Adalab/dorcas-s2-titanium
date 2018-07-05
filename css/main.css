@@ -146,6 +146,15 @@ table {
 }
 
 .card__foot--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 32px;
   height: 27px;
   border-radius: 16px;
@@ -158,8 +167,7 @@ table {
   margin-right: 0;
 }
 
-#iconsocial {
-  margin-top: 4px;
+.iconsocial {
   font-size: 18px;
   color: #114e4e;
 }
@@ -663,10 +671,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.fas {
-  color: #e17334;
 }
 
 .fa-angle-up {

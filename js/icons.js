@@ -1,4 +1,3 @@
-
 'use strict'
 
 var arrow = document.querySelector('.fieldset__rellena--arrow');
@@ -70,5 +69,3 @@ function notif(a) {
 function teste(){
   alert('Testing... ok!');
 }
-
-//# sourceMappingURL=main.min.js.map

@@ -146,6 +146,15 @@ table {
 }
 
 .card__foot--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 32px;
   height: 27px;
   border-radius: 16px;
@@ -158,8 +167,7 @@ table {
   margin-right: 0;
 }
 
-#iconsocial {
-  margin-top: 4px;
+.iconsocial {
   font-size: 18px;
   color: #114e4e;
 }
@@ -665,10 +673,6 @@ body {
   align-items: center;
 }
 
-.fas {
-  color: #e17334;
-}
-
 .fa-angle-up {
   color: #54585a;
 }
@@ -733,6 +737,36 @@ body {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.icons {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  background: rgba(160, 233, 79, 0.2);
+  border: 1px solid #d8e7d8;
+}
+
+.icon {
+  margin: 15px 30px;
+  font-size: 28px;
+}
+
+.mobile {
+  display: none;
+}
+
+.email {
+  display: none;
+}
+
+.linkedin {
+  display: none;
+}
+
+.github {
+  display: none;
 }
 
 @media all and (min-width: 768px) {

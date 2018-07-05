@@ -78,6 +78,17 @@ table {
   width: 100%;
   background-color: #ffffff;
   border-radius: 2px;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.card__head {
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,22 +99,32 @@ table {
 }
 
 .card__head--border {
-  width: 5px;
+  border-left: 5px solid #a2deaf;
   height: 42px;
-  background-color: #a2deaf;
-  margin: 0px;
+}
+
+.card__head--container {
+  margin-left: 15px;
+  margin-top: 5px;
 }
 
 .card__name {
   font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.11;
 }
 
-.card__box {
-  height: 200px;
+.card__job {
+  font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #54585a;
 }
 
-.card__foot {
-  border-bottom: 2px solid #438792;
+.card__pic {
+  width: 100%;
+  display: block;
 }
 
 .header {
@@ -283,6 +304,11 @@ body {
   color: #ffffff;
 }
 
+.page__main {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(white));
+  background-image: linear-gradient(#f5f5f5, white);
+}
+
 .diseña__coloresfuentes {
   width: 82px;
   height: 19px;
@@ -290,6 +316,10 @@ body {
   font-size: 14px;
   color: #54585a;
   margin-left: 39px;
+}
+
+.diseña__colores--paleta {
+  display: inline;
 }
 
 .diseña__colores--colores1 {
@@ -406,8 +436,11 @@ body {
 .div__rellena {
   margin-left: 20px;
   margin-right: 20px;
-  border-top: solid 1px #d8d8d8;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  border-bottom: solid 1px #d8d8d8;
 }
 
 .fieldset__container--title {
@@ -417,14 +450,19 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 10px;
   margin-bottom: 25px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .fieldset__rellena--keyboard {
   font-size: 18px;
   color: #e17334;
   display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .fieldset__title {
@@ -434,7 +472,7 @@ body {
   color: #54585a;
   text-transform: uppercase;
   font-weight: 600;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 .fieldset__rellena--input {
@@ -454,6 +492,7 @@ body {
 .fieldset__rellena--arrow {
   display: block;
   text-align: right;
+  font-size: 18px;
 }
 
 .div__imagen {
@@ -476,10 +515,16 @@ body {
   width: 140px;
   height: 30px;
   background: #e17334;
-}
-
-.label__habilidades {
-  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
 }
 
 .label__habilidades {
@@ -500,7 +545,6 @@ body {
   width: 165px;
   height: 30px;
   border: solid 1px #a2deaf;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
   line-height: 20px;
   font-size: 14px;
   -webkit-box-sizing: border-box;
@@ -537,7 +581,6 @@ body {
   width: 165px;
   height: 30px;
   border: solid 1px #a2deaf;
-  font-family: 'Comic Sans MS', 'Comic Sans', 'TSCu_Comic', san-serif;
   line-height: 20px;
   font-size: 14px;
   -webkit-box-sizing: border-box;
@@ -571,6 +614,19 @@ body {
   color: #54585a;
 }
 
+.share {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .fieldset__share--button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,16 +644,30 @@ body {
   border-radius: 12px;
   -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  margin: auto;
 }
 
 .fieldset__share--button--text {
   font-size: 18px;
-  margin-left: 10px;
+  margin-left: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 .fieldset__share--button--icon {
   font-size: 22px;
-  margin-left: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: auto;
+}
+
+.fieldset__icon--share {
+  margin: 0 0 0 23px;
+}
+
+.fieldset__rellena--icon-arrow {
+  margin-right: 20px;
 }
 
 .uppercase {
@@ -670,6 +740,11 @@ body {
 
   .fieldset__rellena--input {
     width: 329px;
+  }
+
+  .div__rellena {
+    padding-top: 30px;
+    padding-bottom: 21px;
   }
 }
 

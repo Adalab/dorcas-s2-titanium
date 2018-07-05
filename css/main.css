@@ -37,7 +37,8 @@ table {
 }
 
 .visor {
-  background-color: #dde9ed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bfcdd0), to(#dde9ed));
+  background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
   padding: 10px 35px 30px 45px;
 }
 
@@ -75,7 +76,6 @@ table {
 }
 
 .card {
-  width: 100%;
   background-color: #ffffff;
   border-radius: 2px;
   display: block;
@@ -83,10 +83,11 @@ table {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-shadow: 0.5px 2px 2px 0.5px rgba(0, 0, 0, 0.35);
+  box-shadow: 0.5px 2px 2px 0.5px rgba(0, 0, 0, 0.35);
 }
 
 .card__head {
-  width: 100%;
   padding-top: 23px;
   padding-bottom: 10px;
   display: -webkit-box;
@@ -122,9 +123,71 @@ table {
   color: #54585a;
 }
 
-.card__pic {
+.card__pic--pic {
   width: 100%;
-  display: block;
+}
+
+.card__foot--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 10px 62px 10px 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(67, 135, 146, 0.2);
+}
+
+.card__foot--icon {
+  width: 32px;
+  height: 27px;
+  border-radius: 16px;
+  border: solid 2px #a2deaf;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.card__foot--icon:last-child {
+  margin-right: 0;
+}
+
+#iconsocial {
+  margin-top: 4px;
+  font-size: 18px;
+  color: #114e4e;
+}
+
+.card__foot--skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px 92px 10px 15px;
+}
+
+.card__foot--box {
+  border-radius: 4px;
+  background-color: #438792;
+}
+
+.card__foot--text {
+  margin: 2px 2px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #ffffff;
 }
 
 .header {
@@ -673,6 +736,19 @@ body {
 }
 
 @media all and (min-width: 768px) {
+  .page__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
   .footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

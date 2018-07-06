@@ -21,9 +21,13 @@ for (var i = 0; i < collapsibleTriggers.length; i++) {
 }
 
 function updateCollapsibles (event){
-  console.log (event);
   var parent = event.currentTarget.parentElement;
+  console.log (event);
+
 }
+
+
+
 
 // function updateCollapsibles(e) {
 //   var parent = e.currentTarget.parentElement;

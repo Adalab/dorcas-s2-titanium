@@ -78,6 +78,17 @@ table {
   width: 100%;
   background-color: #ffffff;
   border-radius: 2px;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.card__head {
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,22 +99,32 @@ table {
 }
 
 .card__head--border {
-  width: 5px;
+  border-left: 5px solid #a2deaf;
   height: 42px;
-  background-color: #a2deaf;
-  margin: 0px;
+}
+
+.card__head--container {
+  margin-left: 15px;
+  margin-top: 5px;
 }
 
 .card__name {
   font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.11;
 }
 
-.card__box {
-  height: 200px;
+.card__job {
+  font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #54585a;
 }
 
-.card__foot {
-  border-bottom: 2px solid #438792;
+.card__pic {
+  width: 100%;
+  display: block;
 }
 
 .header {

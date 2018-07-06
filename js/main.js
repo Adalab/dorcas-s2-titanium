@@ -11,23 +11,21 @@
 //colapsables
 
 var collapsibles = document.querySelectorAll(".collapsible");
+var contenido = document.querySelectorAll(".collapsible__content");
 
 var collapsibleTriggers = document.querySelectorAll(".collapsible__label");
 console.log(collapsibleTriggers);
+
 
 for (var i = 0; i < collapsibleTriggers.length; i++) {
   console.log(collapsibleTriggers[i]);
   collapsibleTriggers[i].addEventListener("click", updateCollapsibles);
 }
-
-function updateCollapsibles (event){
-  var parent = event.currentTarget.parentElement;
-  console.log (event);
-
+function updateCollapsibles(event) {
+  var madre = event.currentTarget.parentElement;
+  madre.classList.add("fieldset--invisible");
+  console.log(event);
 }
-
-
-
 
 // function updateCollapsibles(e) {
 //   var parent = e.currentTarget.parentElement;

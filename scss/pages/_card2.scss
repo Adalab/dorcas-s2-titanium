@@ -182,3 +182,9 @@ padding: auto;
 	margin-right: 20px;
 	align-self: flex-end;
 }
+.fieldset--invisible{
+	.collapsible__content{
+		display: none;
+	}
+}
+	

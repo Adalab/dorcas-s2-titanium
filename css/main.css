@@ -179,13 +179,11 @@ table {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   padding: 10px 92px 10px 15px;
 }
 
 .card__foot--box {
+  margin-right: 10px;
   border-radius: 4px;
   background-color: #438792;
 }
@@ -591,6 +589,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   color: white;
+}
+
+.añadir__hiddenField {
+  display: none;
 }
 
 .label__habilidades {

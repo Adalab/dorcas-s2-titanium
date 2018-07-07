@@ -103,11 +103,10 @@ margin-right:0;
 .card__foot--skills{
 display: flex;
 flex-direction: row;
-justify-content: space-between;
 padding: 10px 92px 10px 15px;
 }
 .card__foot--box{
-
+  margin-right: 10px;
   border-radius: 4px;
   background-color: $dirty-blue;
 }

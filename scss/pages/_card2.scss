@@ -58,7 +58,7 @@
   box-sizing: border-box;
   margin-left: 20px;
 }
-.añadir {
+.añadir__upload-btn {
   width: 140px;
   height: 30px;
   background: $dull-orange;
@@ -67,6 +67,9 @@
   align-items: center;
   color: white;
 }
+// // .añadir__hiddenField {
+// //   display: none;
+// }
 .label__habilidades {
   margin-top: 40px;
 }

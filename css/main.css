@@ -101,7 +101,6 @@ table {
 
 .card__head--border {
   border-left: 5px solid #a2deaf;
-  height: 42px;
 }
 
 .card__head--container {
@@ -578,7 +577,7 @@ body {
   margin-left: 20px;
 }
 
-.añadir {
+.añadir__upload-btn {
   width: 140px;
   height: 30px;
   background: #e17334;

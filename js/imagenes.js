@@ -15,11 +15,9 @@ function getImage(e){
 function writeImage() {
   profileImage.src= fr.result;
 }
-
 function fakeFileClick() {
   fileField.click();
 }
-
 fileField.addEventListener('change', getImage);
 uploadBtn.addEventListener('click', fakeFileClick);
 

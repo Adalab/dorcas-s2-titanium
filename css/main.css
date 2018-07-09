@@ -123,7 +123,9 @@ table {
 }
 
 .card__pic--pic {
-  width: 100%;
+  width: 240px;
+  height: 200px;
+  background-size: cover;
 }
 
 .card__foot--social {
@@ -573,6 +575,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: 20px;
+  background-size: cover;
 }
 
 .añadir__upload-btn {

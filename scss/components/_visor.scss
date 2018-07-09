@@ -71,7 +71,9 @@ line-height: 1.11;
   color: $gunmetal;
 }
 .card__pic--pic {
-  width: 100%;
+  width: 240px;
+  height: 200px;
+  background-size: cover;
 }
 .card__foot--social{
   display: flex;

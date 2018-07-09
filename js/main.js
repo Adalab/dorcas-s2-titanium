@@ -22,8 +22,11 @@ for (var i = 0; i < collapsibleTriggers.length; i++) {
   collapsibleTriggers[i].addEventListener("click", updateCollapsibles);
 }
 function updateCollapsibles(event) {
+  for (var i = 0; i < collapsibleTriggers.length; i++) {
+    collapsibleTriggers[i].parentElement.classList.add("fieldset--invisible");
+  }
   var madre = event.currentTarget.parentElement;
-  madre.classList.add("fieldset--invisible");
+  madre.classList.toggle("fieldset--invisible");
   console.log(event);
 }
 

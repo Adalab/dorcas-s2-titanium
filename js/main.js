@@ -12,7 +12,7 @@ console.log(collapsibleTriggers);
 for (var i = 0; i < collapsibleTriggers.length; i++) {
   console.log(collapsibleTriggers[i]);
   collapsibleTriggers[i].addEventListener("click", updateCollapsibles);
-  move.classList.add("rota");
+  // move.classList.add("rota");
   // crear clase en el css con: rotate {
 //  transform: rotate(-180deg);
 //  margin-right: 0;
@@ -20,7 +20,7 @@ for (var i = 0; i < collapsibleTriggers.length; i++) {
 // }
 }
 function updateCollapsibles(event) {
-  var move = document.querySelector(".fieldset__rellena--arrow");
+  // var move = document.querySelector(".fieldset__rellena--arrow");
   for (var i = 0; i < collapsibleTriggers.length; i++) {
 
     collapsibleTriggers[i].parentElement.classList.add("fieldset--invisible");

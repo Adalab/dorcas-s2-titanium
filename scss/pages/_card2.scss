@@ -175,4 +175,10 @@
   .collapsible__content {
     display: none;
   }
+  .rotate {
+    transform: rotate(-180deg);
+    margin-right: 0;
+    margin-left: auto;
+     }
 }
+

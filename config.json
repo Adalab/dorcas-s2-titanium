@@ -8,6 +8,8 @@
 			"js/main.js",
 			"js/icons.js",
 			"js/disena.js"
+			"js/name.js"
+			"js/colors.js"
 		],
 		"dest": "js/"
 	},

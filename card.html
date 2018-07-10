@@ -26,9 +26,9 @@
           <div class="card__head--border">
             <div class="card__head--container">
               <div class="card__name">
-                <p>Nombre Apellido</p>
+                <p id="element-name">Nombre Apellido</p>
                     <div class="card__job">
-                      <p> Descripción</p>
+                      <p id="element-role"> Descripción</p>
                     </div>
               </div>
             </div>
@@ -110,12 +110,14 @@
           </span>
         </div>
         <div class="">
-          <label class="fieldset__rellena--label" for="nombre">Nombre completo</label>
-          <input class="fieldset__rellena--input" type="text" name="name" placeholder="Ej: Sally Jill">
+          <label class="fieldset__rellena--label" for="editor-name">Nombre completo</label>
+          <input class="fieldset__rellena--input fieldset--name"  type="text" name="editor-name" id="editor-name"
+          placeholder="Ej: Sally Jill" data-donde="element-name">
         </div>
         <div class="">
-          <label class="fieldset__rellena--label" for="puesto">Puesto</label>
-          <input class="fieldset__rellena--input" type="text" name="puesto" placeholder="Ej: Front-end unicorn">
+          <label class="fieldset__rellena--label" for="editor-role">Puesto</label>
+          <input class="fieldset__rellena--input fieldset--role"  type="text" name="editor-role"  id="editor-role"
+          placeholder="Ej: Front-end unicorn" data-donde="element-role">
         </div>
         <div class="">
           <label class="fieldset__rellena--label" for="imagen">Imagen de perfil</label>

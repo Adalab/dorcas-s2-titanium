@@ -8,9 +8,7 @@
 .visor {
   background: linear-gradient(to bottom, $silver, $palegrey);
   padding: 10px 35px 30px 45px;
-
 }
-
 .reset{
   width: 75px;
   height: 30px;
@@ -52,7 +50,7 @@
 }
 .card__head--border {
   border-left: 5px solid $hospital-green;
-  height: 42px;
+
 }
 .card__head--container {
   margin-left: 15px;
@@ -74,8 +72,8 @@ line-height: 1.11;
   width: 240px;
   height: 200px;
   background-image: url("../images/pollito.png");
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .card__foot--social{
@@ -108,11 +106,10 @@ margin-right:0;
 .card__foot--skills{
 display: flex;
 flex-direction: row;
-justify-content: space-between;
 padding: 10px 92px 10px 15px;
 }
 .card__foot--box{
-
+  margin-right: 10px;
   border-radius: 4px;
   background-color: $dirty-blue;
 }

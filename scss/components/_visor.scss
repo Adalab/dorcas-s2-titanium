@@ -70,8 +70,13 @@ line-height: 1.11;
   line-height: 1.25;
   color: $gunmetal;
 }
-.card__pic--pic {
-  width: 100%;
+.card__pic {
+  width: 240px;
+  height: 200px;
+  background-image: url("../images/pollito.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .card__foot--social{
   display: flex;

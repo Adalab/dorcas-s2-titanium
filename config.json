@@ -6,7 +6,8 @@
 	"js": {
 		"src": [
 			"js/main.js",
-			"js/icons.js"
+			"js/icons.js",
+			"js/name.js"
 		],
 		"dest": "js/"
 	},

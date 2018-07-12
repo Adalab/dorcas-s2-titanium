@@ -57,7 +57,10 @@
   border: solid 1px black;
   box-sizing: border-box;
   margin-left: 20px;
+  background-image: url("../images/pollito.png");
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .añadir__upload-btn {
   width: 140px;

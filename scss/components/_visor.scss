@@ -8,9 +8,7 @@
 .visor {
   background: linear-gradient(to bottom, $silver, $palegrey);
   padding: 10px 35px 30px 45px;
-
 }
-
 .reset{
   width: 75px;
   height: 30px;
@@ -70,10 +68,13 @@ line-height: 1.11;
   line-height: 1.25;
   color: $gunmetal;
 }
-.card__pic--pic {
+.card__pic {
   width: 240px;
   height: 200px;
+  background-image: url("../images/pollito.png");
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .card__foot--social{
   display: flex;

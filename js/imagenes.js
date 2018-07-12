@@ -4,7 +4,7 @@ var fr = new FileReader();
 
 var uploadBtn = document.querySelector('.añadir__upload-btn');
 var fileField = document.querySelector('#img-selector');
-var profileImage = document.querySelector('.card__pic--pic');
+var profileImage = document.querySelector('.card__pic');
 var miniBox = document.querySelector ('.mini');
 function getImage(e){
   var myFile = e.currentTarget.files[0];
@@ -13,7 +13,7 @@ function getImage(e){
 }
 
 function writeImage() {
-  profileImage.src= fr.result;
+  profileImage.style.backgroundImage = 'url(' + fr.result + ')';
   miniBox.style.backgroundImage = 'url(' + fr.result + ' )';
 }
 function fakeFileClick() {

@@ -122,10 +122,13 @@ table {
   color: #54585a;
 }
 
-.card__pic--pic {
+.card__pic {
   width: 240px;
   height: 200px;
+  background-image: url("../images/pollito.png");
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card__foot--social {
@@ -575,7 +578,10 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: 20px;
+  background-image: url("../images/pollito.png");
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .añadir__upload-btn {

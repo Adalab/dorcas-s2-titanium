@@ -18,7 +18,6 @@ function writeImage() {
   miniBox.style.backgroundImage = 'url(' + fr.result + ' )';
 }
 function fakeFileClick() {
-  alert('oi');
   fileField.click();
 }
 fileField.addEventListener('change', getImage);

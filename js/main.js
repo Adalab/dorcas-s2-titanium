@@ -20,6 +20,3 @@ function ponerEstilos() {
     tarjetacontenedor.classList.add('');
   }
 }
-function reset() {
-  tarjetacontenedor.classList.remove('', '', '');
-}

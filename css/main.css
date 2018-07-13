@@ -546,10 +546,27 @@ body {
 }
 
 .fieldset__rellena--input {
-  margin-top: 5px;
+  padding: 5px 9px;
   width: 281px;
   height: 30px;
   border: solid 1px #a2deaf;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  margin-top: 5px;
+  color: #c5c5c5;
+}
+
+::-moz-placeholder {
+  margin-top: 5px;
+  color: #c5c5c5;
+}/* firefox 19+ */:-ms-input-placeholder {
+  margin-top: 5px;
+  color: #c5c5c5;
+}/* ie */input:-moz-placeholder {
+  margin-top: 5px;
   color: #c5c5c5;
 }
 

@@ -9,7 +9,9 @@
 			"js/icons.js",
       "js/imagenes.js",
       "js/reset.js",
-			"js/name.js"
+			"js/name.js",
+			"js/radio.js"
+			
 		],
 		"dest": "js/"
 	},

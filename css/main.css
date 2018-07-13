@@ -76,6 +76,7 @@ table {
 }
 
 .card {
+  width: 240px;
   background-color: #ffffff;
   border-radius: 2px;
   display: block;

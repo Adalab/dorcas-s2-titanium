@@ -7,7 +7,8 @@
 		"src": [
 			"js/main.js",
 			"js/icons.js",
-			"js/imagenes.js"
+      "js/imagenes.js",
+      "js/reset.js"
 		],
 		"dest": "js/"
 	},

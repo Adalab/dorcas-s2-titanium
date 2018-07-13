@@ -112,6 +112,7 @@ table {
 }
 
 .card__name {
+  width: 240px;
   font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
   font-size: 18px;
   font-weight: 900;
@@ -119,6 +120,7 @@ table {
 }
 
 .card__job {
+  width: 240px;
   font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
   font-size: 16px;
   line-height: 1.25;

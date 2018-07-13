@@ -13,10 +13,12 @@ function getImage(e){
 }
 
 function writeImage() {
+
   profileImage.style.backgroundImage = 'url(' + fr.result + ')';
   miniBox.style.backgroundImage = 'url(' + fr.result + ' )';
 }
 function fakeFileClick() {
+  alert('oi');
   fileField.click();
 }
 fileField.addEventListener('change', getImage);

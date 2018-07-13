@@ -1,10 +1,10 @@
 'use strict';
-var profilePic = document.querySelector ('.card__pic');
-var miniPic = document.querySelector ('.mini');
+/* global profileImage miniBox */
+
 var resetButton = document.querySelector('.reset');
 var nameFilled = document.querySelector('.card__name--name');
 var roleFilled = document.querySelector('.card__job--job');
-var iconsRemove = document.querySelector('.card__foot--social');
+var iconsRemove = document.querySelectorAll('.card__foot--icon');
 var formRemove = document.querySelectorAll('.fieldset__rellena--input');
 // var colorRemove = document.querySelector('#')
 function resetAll() {
@@ -20,16 +20,17 @@ function resetAll() {
   roleFilled.innerHTML = 'Descripcion';
 
   //reset pic
-  profilePic.style.backgroundImage = 'url(' + '../images/pollito.png' + ')';
-  miniPic.style.backgroundImage = 'url(' + '../images/pollito.png' + ' )';
+  profileImage.style.backgroundImage = 'url(../images/pollito.png)';
+  miniBox.style.backgroundImage = 'url(../images/pollito.png)';
 
   // quitar iconos
-  iconsRemove.innerHTML= '';
+  for (var i = 0; i<iconsRemove.length; i++){
+    iconsRemove[i].style.display = 'none';
+  }
   //quitar vlaores introducidos en el formulario
 
   for (var i = 0; i < formRemove.length; i++) {
     formRemove[i].value = '';
-    console.log (formRemove);
   }
 }
 resetButton.addEventListener('click', resetAll);

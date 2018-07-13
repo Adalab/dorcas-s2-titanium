@@ -60,12 +60,14 @@
   margin-top: 5px;
 }
 .card__name {
+  width: 240px;
 font-family: $option2;
 font-size: $x_large;
 font-weight: $bold;
 line-height: 1.11;
 }
 .card__job {
+  width: 240px;
   font-family: $option2;
   font-size: $large;
   line-height: 1.25;

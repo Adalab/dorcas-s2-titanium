@@ -1,18 +1,28 @@
 .div__rellena {
   margin-left: 20px;
   margin-right: 20px;
+<<<<<<< HEAD
   padding-bottom: 30px;
+=======
+>>>>>>> sandra
   padding-top: 10px;
   font-family: $main;
   font-size: 14px;
   border-bottom: solid 1px #d8d8d8;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> sandra
 .fieldset__rellena {
 }
 .fieldset__container--title {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   margin-bottom: 25px;
+=======
+>>>>>>> sandra
   justify-content: space-between;
 }
 .fieldset__rellena--keyboard {
@@ -29,6 +39,7 @@
   text-transform: uppercase;
   font-weight: $semibold;
   margin-left: 12px;
+<<<<<<< HEAD
 }
 .fieldset__rellena--input {
   margin-top: 5px;
@@ -116,8 +127,100 @@
   display: flex;
   justify-content: center;
   align-items: center;
+=======
+>>>>>>> sandra
 }
-
+.fieldset__rellena--input {
+  margin-top: 5px;
+  width: 281px;
+  height: 30px;
+  border: solid 1px $hospital-green;
+  color: #c5c5c5;
+}
+.fieldset__rellena--label {
+  display: block;
+  color: $dark-green-blue;
+  margin-top: 20px;
+}
+.fieldset__rellena--arrow {
+  display: block;
+  text-align: right;
+  font-size: $x_large;
+  transform: translate(0, -15px) 
+}
+.div__imagen {
+  display: flex;
+  margin-top: 5px;
+}
+.mini {
+  width: 30px;
+  height: 30px;
+  border: solid 1px black;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+.añadir {
+  width: 140px;
+  height: 30px;
+  background: $dull-orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.label__habilidades {
+  margin-top: 40px;
+}
+.div__habilidades {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.input--html {
+  width: 165px;
+  height: 30px;
+  border: solid 1px $hospital-green;
+  line-height: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.more {
+  border: solid 1px $dull-orange;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulario__div--habilidades {
+  display: flex;
+  margin-top: 21px;
+}
+.input--css {
+  width: 165px;
+  height: 30px;
+  border: solid 1px $hospital-green;
+  line-height: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.less {
+  border: solid 1px $dull-orange;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fas {
+  color: $dull-orange;
+}
 .fa-angle-up {
   color: $gunmetal;
 }
@@ -126,6 +229,17 @@
     width: 329px;
   }
 
+<<<<<<< HEAD
+.fa-angle-up {
+  color: $gunmetal;
+}
+@media all and (min-width: 768px) {
+  .fieldset__rellena--input {
+    width: 329px;
+  }
+
+=======
+>>>>>>> sandra
   .div__rellena {
     padding-top: 30px;
     padding-bottom: 21px;
@@ -156,6 +270,17 @@
   margin-left: 4px;
   font-family: $main;
   font-weight: $semibold;
+<<<<<<< HEAD
+}
+.fieldset__share--button--icon {
+  font-size: 22px;
+  justify-content: center;
+  padding: auto;
+}
+.fieldset__icon--share {
+  margin: 0 0 0 23px;
+=======
+>>>>>>> sandra
 }
 .fieldset__share--button--icon {
   font-size: 22px;
@@ -165,7 +290,18 @@
 .fieldset__icon--share {
   margin: 0 0 0 23px;
 }
-.fieldset__rellena--icon-arrow{
-	margin-right: 20px;
-	align-self: flex-end;
+.fieldset__rellena--icon-arrow {
+  margin-right: 20px;
+  align-self: flex-end;
 }
+.fieldset--invisible {
+  .collapsible__content {
+    display: none;
+  }
+  .rotate {
+    transform: rotate(-180deg);
+    margin-right: 0;
+    margin-left: auto;
+     }
+}
+

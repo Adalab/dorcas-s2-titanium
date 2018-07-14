@@ -503,7 +503,6 @@ body {
 .div__rellena {
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 30px;
   padding-top: 10px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -517,7 +516,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 25px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -560,6 +558,8 @@ body {
   display: block;
   text-align: right;
   font-size: 18px;
+  -webkit-transform: translate(0, -15px);
+  transform: translate(0, -15px);
 }
 
 .div__imagen {
@@ -733,6 +733,17 @@ body {
   margin-right: 20px;
   -ms-flex-item-align: end;
   align-self: flex-end;
+}
+
+.fieldset--invisible .collapsible__content {
+  display: none;
+}
+
+.fieldset--invisible .rotate {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .uppercase {

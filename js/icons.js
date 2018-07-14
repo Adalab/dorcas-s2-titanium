@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var arrow = document.querySelector('.fieldset__rellena--arrow');
 

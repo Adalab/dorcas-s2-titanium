@@ -61,7 +61,8 @@ table {
 .reset__icon {
   color: #54585a;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
   font-size: 12px;
   line-height: 1.67px;
 }
@@ -72,10 +73,11 @@ table {
   color: #54585a;
   text-align: center;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .card {
+  width: 240px;
   background-color: #ffffff;
   border-radius: 2px;
   display: block;
@@ -100,8 +102,8 @@ table {
 }
 
 .card__head--border {
+  width: 240px;
   border-left: 5px solid #a2deaf;
-  height: 42px;
 }
 
 .card__head--container {
@@ -110,6 +112,7 @@ table {
 }
 
 .card__name {
+  width: 240px;
   font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
   font-size: 18px;
   font-weight: 900;
@@ -117,14 +120,20 @@ table {
 }
 
 .card__job {
+  width: 240px;
   font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
   font-size: 16px;
   line-height: 1.25;
   color: #54585a;
 }
 
-.card__pic--pic {
-  width: 100%;
+.card__pic {
+  width: 240px;
+  height: 200px;
+  background-image: url("../images/pollito.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card__foot--social {
@@ -180,13 +189,11 @@ table {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   padding: 10px 92px 10px 15px;
 }
 
 .card__foot--box {
+  margin-right: 10px;
   border-radius: 4px;
   background-color: #438792;
 }
@@ -576,9 +583,13 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: 20px;
+  background-image: url("../images/pollito.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.añadir {
+.añadir__upload-btn {
   width: 140px;
   height: 30px;
   background: #e17334;
@@ -592,6 +603,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   color: white;
+}
+
+.añadir__hiddenField {
+  display: none;
 }
 
 .label__habilidades {

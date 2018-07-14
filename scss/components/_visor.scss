@@ -44,27 +44,31 @@
   box-shadow: 0.5px 2px 2px 0.5px rgba(0, 0, 0, 0.35);
 }
 .card__head {
-
+  width: 240px;
   padding-top: 23px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
 }
 .card__head--border {
-  width: 240px;
+  width: 235px;
   border-left: 5px solid $hospital-green;
 
 }
 .card__head--container {
+  width: 240px;
   margin-left: 15px;
   margin-top: 5px;
 }
 .card__name {
   width: 240px;
-font-family: $option2;
-font-size: $x_large;
-font-weight: $bold;
-line-height: 1.11;
+  font-family: $option2;
+  font-size: $x_large;
+  font-weight: $bold;
+  line-height: 1.11;
+}
+.card__name--name {
+  width: 240px;
 }
 .card__job {
   width: 240px;
@@ -72,6 +76,9 @@ line-height: 1.11;
   font-size: $large;
   line-height: 1.25;
   color: $gunmetal;
+}
+.card__job--job {
+  width: 240px;
 }
 .card__pic {
   width: 240px;

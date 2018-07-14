@@ -90,6 +90,7 @@ table {
 }
 
 .card__head {
+  width: 240px;
   padding-top: 23px;
   padding-bottom: 10px;
   display: -webkit-box;
@@ -102,11 +103,12 @@ table {
 }
 
 .card__head--border {
-  width: 240px;
+  width: 235px;
   border-left: 5px solid #a2deaf;
 }
 
 .card__head--container {
+  width: 240px;
   margin-left: 15px;
   margin-top: 5px;
 }
@@ -119,12 +121,20 @@ table {
   line-height: 1.11;
 }
 
+.card__name--name {
+  width: 240px;
+}
+
 .card__job {
   width: 240px;
   font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
   font-size: 16px;
   line-height: 1.25;
   color: #54585a;
+}
+
+.card__job--job {
+  width: 240px;
 }
 
 .card__pic {

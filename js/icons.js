@@ -1,7 +1,5 @@
 'use strict';
 
-var arrow = document.querySelector('.fieldset__rellena--arrow');
-
 var mobileLink = document.querySelector('.mobileLink');
 var emailLink = document.querySelector('.emailLink');
 var linkedinLink = document.querySelector('.linkedinLink');
@@ -11,8 +9,6 @@ var inputEmail = document.querySelector('.fieldset__rellena--input-email');
 var inputTelefono = document.querySelector('.fieldset__rellena--input-mobile');
 var inputLinkedin = document.querySelector('.fieldset__rellena--input-linkedin');
 var inputGithub = document.querySelector('.fieldset__rellena--input-github');
-
-arrow.addEventListener('click', teste);
 
 
 var contact = document.querySelector('.contact');
@@ -24,8 +20,6 @@ contact.addEventListener('keyup', showIcon);
 
 function showIcon(event) {
   if (event.target !== event.currentTarget) {
-
-    notif(event.target.value);
 
     var guilty = event.target.className;
     var changeIcon;

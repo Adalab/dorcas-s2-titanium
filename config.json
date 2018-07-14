@@ -10,6 +10,7 @@
 			"js/name.js",
 			"js/imagenes.js",
 			"js/localstorage.js"
+
 		],
 		"dest": "js/"
 	},

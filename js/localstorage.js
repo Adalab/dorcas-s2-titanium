@@ -5,6 +5,19 @@
 
 var infoTarjeta = {};
 
+
+// -------------------- addEventListeners para los input, para guardar el texto en LS
+nameField.addEventListener('focusout', guardarDataLS);
+roleField.addEventListener('focusout', guardarDataLS);
+inputEmail.addEventListener('focusout', guardarDataLS);
+inputTelefono.addEventListener('focusout', guardarDataLS);
+inputLinkedin.addEventListener('focusout', guardarDataLS);
+inputGithub.addEventListener('focusout', guardarDataLS);
+
+function guardarDataL(ev) {
+  console.log('Leaving: ' + ev.currentTarget.name);
+}
+
 function guardarDataLS() {
 
   if (!localStorage.getItem('Profile-Card')) {

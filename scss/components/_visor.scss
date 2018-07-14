@@ -53,7 +53,12 @@
 .card__head--border {
   width: 240px;
   border-left: 5px solid $hospital-green;
-
+  &.rojo {
+    border-left: 5px solid $butan-orange;
+  }
+  &.gris {
+    border-left: 5px solid $blue-grey-medium;
+  }
 }
 .card__head--container {
   margin-left: 15px;
@@ -61,10 +66,23 @@
 }
 .card__name {
   width: 240px;
-font-family: $option2;
-font-size: $x_large;
-font-weight: $bold;
-line-height: 1.11;
+  font-family: $option2;
+  font-size: $x_large;
+  font-weight: $bold;
+  line-height: 1.11;
+}
+.card__name--name{
+  color :$dark-green-blue;
+  font-size: 18px;
+  font-family: $option2;
+  font-weight: $bold;
+  line-height: 1.11;
+  &.rojo {
+    color: $granate;
+  }
+  &.gris {
+    color:$blue-grey-dark;
+  }
 }
 .card__job {
   width: 240px;
@@ -87,7 +105,15 @@ line-height: 1.11;
   justify-content: flex-start;
   padding: 10px 62px 10px 20px;
   align-items: center;
-  border-bottom: 1px solid rgba(67, 135, 146, 0.2);
+  border-bottom: 1px solid $dirty-blue;
+  &.rojo {
+    border-left: 5px solid $butan-orange;
+    border-bottom: 1px solid $passion-red;
+  }
+  &.gris {
+    border-left: 5px solid $blue-grey-medium;
+    border-bottom: 1px solid $blue-grey-clear;
+  }
 }
 .card__foot--icon{
   display: flex;
@@ -99,6 +125,14 @@ line-height: 1.11;
   border: solid 2px $hospital-green;
   text-align: center;
   margin-right: 10px;
+
+    &.rojo {
+      border: 2px solid $butan-orange;
+    }
+    &.gris {
+      border: 2px solid $blue-grey-medium;
+    }
+
 }
 .card__foot--icon:last-child{
 margin-right:0;
@@ -107,6 +141,12 @@ margin-right:0;
   // margin-top: 4px;
   font-size: $x_large;
   color: $dark-green-blue;
+  &.rojo {
+    color: $granate;
+  }
+  &.gris {
+    color:$blue-grey-dark;
+  }
 }
 .card__foot--skills{
 display: flex;
@@ -117,6 +157,12 @@ padding: 10px 92px 10px 15px;
   margin-right: 10px;
   border-radius: 4px;
   background-color: $dirty-blue;
+  &.rojo {
+    background-color: $passion-red;
+  }
+  &.gris {
+    background-color: $blue-grey-clear;
+  }
 }
 .card__foot--text{
   margin: 2px 2px;

@@ -106,6 +106,14 @@ table {
   border-left: 5px solid #a2deaf;
 }
 
+.card__head--border.rojo {
+  border-left: 5px solid #e95626;
+}
+
+.card__head--border.gris {
+  border-left: 5px solid #a0c0cf;
+}
+
 .card__head--container {
   margin-left: 15px;
   margin-top: 5px;
@@ -117,6 +125,22 @@ table {
   font-size: 18px;
   font-weight: 900;
   line-height: 1.11;
+}
+
+.card__name--name {
+  color: #114e4e;
+  font-size: 18px;
+  font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
+  font-weight: 900;
+  line-height: 1.11;
+}
+
+.card__name--name.rojo {
+  color: #420101;
+}
+
+.card__name--name.gris {
+  color: #3e5b65;
 }
 
 .card__job {
@@ -151,7 +175,17 @@ table {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid rgba(67, 135, 146, 0.2);
+  border-bottom: 1px solid #438792;
+}
+
+.card__foot--social.rojo {
+  border-left: 5px solid #e95626;
+  border-bottom: 1px solid #bd1010;
+}
+
+.card__foot--social.gris {
+  border-left: 5px solid #a0c0cf;
+  border-bottom: 1px solid #dfe5eb;
 }
 
 .card__foot--icon {
@@ -172,6 +206,14 @@ table {
   margin-right: 10px;
 }
 
+.card__foot--icon.rojo {
+  border: 2px solid #e95626;
+}
+
+.card__foot--icon.gris {
+  border: 2px solid #a0c0cf;
+}
+
 .card__foot--icon:last-child {
   margin-right: 0;
 }
@@ -179,6 +221,14 @@ table {
 .iconsocial {
   font-size: 18px;
   color: #114e4e;
+}
+
+.iconsocial.rojo {
+  color: #420101;
+}
+
+.iconsocial.gris {
+  color: #3e5b65;
 }
 
 .card__foot--skills {
@@ -196,6 +246,14 @@ table {
   margin-right: 10px;
   border-radius: 4px;
   background-color: #438792;
+}
+
+.card__foot--box.rojo {
+  background-color: #bd1010;
+}
+
+.card__foot--box.gris {
+  background-color: #dfe5eb;
 }
 
 .card__foot--text {

@@ -1,28 +1,18 @@
 .div__rellena {
   margin-left: 20px;
   margin-right: 20px;
-<<<<<<< HEAD
   padding-bottom: 30px;
-=======
->>>>>>> sandra
   padding-top: 10px;
   font-family: $main;
   font-size: 14px;
   border-bottom: solid 1px #d8d8d8;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> sandra
 .fieldset__rellena {
 }
 .fieldset__container--title {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
   margin-bottom: 25px;
-=======
->>>>>>> sandra
   justify-content: space-between;
 }
 .fieldset__rellena--keyboard {
@@ -39,7 +29,6 @@
   text-transform: uppercase;
   font-weight: $semibold;
   margin-left: 12px;
-<<<<<<< HEAD
 }
 .fieldset__rellena--input {
   margin-top: 5px;
@@ -134,8 +123,6 @@ display: none;
   display: flex;
   justify-content: center;
   align-items: center;
-=======
->>>>>>> sandra
 }
 .fieldset__rellena--input {
   margin-top: 5px;
@@ -153,7 +140,7 @@ display: none;
   display: block;
   text-align: right;
   font-size: $x_large;
-  transform: translate(0, -15px) 
+  transform: translate(0, -15px)
 }
 .div__imagen {
   display: flex;
@@ -235,8 +222,7 @@ display: none;
   .fieldset__rellena--input {
     width: 329px;
   }
-
-<<<<<<< HEAD
+}
 .fa-angle-up {
   color: $gunmetal;
 }
@@ -245,8 +231,6 @@ display: none;
     width: 329px;
   }
 
-=======
->>>>>>> sandra
   .div__rellena {
     padding-top: 30px;
     padding-bottom: 21px;
@@ -277,7 +261,6 @@ display: none;
   margin-left: 4px;
   font-family: $main;
   font-weight: $semibold;
-<<<<<<< HEAD
 }
 .fieldset__share--button--icon {
   font-size: 22px;
@@ -286,8 +269,6 @@ display: none;
 }
 .fieldset__icon--share {
   margin: 0 0 0 23px;
-=======
->>>>>>> sandra
 }
 .fieldset__share--button--icon {
   font-size: 22px;
@@ -310,5 +291,4 @@ display: none;
     margin-right: 0;
     margin-left: auto;
      }
-}
-
+    }

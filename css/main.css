@@ -510,6 +510,7 @@ body {
 .div__rellena {
   margin-left: 20px;
   margin-right: 20px;
+  padding-bottom: 30px;
   padding-top: 10px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -523,6 +524,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 25px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -565,8 +567,6 @@ body {
   display: block;
   text-align: right;
   font-size: 18px;
-  -webkit-transform: translate(0, -15px);
-  transform: translate(0, -15px);
 }
 
 .div__imagen {
@@ -688,6 +688,147 @@ body {
   align-items: center;
 }
 
+.fieldset__rellena--input {
+  margin-top: 5px;
+  width: 281px;
+  height: 30px;
+  border: solid 1px #a2deaf;
+  color: #c5c5c5;
+}
+
+.fieldset__rellena--label {
+  display: block;
+  color: #114e4e;
+  margin-top: 20px;
+}
+
+.fieldset__rellena--arrow {
+  display: block;
+  text-align: right;
+  font-size: 18px;
+  -webkit-transform: translate(0, -15px);
+  transform: translate(0, -15px);
+}
+
+.div__imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.mini {
+  width: 30px;
+  height: 30px;
+  border: solid 1px black;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+
+.añadir {
+  width: 140px;
+  height: 30px;
+  background: #e17334;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+}
+
+.label__habilidades {
+  margin-top: 40px;
+}
+
+.div__habilidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.input--html {
+  width: 165px;
+  height: 30px;
+  border: solid 1px #a2deaf;
+  line-height: 20px;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.more {
+  border: solid 1px #e17334;
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.formulario__div--habilidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 21px;
+}
+
+.input--css {
+  width: 165px;
+  height: 30px;
+  border: solid 1px #a2deaf;
+  line-height: 20px;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.less {
+  border: solid 1px #e17334;
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.fas {
+  color: #e17334;
+}
+
+.fa-angle-up {
+  color: #54585a;
+}
+
 .fa-angle-up {
   color: #54585a;
 }
@@ -730,6 +871,18 @@ body {
   margin-left: 4px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+}
+
+.fieldset__share--button--icon {
+  font-size: 22px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: auto;
+}
+
+.fieldset__icon--share {
+  margin: 0 0 0 23px;
 }
 
 .fieldset__share--button--icon {
@@ -870,6 +1023,10 @@ body {
 
   .diseña__coloresfuentes {
     width: 151px;
+  }
+
+  .fieldset__rellena--input {
+    width: 329px;
   }
 
   .fieldset__rellena--input {

@@ -52,7 +52,7 @@ function getJSONFromInputs(json){
     .catch(function(error){console.log(error); })
 }
 function showURL(result){
-  if(result.success){
+  if(result === true){
     responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
   } else {
     responseURL.innerHTML = 'ERROR:' + result.error;

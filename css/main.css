@@ -61,7 +61,8 @@ table {
 .reset__icon {
   color: #54585a;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
   font-size: 12px;
   line-height: 1.67px;
 }
@@ -72,7 +73,7 @@ table {
   color: #54585a;
   text-align: center;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .card {
@@ -101,6 +102,7 @@ table {
 }
 
 .card__head--border {
+  width: 240px;
   border-left: 5px solid #a2deaf;
 }
 
@@ -110,6 +112,7 @@ table {
 }
 
 .card__name {
+  width: 240px;
   font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
   font-size: 18px;
   font-weight: 900;
@@ -117,6 +120,7 @@ table {
 }
 
 .card__job {
+  width: 240px;
   font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
   font-size: 16px;
   line-height: 1.25;

@@ -22,7 +22,8 @@
 .reset__icon{
   color: $gunmetal;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
   font-size: $x_small;
   line-height: 1.67px;
 }
@@ -32,7 +33,7 @@
   color: $gunmetal;
   text-align: center;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .card {
   width: 240px;
@@ -50,6 +51,7 @@
   flex-direction: row;
 }
 .card__head--border {
+  width: 240px;
   border-left: 5px solid $hospital-green;
 
 }
@@ -58,12 +60,14 @@
   margin-top: 5px;
 }
 .card__name {
+  width: 240px;
 font-family: $option2;
 font-size: $x_large;
 font-weight: $bold;
 line-height: 1.11;
 }
 .card__job {
+  width: 240px;
   font-family: $option2;
   font-size: $large;
   line-height: 1.25;

@@ -7,8 +7,11 @@
 		"src": [
 			"js/main.js",
 			"js/icons.js",
+      "js/imagenes.js",
+      "js/reset.js",
 			"js/name.js",
 			"js/imagenes.js",
+			"js/radio.js",
 			"js/localstorage.js"
 
 		],

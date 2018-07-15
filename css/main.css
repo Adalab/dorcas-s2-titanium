@@ -151,7 +151,7 @@ table {
   font-family: "Montserrat", sans-serif;
 }
 
-.card__job {
+.card__job--job {
   width: 240px;
   font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
   font-size: 16px;

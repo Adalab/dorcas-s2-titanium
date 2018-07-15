@@ -90,16 +90,14 @@
     font-family: $montserrat;
   }
 }
-.card__job {
+
+.card__job--job{
   width: 240px;
   font-family: $comicsans;
   font-size: $large;
   line-height: 1.25;
   color: $gunmetal;
-
-}
-.card__job--job{
-    &.ubuntu{
+  &.ubuntu{
     font-family: $ubuntu;
   }
   &.montserrat{

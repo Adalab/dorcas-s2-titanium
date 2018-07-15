@@ -148,9 +148,11 @@ function recuperarDataLS() {
     inputLinkedin.value = infoTarjeta.linkedin;
     inputGithub.value = infoTarjeta.github;
 
-    document.querySelector('#' + infoTarjeta.fuente).checked = true;
+    // document.querySelector('#' + infoTarjeta.color).checked = true;
+    aplicarColor(infoTarjeta.color);
 
-    document.querySelector('#' + infoTarjeta.color).checked = true;
+    // document.querySelector('#' + infoTarjeta.fuente).checked = true;
+    aplicarFuente(infoTarjeta.fuente);
 
 
     if (inputEmail.value !== '') {
@@ -177,12 +179,12 @@ function recuperarDataLS() {
 
     loadSelect();
     setTimeout(determineSelectsValuesOnRecoverData, 2000);
-    setTimeout(function() {
-      document.querySelector('#' + infoTarjeta.fuente).click();
-    }, 2000);
-    setTimeout(function() {
-      document.querySelector('#' + infoTarjeta.color).click();
-    }, 2000);
+    // setTimeout(function() {
+    //   document.querySelector('#' + infoTarjeta.fuente).click();
+    // }, 2000);
+    // setTimeout(function() {
+    //   document.querySelector('#' + infoTarjeta.color).click();
+    // }, 2000);
 
   } else {
     loadSelect();

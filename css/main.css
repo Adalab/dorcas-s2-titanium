@@ -147,10 +147,6 @@ table {
   font-family: "Ubuntu", sans-serif;
 }
 
-.card__name--name.comicsans {
-  font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
-}
-
 .card__name--name.montserrat {
   font-family: "Montserrat", sans-serif;
 }
@@ -163,15 +159,11 @@ table {
   color: #54585a;
 }
 
-.card__job.ubuntu {
+.card__job--job.ubuntu {
   font-family: "Ubuntu", sans-serif;
 }
 
-.card__job.comicsans {
-  font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
-}
-
-.card__job.montserrat {
+.card__job--job.montserrat {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -287,10 +279,6 @@ table {
 
 .card__foot--text.ubuntu {
   font-family: "Ubuntu", sans-serif;
-}
-
-.card__foot--text.comicsans {
-  font-family: "Comic Sans MS", "Comic Sans", "Chilanka", sans-serif;
 }
 
 .card__foot--text.montserrat {

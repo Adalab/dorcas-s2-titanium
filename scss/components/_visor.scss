@@ -86,9 +86,6 @@
   &.ubuntu{
     font-family: $ubuntu;
   }
-  &.comicsans{
-    font-family: $comicsans;
-  }
   &.montserrat{
     font-family: $montserrat;
   }
@@ -99,11 +96,11 @@
   font-size: $large;
   line-height: 1.25;
   color: $gunmetal;
-  &.ubuntu{
+
+}
+.card__job--job{
+    &.ubuntu{
     font-family: $ubuntu;
-  }
-  &.comicsans{
-    font-family: $comicsans;
   }
   &.montserrat{
     font-family: $montserrat;
@@ -187,9 +184,6 @@ padding: 10px 92px 10px 15px;
   color: $white;
   &.ubuntu{
     font-family: $ubuntu;
-  }
-  &.comicsans{
-    font-family: $comicsans;
   }
   &.montserrat{
     font-family: $montserrat;

@@ -4,6 +4,13 @@
 // Funciones localstorage
 
 var infoTarjeta = {};
+var habilidade1LocalStorage = null;
+var habilidade2LocalStorage = null;
+var habilidade3LocalStorage = null;
+
+// var habilidade2 = document.querySelector('.select__habilidades2');
+// var habilidade3 = document.querySelector('.select__habilidades3');
+
 
 
 // -------------------- addEventListeners para los input, para guardar el texto en LS
@@ -14,9 +21,22 @@ inputTelefono.addEventListener('focusout', guardarDataLS);
 inputLinkedin.addEventListener('focusout', guardarDataLS);
 inputGithub.addEventListener('focusout', guardarDataLS);
 
-function guardarDataL(ev) {
-  console.log('Leaving: ' + ev.currentTarget.name);
+function guardarDataLSSelect(guilty) {
+
+  if (guilty.name === 'Habilidade1') {
+    habilidade1LocalStorage = guilty.value;
+    console.log(guilty.name + guilty.value);
+
+  } else if (guilty.name === 'Habilidade2') {
+
+    habilidade2LocalStorage = guilty.value;
+
+  } else if (guilty.name === 'Habilidade3') {
+    habilidade3LocalStorage = guilty.value;
+  }
+  guardarDataLS()
 }
+
 
 function guardarDataLS() {
 
@@ -39,6 +59,7 @@ function guardarDataLS() {
   } else {
     infoTarjeta = JSON.parse(localStorage.getItem('Profile-Card'));
   }
+
   infoTarjeta.nombre = nameField.value;
   infoTarjeta.puesto = roleField.value;
   infoTarjeta.foto = fotoURL;
@@ -46,9 +67,9 @@ function guardarDataLS() {
   infoTarjeta.telefono = inputTelefono.value;
   infoTarjeta.linkedin = inputLinkedin.value;
   infoTarjeta.github = inputGithub.value;
-  infoTarjeta.habilidade1 = null
-  infoTarjeta.habilidade2 = null
-  infoTarjeta.habilidade3 = null
+  infoTarjeta.habilidade1 = habilidade1LocalStorage;
+  infoTarjeta.habilidade2 = habilidade2LocalStorage;
+  infoTarjeta.habilidade3 = habilidade3LocalStorage;
   infoTarjeta.color = null
   infoTarjeta.fuente = null
 
@@ -67,7 +88,33 @@ function recuperarDataLS() {
     inputTelefono.value = infoTarjeta.telefono;
     inputLinkedin.value = infoTarjeta.linkedin;
     inputGithub.value = infoTarjeta.github;
+
+    loadSelect();
+    setTimeout(determineSelectsValuesOnRecoverData, 1000);
+
+  } else {
+    alert('loading');
+
+    loadSelect();
   }
+}
+
+function determineSelectsValuesOnRecoverData() {
+  if (infoTarjeta.habilidade1 !== null) {
+    console.log(infoTarjeta.habilidade1);
+    document.querySelector('.select__habilidades1').value = infoTarjeta.habilidade1;
+  }
+  // if (infoTarjeta.habilidade2 !== null) {
+  //   createSelect(); // problema con ese segundo createSelect(). El event change de habilidad1 se lía
+  //   console.log(infoTarjeta.habilidade2);
+  //   document.querySelector('.select__habilidades2').value = infoTarjeta.habilidade2;
+  // }
+  // if (infoTarjeta.habilidade3 !== null) {
+  //   createSelect();
+  //   console.log(infoTarjeta.habilidade3);
+  //   document.querySelector('.select__habilidades3').value = infoTarjeta.habilidade3;
+  // }
+
 }
 
 // -------------- Se ejecuta al iniciar la página

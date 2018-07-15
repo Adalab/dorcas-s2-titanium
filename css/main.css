@@ -640,7 +640,7 @@ body {
   margin-top: 5px;
 }
 
-.input--html {
+.select__habilidades {
   width: 165px;
   height: 30px;
   border: solid 1px #a2deaf;
@@ -650,7 +650,7 @@ body {
   box-sizing: border-box;
 }
 
-.more {
+.button__add-select--container {
   border: solid 1px #e17334;
   width: 30px;
   height: 30px;
@@ -667,6 +667,14 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #e17334;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.button__add-select--container.hide {
+  display: none;
 }
 
 .formulario__div--habilidades {

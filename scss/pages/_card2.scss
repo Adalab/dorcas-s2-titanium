@@ -115,16 +115,16 @@ input:-moz-placeholder {
   margin-top : 5px;
 }
 
-.input--html {
+.select__habilidades {
   width      : 165px;
   height     : 30px;
   border     : solid 1px $hospital-green;
   line-height: 20px;
-  font-size  : 14px;
+  font-size  : $normal;
   box-sizing : border-box;
 }
 
-.more {
+.button__add-select--container {
   border         : solid 1px $dull-orange;
   width          : 30px;
   height         : 30px;
@@ -134,6 +134,14 @@ input:-moz-placeholder {
   display        : flex;
   justify-content: center;
   align-items    : center;
+  color          : $dull-orange;
+  font-size      : $x_large;
+  font-weight    : 900;
+  cursor         : pointer;
+}
+
+.button__add-select--container.hide {
+  display: none;
 }
 
 .formulario__div--habilidades {

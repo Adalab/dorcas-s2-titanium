@@ -43,12 +43,13 @@ function habilidades2options() {
     var currentSelectNumber = j + 1;
     currentSelect.name = 'Habilidade' + currentSelectNumber;
 
-    currentSelect.removeEventListener('change', function() {
-      guardarDataLSSelect(currentSelect);
-    });
-    currentSelect.addEventListener('change', function() {
-      guardarDataLSSelect(currentSelect);
-    }); // para localStorage
+    if (currentSelect.getAttribute('data-eventlistener') === 'true') {
+      alert('true');
+    } else {
+
+      currentSelect.addEventListener('change', guardarDataLSSelect); // para localStorage
+      currentSelect.setAttribute('data-eventlistener', true);
+    }
   }
 }
 

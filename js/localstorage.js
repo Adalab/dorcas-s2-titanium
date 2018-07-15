@@ -21,7 +21,9 @@ inputTelefono.addEventListener('focusout', guardarDataLS);
 inputLinkedin.addEventListener('focusout', guardarDataLS);
 inputGithub.addEventListener('focusout', guardarDataLS);
 
-function guardarDataLSSelect(guilty) {
+function guardarDataLSSelect(event) {
+
+  var guilty = event.currentTarget;
 
   if (guilty.name === 'Habilidade1') {
     habilidade1LocalStorage = guilty.value;

@@ -66,7 +66,7 @@
 }
 .card__name {
   width: 240px;
-  font-family: $option2;
+  font-family: $comicsans;
   font-size: $x_large;
   font-weight: $bold;
   line-height: 1.11;
@@ -74,7 +74,7 @@
 .card__name--name{
   color :$dark-green-blue;
   font-size: 18px;
-  font-family: $option2;
+  font-family: $comicsans;
   font-weight: $bold;
   line-height: 1.11;
   &.rojo {
@@ -86,7 +86,7 @@
 }
 .card__job {
   width: 240px;
-  font-family: $option2;
+  font-family: $comicsans;
   font-size: $large;
   line-height: 1.25;
   color: $gunmetal;
@@ -105,14 +105,12 @@
   justify-content: flex-start;
   padding: 10px 62px 10px 20px;
   align-items: center;
-  border-bottom: 1px solid $dirty-blue;
+  border-bottom: 1px solid rgba(67, 136, 147, 0.2);
   &.rojo {
-    border-left: 5px solid $butan-orange;
-    border-bottom: 1px solid $passion-red;
+    border-bottom: 1px solid rgba(189, 16, 16, 0.2);
   }
   &.gris {
-    border-left: 5px solid $blue-grey-medium;
-    border-bottom: 1px solid $blue-grey-clear;
+    border-bottom: 1px solid rgba(223, 229, 235, 0.2);
   }
 }
 .card__foot--icon{

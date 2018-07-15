@@ -1,44 +1,100 @@
 'use strict';
 
-var nombreVisor = document.querySelector('#element-name');
-var puestoVisor = document.querySelector('#element-role');
+var nombreVisor = document.querySelector('.card__name--name');
 var borderVisor = document.querySelector('.card__head--border');
-var iconBorderVisor = document.querySelector('.card__foot--icon');
-var iconVisor = document.querySelector('.iconsocial');
-var habilidadesVisor = document.querySelector('.card__foot--text');
+var iconBorderVisor = document.querySelectorAll('.card__foot--icon');
+var iconVisor = document.querySelectorAll('.iconsocial');
+var fondoHabilidades = document.querySelectorAll('.card__foot--box');
 var colorVisor = document.querySelectorAll('.diseña__colores--paleta');
-var fuenteVisor = document.querySelectorAll('.diseña__fuentes');
-var color1 = '$dark-green-blue';
-var color2 = '$dirty-blue';
-var color3 = '$hospital-green';
+var borderVisorHead = document.querySelector('.card__foot--social');
+var jobVisor = document.querySelector('.card__job--job');
+var fuenteVisor = document.querySelectorAll('.diseña--radio');
 
-function definirColores() {
-  borderVisor.style.borderLeft = '5px solid' + color3;
-  iconBorderVisor.style.border = '2px solid '
-  color3;
-  iconVisor = color1;
-  habilidadesVisor = color2;
-  nombreVisor = color1;
-}
-
+// TODO: añadir .card__foot--text y .card__job--job como querySelectors para el cambio de las fuentes
 
 function cambiarColor(event) {
-  var colores = event.currentTarget.id;
-  if (colores === 'red') {
-    var color1 = '$dark-green-blue';
-    var color2 = '$dirty-blue';
-    var color3 = '$hospital-green';
-
+  if (event.currentTarget.id === 'rojo') {
+    nombreVisor.classList.remove('gris');
+    nombreVisor.classList.add('rojo');
+    borderVisor.classList.remove('gris');
+    borderVisor.classList.add('rojo');
+    borderVisorHead.classList.remove('gris');
+    borderVisorHead.classList.add('rojo');
+    for (var e = 0; e < iconVisor.length; e++) {
+      iconVisor[e].classList.remove('gris');
+      iconVisor[e].classList.add('rojo');
+    }
+    for (var x = 0; x < fondoHabilidades.length; x++) {
+      fondoHabilidades[x].classList.remove('gris');
+      fondoHabilidades[x].classList.add('rojo');
+    }
+    for (var z = 0; z < iconBorderVisor.length; z++) {
+      iconBorderVisor[z].classList.remove('gris');
+      iconBorderVisor[z].classList.add('rojo');
+    }
+  } else if (event.currentTarget.id === 'gris') {
+    nombreVisor.classList.remove('rojo');
+    nombreVisor.classList.add('gris');
+    borderVisor.classList.remove('rojo');
+    borderVisor.classList.add('gris');
+    borderVisorHead.classList.remove('rojo');
+    borderVisorHead.classList.add('gris');
+    for (var e = 0; e < iconVisor.length; e++) {
+      iconVisor[e].classList.remove('rojo');
+      iconVisor[e].classList.add('gris');
+    }
+    for (var x = 0; x < fondoHabilidades.length; x++) {
+      fondoHabilidades[x].classList.remove('rojo');
+      fondoHabilidades[x].classList.add('gris');
+    }
+    for (var z = 0; z < iconBorderVisor.length; z++) {
+      iconBorderVisor[z].classList.remove('rojo');
+      iconBorderVisor[z].classList.add('gris');
+    }
+  } else {
+    nombreVisor.classList.remove('rojo');
+    nombreVisor.classList.remove('gris');
+    borderVisor.classList.remove('rojo');
+    borderVisor.classList.remove('gris');
+    borderVisorHead.classList.remove('rojo');
+    borderVisorHead.classList.remove('gris');
+    for (var e = 0; e < iconVisor.length; e++) {
+      iconVisor[e].classList.remove('rojo');
+      iconVisor[e].classList.remove('gris');
+    }
+    for (var x = 0; x < fondoHabilidades.length; x++) {
+      fondoHabilidades[x].classList.remove('rojo');
+      fondoHabilidades[x].classList.remove('gris');
+    }
+    for (var z = 0; z < iconBorderVisor.length; z++) {
+      iconBorderVisor[z].classList.remove('rojo');
+      iconBorderVisor[z].classList.remove('gris');
+    }
   }
 }
 
 function cambiarFuente() {
-  teste();
+  if (event.currentTarget.id === 'ubuntu') {
+    nombreVisor.classList.remove('montserrat');
+    nombreVisor.classList.add('ubuntu');
+    jobVisor.classList.remove('montserrat');
+    jobVisor.classList.add('ubuntu');
+  }else if (event.currentTarget.id === 'montserrat'){
+    nombreVisor.classList.remove('ubuntu');
+    nombreVisor.classList.add('montserrat');
+    jobVisor.classList.remove('ubuntu');
+    jobVisor.classList.add('montserrat');
+  }else if (event.currentTarget.id === 'comicsans') {
+    jobVisor.classList.remove('ubuntu');
+    jobVisor.classList.remove('montserrat');
+    nombreVisor.classList.remove('ubuntu');
+    nombreVisor.classList.remove('montserrat');
+  }
 }
 
 for (var i = 0; i < colorVisor.length; i++) {
   colorVisor[i].addEventListener('click', cambiarColor);
 }
-for (var i = 0; i < fuenteVisor.length; i++) {
-  fuenteVisor[i].addEventListener('click', cambiarFuente);
+for (var x = 0; x < fuenteVisor.length; x++) {
+  fuenteVisor[x].addEventListener('click', cambiarFuente);
 }

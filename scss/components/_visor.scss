@@ -61,6 +61,13 @@
   width      : 240px;
   border-left: 5px solid $hospital-green;
 
+  &.rojo {
+    border-left: 5px solid $butan-orange;
+  }
+
+  &.gris {
+    border-left: 5px solid $blue-grey-medium;
+  }
 }
 
 .card__head--container {
@@ -70,18 +77,50 @@
 
 .card__name {
   width      : 240px;
-  font-family: $option2;
+  font-family: $comicsans;
   font-size  : $x_large;
   font-weight: $bold;
   line-height: 1.11;
 }
 
-.card__job {
+.card__name--name {
+  color      : $dark-green-blue;
+  font-size  : 18px;
+  font-family: $comicsans;
+  font-weight: $bold;
+  line-height: 1.11;
+
+  &.rojo {
+    color: $granate;
+  }
+
+  &.gris {
+    color: $blue-grey-dark;
+  }
+
+  &.ubuntu {
+    font-family: $ubuntu;
+  }
+
+  &.montserrat {
+    font-family: $montserrat;
+  }
+}
+
+.card__job--job {
   width      : 240px;
-  font-family: $option2;
+  font-family: $comicsans;
   font-size  : $large;
   line-height: 1.25;
   color      : $gunmetal;
+
+  &.ubuntu {
+    font-family: $ubuntu;
+  }
+
+  &.montserrat {
+    font-family: $montserrat;
+  }
 }
 
 .card__pic {
@@ -99,7 +138,15 @@
   justify-content: flex-start;
   padding        : 10px 62px 10px 20px;
   align-items    : center;
-  border-bottom  : 1px solid rgba(67, 135, 146, 0.2);
+  border-bottom  : 1px solid rgba(67, 136, 147, 0.2);
+
+  &.rojo {
+    border-bottom: 1px solid rgba(189, 16, 16, 0.2);
+  }
+
+  &.gris {
+    border-bottom: 1px solid rgba(223, 229, 235, 0.2);
+  }
 }
 
 .card__foot--icon {
@@ -107,11 +154,20 @@
   align-items    : center;
   justify-content: center;
   width          : 32px;
-  height         : 32px;
+  height         : 27px;
   border-radius  : 16px;
   border         : solid 2px $hospital-green;
   text-align     : center;
   margin-right   : 10px;
+
+  &.rojo {
+    border: 2px solid $butan-orange;
+  }
+
+  &.gris {
+    border: 2px solid $blue-grey-medium;
+  }
+
 }
 
 .card__foot--icon:last-child {
@@ -122,6 +178,14 @@
   // margin-top: 4px;
   font-size: $x_large;
   color    : $dark-green-blue;
+
+  &.rojo {
+    color: $granate;
+  }
+
+  &.gris {
+    color: $blue-grey-dark;
+  }
 }
 
 .card__foot--skills {
@@ -134,6 +198,14 @@
   margin-right    : 10px;
   border-radius   : 4px;
   background-color: $dirty-blue;
+
+  &.rojo {
+    background-color: $passion-red;
+  }
+
+  &.gris {
+    background-color: $blue-grey-clear;
+  }
 }
 
 .card__foot--text {
@@ -141,4 +213,12 @@
   font-family: $main;
   font-size  : $small;
   color      : $white;
+
+  &.ubuntu {
+    font-family: $ubuntu;
+  }
+
+  &.montserrat {
+    font-family: $montserrat;
+  }
 }

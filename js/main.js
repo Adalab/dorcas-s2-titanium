@@ -30,10 +30,11 @@ function updateCollapsibles(event) {
 var submitButton = document.querySelector('#submit');
 var responseURL = document.querySelector('.response');
 var form = document.querySelector('.formularioForm');
+var label = document.querySelector('.fieldset__rellenaLabel');
 var fr = new FileReader();
 submitButton.addEventListener('click', loadPhoto);
 function sendData(){
-  var inputs = Array.from(formularioForm.fieldset__rellenaLabel); /*aquí cambiar lo de elements por la clase que tengan los items que contiene formulario*/
+  var inputs = Array.from(form.label); /*aquí cambiar lo de elements por la clase que tengan los items que contiene formulario*/
   var json = getJSONFromInputs(inputs);
   json.skills = ['Javascript', 'React'];
   json.photo = fr.result; /* lo de photo hay que referenciarlo. ¿Qué clase o id tiene la foto una vez que se sube?*/

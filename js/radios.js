@@ -35,15 +35,23 @@ function cambiarColor(event) {
     }
   } else if (event.currentTarget.id === 'gris') {
     nombreVisor.classList.remove('rojo');
-    borderVisor.classList.remove('rojo');
-    iconBorderVisor.classList.remove('rojo');
-    iconVisor.classList.remove('rojo');
-    fondoHabilidades.classList.remove('rojo');
     nombreVisor.classList.add('gris');
+    borderVisor.classList.remove('rojo');
     borderVisor.classList.add('gris');
-    iconBorderVisor.classList.add('gris');
-    iconVisor.classList.add('gris');
-    fondoHabilidades.classList.add('gris');
+    borderVisorHead.classList.remove('rojo');
+    borderVisorHead.classList.add('gris');
+    for (var e = 0; e < iconVisor.length; e++) {
+      iconVisor[e].classList.remove('rojo');
+      iconVisor[e].classList.add('gris');
+    }
+    for (var x = 0; x < fondoHabilidades.length; x++) {
+      fondoHabilidades[x].classList.remove('rojo');
+      fondoHabilidades[x].classList.add('gris');
+    }
+    for (var z = 0; z < iconBorderVisor.length; z++) {
+      iconBorderVisor[z].classList.remove('rojo');
+      iconBorderVisor[z].classList.add('gris');
+    }
   } else {
     nombreVisor.classList.remove('rojo');
     borderVisor.classList.remove('rojo');

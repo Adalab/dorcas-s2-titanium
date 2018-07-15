@@ -83,6 +83,15 @@
   &.gris {
     color:$blue-grey-dark;
   }
+  &.ubuntu{
+    font-family: $ubuntu;
+  }
+  &.comicsans{
+    font-family: $comicsans;
+  }
+  &.montserrat{
+    font-family: $montserrat;
+  }
 }
 .card__job {
   width: 240px;
@@ -90,6 +99,15 @@
   font-size: $large;
   line-height: 1.25;
   color: $gunmetal;
+  &.ubuntu{
+    font-family: $ubuntu;
+  }
+  &.comicsans{
+    font-family: $comicsans;
+  }
+  &.montserrat{
+    font-family: $montserrat;
+  }
 }
 .card__pic {
   width: 240px;
@@ -167,4 +185,13 @@ padding: 10px 92px 10px 15px;
   font-family: $main;
   font-size: $small;
   color: $white;
+  &.ubuntu{
+    font-family: $ubuntu;
+  }
+  &.comicsans{
+    font-family: $comicsans;
+  }
+  &.montserrat{
+    font-family: $montserrat;
+  }
 }

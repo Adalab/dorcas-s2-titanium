@@ -1,5 +1,6 @@
 'use strict';
-/* global profileImage miniBox */
+/* global jobVisor iconBorderVisor profileImage miniBox nombreVisor */
+
 
 var resetButton = document.querySelector('.reset');
 var formRemove = document.querySelectorAll('.fieldset__rellena--input');

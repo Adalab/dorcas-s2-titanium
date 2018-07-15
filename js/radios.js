@@ -84,11 +84,11 @@ function cambiarFuente() {
     nombreVisor.classList.add('montserrat');
     jobVisor.classList.remove('ubuntu');
     jobVisor.classList.add('montserrat');
-  }else{
+  }else if (event.currentTarget.id === 'comicsans') {
     jobVisor.classList.remove('ubuntu');
     jobVisor.classList.remove('montserrat');
     nombreVisor.classList.remove('ubuntu');
-    nombreVisor.classList.remove('comicsans');
+    nombreVisor.classList.remove('montserrat');
   }
 }
 

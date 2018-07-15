@@ -29,11 +29,11 @@ function updateCollapsibles(event) {
 
 var submitButton = document.querySelector('#submit');
 var responseURL = document.querySelector('.response');
-var form = document.querySelector('.formulario');
+var form = document.querySelector('.formularioForm');
 var fr = new FileReader();
 submitButton.addEventListener('click', loadPhoto);
 function sendData(){
-  var inputs = Array.from(form.elements); /*aquí cambiar lo de elements por la clase que tengan los items que contiene formulario*/
+  var inputs = Array.from(formularioForm.fieldset__rellenaLabel); /*aquí cambiar lo de elements por la clase que tengan los items que contiene formulario*/
   var json = getJSONFromInputs(inputs);
   json.skills = ['Javascript', 'React'];
   json.photo = fr.result; /* lo de photo hay que referenciarlo. ¿Qué clase o id tiene la foto una vez que se sube?*/
@@ -52,11 +52,11 @@ function getJSONFromInputs(json){
     .catch(function(error){console.log(error); })
 }
 function showURL(result){
-  if(result === null){
+  if(result.success){
     responseURL.innerHTML = 'ERROR:' + result.error;
   } else {
     responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
-  } /*Aquí cambié la función, poniendo ===null en el if y en el else lo que antes estaba arriba, en lugar de poner en el if la condición de certeza*/
+  }
 }
 
 // Habilidades
@@ -66,21 +66,15 @@ var selecPadre;
 
 function contenidoHTML() {
   var divSelectPadre = document.querySelector('.selecthab');
-
-  //Declaraciones de variables de select y su contenido
   var selecPadreNuevo = document.createElement('div');
   var selecNuevo = document.createElement('select');
   var opcioNueva = document.createElement('option');
   var opcionContenido = document.createTextNode('HTML');
-
-  //Declaraciones variables boton más div que lo contiene
-
   var nuevoBotonSelec = document.createElement('div');
   var nuevoBotonContenidoSelec = document.createElement('i');
 
-  //Bucle que recorre el array de userSelections (+ 1 para que aparezca 1 ya pintado al cargar la página) y añade los grupos de contenido
   for (var i = 0; i < userSelections.length + 1; i++) {
-    //Insercion contenido en option, e insercion de option como contenido de select. Insercion de select dentro del div que es su padre
+
     opcioNueva.appendChild(opcionContenido);
     selecNuevo.appendChild(opcioNueva);
     selecPadreNuevo.appendChild(selecNuevo);
@@ -90,7 +84,6 @@ function contenidoHTML() {
     selecNuevo.classList.add('seleccionOpcion');
     opcioNueva.classList.add('opcionJS');
 
-    //Insercion clase font-awesome en <i>, insercion <i> en <div>
     nuevoBotonContenidoSelect.classList.add('fas');
     nuevoBotonContenidoSelec.classList.add('fa-plus');
     nuevoBotonContenidoSelec.classList.add('anadirJS');
@@ -102,7 +95,6 @@ function contenidoHTML() {
   cambiarBoton();
 }
 
-//función para cambiar el signo del botón dependiendo de las seleciones del usuario
 function cambiarBoton() {
   var button = document.querySelectorAll('.anadirJS');
   for (var i = 0; i < button.length; i++) {
@@ -122,10 +114,8 @@ function cambiarBoton() {
   conectSelectWithCard();
 }
 
-//Llamada a la función que crea el contenido la primera vez
 contenidoHTML();
 
-//Función para añadir el contenido (hasta que las selecciones del usuario sean 3) y cambiar el signo del último botón
 function addSelect(event) {
   console.log('estoy poniendo');
   var clickedElement = event.currentTarget;
@@ -138,7 +128,6 @@ function addSelect(event) {
   }
 }
 
-//Función para quitar el contenido (de momento sólo quita el primer campo no el correspondiente al botón que se pincha)
 function removeSelect() {
   console.log('estoy quitando');
   divPadre = document.querySelector('.selecthab');

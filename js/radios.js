@@ -13,6 +13,7 @@ var fuenteVisor = document.querySelectorAll('.diseña--radio');
 
 
 function cambiarColor(event) {
+  console.log('cambiarColor disparada: ' + event.currentTarget.id);
   guardarColoresLS(event.currentTarget.id);
   if (event.currentTarget.id === 'rojo') {
     nombreVisor.classList.remove('gris');
@@ -80,6 +81,8 @@ function cambiarColor(event) {
 }
 
 function cambiarFuente(eventFuente) {
+  console.log('cambiarFuente disparada: ' + eventFuente.currentTarget.id);
+
   guardarFuentesLS(eventFuente.currentTarget.id);
   if (eventFuente.currentTarget.id === 'ubuntu') {
     nombreVisor.classList.remove('montserrat');

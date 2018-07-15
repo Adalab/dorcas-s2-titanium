@@ -139,10 +139,25 @@ function recuperarDataLS() {
     inputGithub.value = infoTarjeta.github;
 
     if (inputEmail.value !== '') {
-      // document.querySelector('.fieldset__rellena--input-email').keyup();
       emailLink.href = 'mailto:' + inputEmail.value;
       document.querySelector('.email').style.display = 'flex';
     }
+
+    if (inputTelefono.value !== '') {
+      mobileLink.href = 'tel:' + inputTelefono.value;
+      document.querySelector('.mobile').style.display = 'flex';
+    }
+
+    if (inputLinkedin.value !== '') {
+      inputLinkedin.href = 'http://linkedin.com/in/' + inputLinkedin.value;
+      document.querySelector('.linkedin').style.display = 'flex';
+    }
+
+    if (inputGithub.value !== '') {
+      inputGithub.href = 'https://github.com/' + inputGithub.value;
+      document.querySelector('.github').style.display = 'flex';
+    }
+
 
 
     loadSelect();

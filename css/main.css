@@ -165,7 +165,7 @@ table {
   -ms-flex-pack: center;
   justify-content: center;
   width: 32px;
-  height: 27px;
+  height: 32px;
   border-radius: 16px;
   border: solid 2px #a2deaf;
   text-align: center;
@@ -199,7 +199,7 @@ table {
 }
 
 .card__foot--text {
-  margin: 2px 2px;
+  margin: 2px;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   color: #ffffff;

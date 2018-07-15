@@ -122,6 +122,12 @@ input:-moz-placeholder {
   line-height: 20px;
   font-size  : $normal;
   box-sizing : border-box;
+  background : white;
+  color      : white;
+
+  &.select__habilidades-active {
+    color: black;
+  }
 }
 
 .button__add-select--container {

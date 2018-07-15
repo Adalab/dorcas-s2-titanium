@@ -648,6 +648,12 @@ body {
   font-size: 14px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  background: white;
+  color: white;
+}
+
+.select__habilidades.select__habilidades-active {
+  color: black;
 }
 
 .button__add-select--container {

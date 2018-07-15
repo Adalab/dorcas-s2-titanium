@@ -7,6 +7,7 @@ var infoTarjeta = {};
 var habilidade1LocalStorage;
 var habilidade2LocalStorage;
 var habilidade3LocalStorage;
+var guilty;
 
 function verifySelectValues() {
   infoTarjeta = JSON.parse(localStorage.getItem('Profile-Card'));
@@ -43,23 +44,47 @@ inputGithub.addEventListener('focusout', guardarDataLS);
 
 function guardarDataLSSelect(event) {
 
-  var guilty = event.currentTarget;
+  guilty = event.currentTarget;
+
+  guilty.classList.add('select__habilidades-active');
 
   if (guilty.name === 'Habilidade1') {
     habilidade1LocalStorage = guilty.value;
-    console.log(guilty.name + guilty.value);
 
+    if (document.querySelector('.card__foot--box-Habilidade1')) {
+      document.querySelector('.card__foot--box-Habilidade1').remove();
+    }
   } else if (guilty.name === 'Habilidade2') {
+
+    if (document.querySelector('.card__foot--box-Habilidade2')) {
+      document.querySelector('.card__foot--box-Habilidade2').remove();
+    }
 
     habilidade2LocalStorage = guilty.value;
 
   } else if (guilty.name === 'Habilidade3') {
     habilidade3LocalStorage = guilty.value;
+    if (document.querySelector('.card__foot--box-Habilidade3')) {
+      document.querySelector('.card__foot--box-Habilidade3').remove();
+    }
   }
+  habilidades2Visor()
 
   guardarDataLS()
 }
 
+function habilidades2Visor() {
+  var habilidadVisorSkillsBox = document.querySelector('.card__foot--skills');
+  var habilidadVisorDIV = document.createElement('div');
+  habilidadVisorDIV.classList.add('card__foot--box', 'card__foot--box-' + guilty.name);
+  var habilidadVisorP = document.createElement('p');
+  habilidadVisorP.classList.add('card__foot--text', 'uppercase');
+  var habilidadVisorText = document.createTextNode(guilty.value);
+
+  habilidadVisorP.appendChild(habilidadVisorText);
+  habilidadVisorDIV.appendChild(habilidadVisorP);
+  habilidadVisorSkillsBox.appendChild(habilidadVisorDIV);
+}
 
 function guardarDataLS() {
 
@@ -113,8 +138,15 @@ function recuperarDataLS() {
     inputLinkedin.value = infoTarjeta.linkedin;
     inputGithub.value = infoTarjeta.github;
 
+    if (inputEmail.value !== '') {
+      // document.querySelector('.fieldset__rellena--input-email').keyup();
+      emailLink.href = 'mailto:' + inputEmail.value;
+      document.querySelector('.email').style.display = 'flex';
+    }
+
+
     loadSelect();
-    setTimeout(determineSelectsValuesOnRecoverData, 1000);
+    setTimeout(determineSelectsValuesOnRecoverData, 2000);
 
   } else {
     loadSelect();
@@ -123,20 +155,28 @@ function recuperarDataLS() {
 
 function determineSelectsValuesOnRecoverData() {
   if (infoTarjeta.habilidade1 !== '') {
-    console.log(infoTarjeta.habilidade1);
-    document.querySelector('.select__habilidades1').value = infoTarjeta.habilidade1;
+    guilty = document.querySelector('.select__habilidades1');
+    guilty.value = infoTarjeta.habilidade1;
+    guilty.classList.add('select__habilidades-active');
+    habilidades2Visor()
+
   }
   if (infoTarjeta.habilidade2 !== '') {
-    createSelect(); // problema con ese segundo createSelect(). El event change de habilidad1 se lía
-    console.log(infoTarjeta.habilidade2);
-    document.querySelector('.select__habilidades2').value = infoTarjeta.habilidade2;
+    createSelect();
+    guilty = document.querySelector('.select__habilidades2');
+    guilty.value = infoTarjeta.habilidade2;
+    guilty.classList.add('select__habilidades-active');
+    habilidades2Visor()
+
   }
   if (infoTarjeta.habilidade3 !== '') {
     createSelect();
-    console.log(infoTarjeta.habilidade3);
-    document.querySelector('.select__habilidades3').value = infoTarjeta.habilidade3;
-  }
+    guilty = document.querySelector('.select__habilidades3');
+    guilty.value = infoTarjeta.habilidade3;
+    guilty.classList.add('select__habilidades-active');
+    habilidades2Visor()
 
+  }
 }
 
 // -------------- Se ejecuta al iniciar la página

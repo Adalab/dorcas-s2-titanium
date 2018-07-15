@@ -45,11 +45,12 @@ function habilidades2options() {
 
     if (currentSelect.getAttribute('data-eventlistener') !== 'true') {
 
-      currentSelect.addEventListener('change', guardarDataLSSelect); // para localStorage
+      currentSelect.addEventListener('change', guardarDataLSSelect); //  localStorage.js
       currentSelect.setAttribute('data-eventlistener', true);
     }
   }
 }
+
 
 function createSelect() {
 
@@ -116,8 +117,10 @@ function removeSelect() {
   fieldsetSelects.lastChild.remove();
   if (numActualHabilidades === 2) {
     habilidade3LocalStorage = '';
+    document.querySelector('.card__foot--box-Habilidade3').remove();
   } else if (numActualHabilidades === 1) {
     habilidade2LocalStorage = '';
+    document.querySelector('.card__foot--box-Habilidade2').remove();
   }
   guardarDataLS()
   addButtonsEvents()

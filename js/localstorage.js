@@ -8,6 +8,9 @@ var habilidade1LocalStorage;
 var habilidade2LocalStorage;
 var habilidade3LocalStorage;
 var guilty;
+var fuenteSeleccionada;
+var colorSeleccionado;
+
 
 function verifySelectValues() {
   infoTarjeta = JSON.parse(localStorage.getItem('Profile-Card'));
@@ -29,10 +32,6 @@ function verifySelectValues() {
 
 
 }
-// var habilidade2 = document.querySelector('.select__habilidades2');
-// var habilidade3 = document.querySelector('.select__habilidades3');
-
-
 
 // -------------------- addEventListeners para los input, para guardar el texto en LS
 nameField.addEventListener('focusout', guardarDataLS);
@@ -118,11 +117,22 @@ function guardarDataLS() {
   infoTarjeta.habilidade1 = habilidade1LocalStorage;
   infoTarjeta.habilidade2 = habilidade2LocalStorage;
   infoTarjeta.habilidade3 = habilidade3LocalStorage;
-  infoTarjeta.color = null
-  infoTarjeta.fuente = null
+  infoTarjeta.color = colorSeleccionado;
+  infoTarjeta.fuente = fuenteSeleccionada;
 
   localStorage.setItem('Profile-Card', JSON.stringify(infoTarjeta));
 }
+
+function guardarFuentesLS(idFuentes) {
+  fuenteSeleccionada = idFuentes;
+  guardarDataLS();
+}
+
+function guardarColoresLS(idColores) {
+  colorSeleccionado = idColores;
+  guardarDataLS();
+}
+
 
 function recuperarDataLS() {
   if (localStorage.getItem('Profile-Card')) {
@@ -137,6 +147,11 @@ function recuperarDataLS() {
     inputTelefono.value = infoTarjeta.telefono;
     inputLinkedin.value = infoTarjeta.linkedin;
     inputGithub.value = infoTarjeta.github;
+
+    document.querySelector('#' + infoTarjeta.fuente).checked = true;
+
+    document.querySelector('#' + infoTarjeta.color).checked = true;
+
 
     if (inputEmail.value !== '') {
       emailLink.href = 'mailto:' + inputEmail.value;
@@ -162,6 +177,12 @@ function recuperarDataLS() {
 
     loadSelect();
     setTimeout(determineSelectsValuesOnRecoverData, 2000);
+    setTimeout(function() {
+      document.querySelector('#' + infoTarjeta.fuente).click();
+    }, 2000);
+    setTimeout(function() {
+      document.querySelector('#' + infoTarjeta.color).click();
+    }, 2000);
 
   } else {
     loadSelect();

@@ -43,9 +43,7 @@ function habilidades2options() {
     var currentSelectNumber = j + 1;
     currentSelect.name = 'Habilidade' + currentSelectNumber;
 
-    if (currentSelect.getAttribute('data-eventlistener') === 'true') {
-      alert('true');
-    } else {
+    if (currentSelect.getAttribute('data-eventlistener') !== 'true') {
 
       currentSelect.addEventListener('change', guardarDataLSSelect); // para localStorage
       currentSelect.setAttribute('data-eventlistener', true);
@@ -116,6 +114,12 @@ function removeSelect() {
 
   numActualHabilidades--;
   fieldsetSelects.lastChild.remove();
+  if (numActualHabilidades === 2) {
+    habilidade3LocalStorage = '';
+  } else if (numActualHabilidades === 1) {
+    habilidade2LocalStorage = '';
+  }
+  guardarDataLS()
   addButtonsEvents()
 }
 

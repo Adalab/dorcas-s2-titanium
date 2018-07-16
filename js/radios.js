@@ -9,91 +9,112 @@ var colorVisor = document.querySelectorAll('.diseña__colores--paleta');
 var borderVisorHead = document.querySelector('.card__foot--social');
 var jobVisor = document.querySelector('.card__job--job');
 var fuenteVisor = document.querySelectorAll('.diseña--fuentes');
+var colorTrigger;
+var fuenteTrigger;
 
+for (var i = 0; i < colorVisor.length; i++) {
+  colorVisor[i].addEventListener('click', cambiarColor);
+}
 
 function cambiarColor(event) {
-  if (event.currentTarget.id === 'rojo') {
+  colorTrigger = event.currentTarget.id;
+  console.log('cambiarColor disparada: ' + colorTrigger);
+  aplicarColor(colorTrigger);
+  guardarColoresLS(colorTrigger);
+}
+
+function aplicarColor(disparador) {
+  if (colorTrigger === 'rojo') {
     nombreVisor.classList.remove('gris');
     nombreVisor.classList.add('rojo');
     borderVisor.classList.remove('gris');
     borderVisor.classList.add('rojo');
     borderVisorHead.classList.remove('gris');
     borderVisorHead.classList.add('rojo');
+
     for (var e = 0; e < iconVisor.length; e++) {
       iconVisor[e].classList.remove('gris');
       iconVisor[e].classList.add('rojo');
     }
-    for (var x = 0; x < fondoHabilidades.length; x++) {
-      fondoHabilidades[x].classList.remove('gris');
-      fondoHabilidades[x].classList.add('rojo');
+
+    for (var w = 0; w < fondoHabilidades.length; w++) {
+      fondoHabilidades[w].classList.remove('gris');
+      fondoHabilidades[w].classList.add('rojo');
     }
+
     for (var z = 0; z < iconBorderVisor.length; z++) {
       iconBorderVisor[z].classList.remove('gris');
       iconBorderVisor[z].classList.add('rojo');
     }
-  } else if (event.currentTarget.id === 'gris') {
+
+  } else if (colorTrigger === 'gris') {
     nombreVisor.classList.remove('rojo');
     nombreVisor.classList.add('gris');
     borderVisor.classList.remove('rojo');
     borderVisor.classList.add('gris');
     borderVisorHead.classList.remove('rojo');
     borderVisorHead.classList.add('gris');
+
     for (var e = 0; e < iconVisor.length; e++) {
       iconVisor[e].classList.remove('rojo');
       iconVisor[e].classList.add('gris');
     }
-    for (var x = 0; x < fondoHabilidades.length; x++) {
-      fondoHabilidades[x].classList.remove('rojo');
-      fondoHabilidades[x].classList.add('gris');
+
+    for (var w = 0; w < fondoHabilidades.length; w++) {
+      fondoHabilidades[w].classList.remove('rojo');
+      fondoHabilidades[w].classList.add('gris');
     }
+
     for (var z = 0; z < iconBorderVisor.length; z++) {
       iconBorderVisor[z].classList.remove('rojo');
       iconBorderVisor[z].classList.add('gris');
     }
-  } else {
-    nombreVisor.classList.remove('rojo');
-    nombreVisor.classList.remove('gris');
-    borderVisor.classList.remove('rojo');
-    borderVisor.classList.remove('gris');
-    borderVisorHead.classList.remove('rojo');
-    borderVisorHead.classList.remove('gris');
+
+  } else if (colorTrigger === 'azul') {
+    nombreVisor.classList.remove('rojo', 'gris');
+    borderVisor.classList.remove('rojo', 'gris');
+    borderVisorHead.classList.remove('rojo', 'gris');
+
     for (var e = 0; e < iconVisor.length; e++) {
-      iconVisor[e].classList.remove('rojo');
-      iconVisor[e].classList.remove('gris');
+      iconVisor[e].classList.remove('rojo', 'gris');
     }
-    for (var x = 0; x < fondoHabilidades.length; x++) {
-      fondoHabilidades[x].classList.remove('rojo');
-      fondoHabilidades[x].classList.remove('gris');
+
+    for (var w = 0; w < fondoHabilidades.length; w++) {
+      fondoHabilidades[w].classList.remove('rojo', 'gris');
     }
+
     for (var z = 0; z < iconBorderVisor.length; z++) {
-      iconBorderVisor[z].classList.remove('rojo');
-      iconBorderVisor[z].classList.remove('gris');
+      iconBorderVisor[z].classList.remove('rojo', 'gris');
     }
   }
 }
 
-function cambiarFuente() {
-  if (event.currentTarget.id === 'ubuntu') {
+for (var x = 0; x < fuenteVisor.length; x++) {
+  fuenteVisor[x].addEventListener('click', cambiarFuente);
+}
+
+function cambiarFuente(eventFuente) {
+  fuenteTrigger = eventFuente.currentTarget.id;
+  console.log('cambiarFuente disparada: ' + fuenteTrigger);
+  aplicarFuente(fuenteTrigger);
+  guardarFuentesLS(fuenteTrigger);
+}
+
+function aplicarFuente(disparador) {
+  if (fuenteTrigger === 'ubuntu') {
     nombreVisor.classList.remove('montserrat');
     nombreVisor.classList.add('ubuntu');
     jobVisor.classList.remove('montserrat');
     jobVisor.classList.add('ubuntu');
-  }else if (event.currentTarget.id === 'montserrat'){
+  } else if (fuenteTrigger === 'montserrat') {
     nombreVisor.classList.remove('ubuntu');
     nombreVisor.classList.add('montserrat');
     jobVisor.classList.remove('ubuntu');
     jobVisor.classList.add('montserrat');
-  }else if (event.currentTarget.id === 'comicsans') {
+  } else if (fuenteTrigger === 'comicsans') {
     jobVisor.classList.remove('ubuntu');
     jobVisor.classList.remove('montserrat');
     nombreVisor.classList.remove('ubuntu');
     nombreVisor.classList.remove('montserrat');
   }
-}
-
-for (var i = 0; i < colorVisor.length; i++) {
-  colorVisor[i].addEventListener('click', cambiarColor);
-}
-for (var x = 0; x < fuenteVisor.length; x++) {
-  fuenteVisor[x].addEventListener('click', cambiarFuente);
 }

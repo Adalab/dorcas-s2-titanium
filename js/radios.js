@@ -9,7 +9,12 @@ var colorVisor = document.querySelectorAll('.diseña__colores--paleta');
 var borderVisorHead = document.querySelector('.card__foot--social');
 var jobVisor = document.querySelector('.card__job--job');
 var fuenteVisor = document.querySelectorAll('.diseña--fuentes');
+var colorTrigger;
+var fuenteTrigger;
 
+for (var i = 0; i < colorVisor.length; i++) {
+  colorVisor[i].addEventListener('click', cambiarColor);
+}
 
 function cambiarColor(event) {
   colorTrigger = event.currentTarget.id;
@@ -28,14 +33,17 @@ function aplicarColor(disparador) {
     borderVisor.classList.add('rojo');
     borderVisorHead.classList.remove('gris');
     borderVisorHead.classList.add('rojo');
+
     for (var e = 0; e < iconVisor.length; e++) {
       iconVisor[e].classList.remove('gris');
       iconVisor[e].classList.add('rojo');
     }
-    for (var x = 0; x < fondoHabilidades.length; x++) {
-      fondoHabilidades[x].classList.remove('gris');
-      fondoHabilidades[x].classList.add('rojo');
+
+    for (var w = 0; w < fondoHabilidades.length; w++) {
+      fondoHabilidades[w].classList.remove('gris');
+      fondoHabilidades[w].classList.add('rojo');
     }
+
     for (var z = 0; z < iconBorderVisor.length; z++) {
       iconBorderVisor[z].classList.remove('gris');
       iconBorderVisor[z].classList.add('rojo');
@@ -48,14 +56,17 @@ function aplicarColor(disparador) {
     borderVisor.classList.add('gris');
     borderVisorHead.classList.remove('rojo');
     borderVisorHead.classList.add('gris');
+
     for (var e = 0; e < iconVisor.length; e++) {
       iconVisor[e].classList.remove('rojo');
       iconVisor[e].classList.add('gris');
     }
-    for (var x = 0; x < fondoHabilidades.length; x++) {
-      fondoHabilidades[x].classList.remove('rojo');
-      fondoHabilidades[x].classList.add('gris');
+
+    for (var w = 0; w < fondoHabilidades.length; w++) {
+      fondoHabilidades[w].classList.remove('rojo');
+      fondoHabilidades[w].classList.add('gris');
     }
+
     for (var z = 0; z < iconBorderVisor.length; z++) {
       iconBorderVisor[z].classList.remove('rojo');
       iconBorderVisor[z].classList.add('gris');
@@ -67,16 +78,15 @@ function aplicarColor(disparador) {
     borderVisorHead.classList.remove('rojo', 'gris');
 
     for (var e = 0; e < iconVisor.length; e++) {
-      iconVisor[e].classList.remove('rojo');
-      iconVisor[e].classList.remove('gris');
+      iconVisor[e].classList.remove('rojo', 'gris');
     }
-    for (var x = 0; x < fondoHabilidades.length; x++) {
-      fondoHabilidades[x].classList.remove('rojo');
-      fondoHabilidades[x].classList.remove('gris');
+
+    for (var w = 0; w < fondoHabilidades.length; w++) {
+      fondoHabilidades[w].classList.remove('rojo', 'gris');
     }
+
     for (var z = 0; z < iconBorderVisor.length; z++) {
-      iconBorderVisor[z].classList.remove('rojo');
-      iconBorderVisor[z].classList.remove('gris');
+      iconBorderVisor[z].classList.remove('rojo', 'gris');
     }
   }
 }
@@ -110,11 +120,4 @@ function aplicarFuente(disparadorFuente) {
     nombreVisor.classList.remove('ubuntu');
     nombreVisor.classList.remove('montserrat');
   }
-}
-
-for (var i = 0; i < colorVisor.length; i++) {
-  colorVisor[i].addEventListener('click', cambiarColor);
-}
-for (var x = 0; x < fuenteVisor.length; x++) {
-  fuenteVisor[x].addEventListener('click', cambiarFuente);
 }

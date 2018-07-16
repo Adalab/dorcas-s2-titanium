@@ -1,6 +1,7 @@
 'use strict';
 
 var fr = new FileReader();
+var fotoURL;
 
 var uploadBtn = document.querySelector('.añadir__upload-btn');
 var fileField = document.querySelector('#img-selector');
@@ -14,9 +15,10 @@ function getImage(e) {
 }
 
 function writeImage() {
-
+  fotoURL = 'url(' + fr.result + ')';
   profileImage.style.backgroundImage = 'url(' + fr.result + ')';
   miniBox.style.backgroundImage = 'url(' + fr.result + ' )';
+  guardarDataLS()
 }
 
 function fakeFileClick() {

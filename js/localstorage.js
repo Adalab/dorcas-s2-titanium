@@ -3,87 +3,8 @@
 
 // Funciones localstorage
 
+
 var infoTarjeta = {};
-var habilidade1LocalStorage;
-var habilidade2LocalStorage;
-var habilidade3LocalStorage;
-var guilty;
-var fuenteSeleccionada;
-var colorSeleccionado;
-
-
-function verifySelectValues() {
-  infoTarjeta = JSON.parse(localStorage.getItem('Profile-Card'));
-  if (infoTarjeta.habilidade1) {
-    habilidade1LocalStorage = infoTarjeta.habilidade1;
-  } else {
-    habilidade1LocalStorage = '';
-  }
-  if (infoTarjeta.habilidade2) {
-    habilidade2LocalStorage = infoTarjeta.habilidade2;
-  } else {
-    habilidade2LocalStorage = '';
-  }
-  if (infoTarjeta.habilidade3) {
-    habilidade3LocalStorage = infoTarjeta.habilidade3;
-  } else {
-    habilidade3LocalStorage = '';
-  }
-
-
-}
-
-// -------------------- addEventListeners para los input, para guardar el texto en LS
-nameField.addEventListener('focusout', guardarDataLS);
-roleField.addEventListener('focusout', guardarDataLS);
-inputEmail.addEventListener('focusout', guardarDataLS);
-inputTelefono.addEventListener('focusout', guardarDataLS);
-inputLinkedin.addEventListener('focusout', guardarDataLS);
-inputGithub.addEventListener('focusout', guardarDataLS);
-
-function guardarDataLSSelect(event) {
-
-  guilty = event.currentTarget;
-
-  guilty.classList.add('select__habilidades-active');
-
-  if (guilty.name === 'Habilidade1') {
-    habilidade1LocalStorage = guilty.value;
-
-    if (document.querySelector('.card__foot--box-Habilidade1')) {
-      document.querySelector('.card__foot--box-Habilidade1').remove();
-    }
-  } else if (guilty.name === 'Habilidade2') {
-
-    if (document.querySelector('.card__foot--box-Habilidade2')) {
-      document.querySelector('.card__foot--box-Habilidade2').remove();
-    }
-
-    habilidade2LocalStorage = guilty.value;
-
-  } else if (guilty.name === 'Habilidade3') {
-    habilidade3LocalStorage = guilty.value;
-    if (document.querySelector('.card__foot--box-Habilidade3')) {
-      document.querySelector('.card__foot--box-Habilidade3').remove();
-    }
-  }
-  habilidades2Visor()
-
-  guardarDataLS()
-}
-
-function habilidades2Visor() {
-  var habilidadVisorSkillsBox = document.querySelector('.card__foot--skills');
-  var habilidadVisorDIV = document.createElement('div');
-  habilidadVisorDIV.classList.add('card__foot--box', 'card__foot--box-' + guilty.name);
-  var habilidadVisorP = document.createElement('p');
-  habilidadVisorP.classList.add('card__foot--text', 'uppercase');
-  var habilidadVisorText = document.createTextNode(guilty.value);
-
-  habilidadVisorP.appendChild(habilidadVisorText);
-  habilidadVisorDIV.appendChild(habilidadVisorP);
-  habilidadVisorSkillsBox.appendChild(habilidadVisorDIV);
-}
 
 function guardarDataLS() {
 
@@ -99,14 +20,13 @@ function guardarDataLS() {
       'habilidade1': '',
       'habilidade2': '',
       'habilidade3': '',
-      'color': 'azul',
-      'fuente': 'ubuntu'
+      'color': '',
+      'fuente': ''
     }
 
   } else {
     infoTarjeta = JSON.parse(localStorage.getItem('Profile-Card'));
   }
-
   infoTarjeta.nombre = nameField.value;
   infoTarjeta.puesto = roleField.value;
   infoTarjeta.foto = fotoURL;
@@ -114,11 +34,11 @@ function guardarDataLS() {
   infoTarjeta.telefono = inputTelefono.value;
   infoTarjeta.linkedin = inputLinkedin.value;
   infoTarjeta.github = inputGithub.value;
-  infoTarjeta.habilidade1 = habilidade1LocalStorage;
-  infoTarjeta.habilidade2 = habilidade2LocalStorage;
-  infoTarjeta.habilidade3 = habilidade3LocalStorage;
-  infoTarjeta.color = colorSeleccionado;
-  infoTarjeta.fuente = fuenteSeleccionada;
+  infoTarjeta.habilidade1 = null
+  infoTarjeta.habilidade2 = null
+  infoTarjeta.habilidade3 = null
+  infoTarjeta.color = null
+  infoTarjeta.fuente = null
 
   localStorage.setItem('Profile-Card', JSON.stringify(infoTarjeta));
 }
@@ -136,7 +56,6 @@ function guardarColoresLS(disparadorFuente) {
 
 
 function recuperarDataLS() {
-
   if (localStorage.getItem('Profile-Card')) {
     infoTarjeta = JSON.parse(localStorage.getItem('Profile-Card'));
 

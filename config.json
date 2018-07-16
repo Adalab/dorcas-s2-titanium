@@ -10,9 +10,7 @@
       "js/imagenes.js",
       "js/reset.js",
 			"js/name.js",
-			"js/imagenes.js",
-			"js/radios.js",
-			"js/localstorage.js"
+			"js/radios.js"
 
 		],
 		"dest": "js/"

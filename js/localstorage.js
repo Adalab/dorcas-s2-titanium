@@ -140,11 +140,11 @@ function recuperarDataLS() {
   if (localStorage.getItem('Profile-Card')) {
     infoTarjeta = JSON.parse(localStorage.getItem('Profile-Card'));
 
-    document.querySelector('#' + infoTarjeta.color).checked = true;
-    aplicarColor(infoTarjeta.color);
+    // document.querySelector('#' + infoTarjeta.color).checked = true;
+    // aplicarColor(infoTarjeta.color);
 
-    document.querySelector('#' + infoTarjeta.fuente).checked = true;
-    aplicarFuente(infoTarjeta.fuente);
+    // document.querySelector('#' + infoTarjeta.fuente).checked = true;
+    // aplicarFuente(infoTarjeta.fuente);
 
     //
     // document.querySelector('#' + JSON.parse(localStorage.getItem('Profile-Card')).color).checked = true;

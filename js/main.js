@@ -1,3 +1,5 @@
+'use strict';
+
 var maxHabilidades = 3;
 var numActualHabilidades = 1;
 var habilidades = [];

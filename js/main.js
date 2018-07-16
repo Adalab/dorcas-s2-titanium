@@ -29,11 +29,11 @@ function updateCollapsibles(event) {
 
 var submitButton = document.querySelector('#submit');
 var responseURL = document.querySelector('.response');
-var form = document.querySelector('.formulario');
+var div = document.querySelector('.formulario');
 var fr = new FileReader();
-submitButton.addEventListener('click', loadPhoto);
+submitButton.addEventListener('click', getImage);
 function sendData(){
-  var inputs = Array.from(form.elements);
+  var inputs = Array.from(div.label);
   var json = getJSONFromInputs(inputs);
   json.skills = ['Javascript', 'React'];
   json.photo = fr.result;

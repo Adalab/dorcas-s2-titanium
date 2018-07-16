@@ -129,8 +129,8 @@ function guardarFuentesLS(idFuentes) {
   guardarDataLS();
 }
 
-function guardarColoresLS(idColores) {
-  colorSeleccionado = idColores;
+function guardarColoresLS(disparadorFuente) {
+  colorSeleccionado = disparadorFuente;
   guardarDataLS();
 }
 
@@ -140,20 +140,20 @@ function recuperarDataLS() {
   if (localStorage.getItem('Profile-Card')) {
     infoTarjeta = JSON.parse(localStorage.getItem('Profile-Card'));
 
-    document.querySelector('#' + infoTarjeta.color).checked = true;
-    aplicarColor(infoTarjeta.color);
+    if (infoTarjeta.color) {
+      document.querySelector('#' + infoTarjeta.color).checked = true;
+      aplicarColor(infoTarjeta.color);
+    }
+    if (infoTarjeta.fuente) {
+      document.querySelector('#' + infoTarjeta.fuente).checked = true;
+      aplicarFuente(infoTarjeta.fuente);
+    }
 
-    document.querySelector('#' + infoTarjeta.fuente).checked = true;
-    aplicarFuente(infoTarjeta.fuente);
 
-    //
-    // document.querySelector('#' + JSON.parse(localStorage.getItem('Profile-Card')).color).checked = true;
-    // aplicarColor(JSON.parse(localStorage.getItem('Profile-Card')).color);
-    //
-    // document.querySelector('#' + JSON.parse(localStorage.getItem('Profile-Card')).fuente).checked = true;
-    // aplicarFuente(JSON.parse(localStorage.getItem('Profile-Card')).fuente);
-
+    nameField.value = infoTarjeta.nombre;
+    nombreVisor.innerHTML = infoTarjeta.nombre;
     roleField.value = infoTarjeta.puesto;
+    jobVisor.innerHTML = infoTarjeta.puesto;
     profileImage.style.backgroundImage = infoTarjeta.foto;
     miniBox.style.backgroundImage = infoTarjeta.foto;
     profileImage.value = infoTarjeta.foto;
@@ -200,28 +200,25 @@ function recuperarDataLS() {
 }
 
 function determineSelectsValuesOnRecoverData() {
-  if (infoTarjeta.habilidade1 !== '') {
+  if (infoTarjeta.habilidade1.indexOf(habilidades)) {
     guilty = document.querySelector('.select__habilidades1');
     guilty.value = infoTarjeta.habilidade1;
     guilty.classList.add('select__habilidades-active');
     habilidades2Visor()
-
   }
-  if (infoTarjeta.habilidade2 !== '') {
+  if (infoTarjeta.habilidade2.indexOf(habilidades)) {
     createSelect();
     guilty = document.querySelector('.select__habilidades2');
     guilty.value = infoTarjeta.habilidade2;
     guilty.classList.add('select__habilidades-active');
     habilidades2Visor()
-
   }
-  if (infoTarjeta.habilidade3 !== '') {
+  if (infoTarjeta.habilidade3.indexOf(habilidades)) {
     createSelect();
     guilty = document.querySelector('.select__habilidades3');
     guilty.value = infoTarjeta.habilidade3;
     guilty.classList.add('select__habilidades-active');
     habilidades2Visor()
-
   }
 }
 

@@ -108,6 +108,8 @@ function addButtonsEvents() {
       }
     }
   }
+
+  aplicarColor(infoTarjeta.color);
 }
 
 

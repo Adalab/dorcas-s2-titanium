@@ -21,10 +21,12 @@ function cambiarColor(event) {
   console.log('cambiarColor disparada: ' + colorTrigger);
   aplicarColor(colorTrigger);
   guardarColoresLS(colorTrigger);
+
 }
 
 function aplicarColor(disparador) {
-  if (colorTrigger === 'rojo') {
+
+  if (disparador === 'rojo') {
     nombreVisor.classList.remove('gris');
     nombreVisor.classList.add('rojo');
     borderVisor.classList.remove('gris');
@@ -47,7 +49,7 @@ function aplicarColor(disparador) {
       iconBorderVisor[z].classList.add('rojo');
     }
 
-  } else if (colorTrigger === 'gris') {
+  } else if (disparador === 'gris') {
     nombreVisor.classList.remove('rojo');
     nombreVisor.classList.add('gris');
     borderVisor.classList.remove('rojo');
@@ -70,7 +72,7 @@ function aplicarColor(disparador) {
       iconBorderVisor[z].classList.add('gris');
     }
 
-  } else if (colorTrigger === 'azul') {
+  } else if (disparador === 'azul') {
     nombreVisor.classList.remove('rojo', 'gris');
     borderVisor.classList.remove('rojo', 'gris');
     borderVisorHead.classList.remove('rojo', 'gris');
@@ -98,20 +100,21 @@ function cambiarFuente(eventFuente) {
   console.log('cambiarFuente disparada: ' + fuenteTrigger);
   aplicarFuente(fuenteTrigger);
   guardarFuentesLS(fuenteTrigger);
+
 }
 
-function aplicarFuente(disparador) {
-  if (fuenteTrigger === 'ubuntu') {
+function aplicarFuente(disparadorFuente) {
+  if (disparadorFuente === 'ubuntu') {
     nombreVisor.classList.remove('montserrat');
     nombreVisor.classList.add('ubuntu');
     jobVisor.classList.remove('montserrat');
     jobVisor.classList.add('ubuntu');
-  } else if (fuenteTrigger === 'montserrat') {
+  } else if (disparadorFuente === 'montserrat') {
     nombreVisor.classList.remove('ubuntu');
     nombreVisor.classList.add('montserrat');
     jobVisor.classList.remove('ubuntu');
     jobVisor.classList.add('montserrat');
-  } else if (fuenteTrigger === 'comicsans') {
+  } else if (disparadorFuente === 'comicsans') {
     jobVisor.classList.remove('ubuntu');
     jobVisor.classList.remove('montserrat');
     nombreVisor.classList.remove('ubuntu');

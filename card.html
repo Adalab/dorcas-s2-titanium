@@ -14,7 +14,9 @@
     <header class="header">
       <img src="images/awesomecards.svg" alt="Logo de Awesome Cards" class="header__logo">
     </header>
+
     <main class="page__main">
+
       <section class="visor">
         <button class="reset">
         <div class="reset__icon">
@@ -68,66 +70,64 @@
         </div>
       </section>
       <section class="editor">
-        <div class="div__rellena">
-          <fieldset class="fieldset__rellena">
-            <div class="fieldset__container--title">
-              <span class="fieldset__rellena--keyboard">
+        <fieldset class="fieldset__rellena div__rellena collapsible">
+          <div class="fieldset__container--title">
+            <span class="fieldset__rellena--keyboard">
               <i class="far fa-object-ungroup"></i>
               <h2 class="fieldset__title">Diseña</h2>
             </span>
-              <span class="fieldset__rellena--arrow">
-              <i class="fas fa-angle-up"></i>
+            <span class="fieldset__rellena--arrow collapsible__label">
+              <i class="fas fa-angle-up rotate"></i>
             </span>
-            </div>
-            <div class="diseña__colores">
-              <h3 class="diseña__coloresfuentes uppercase">Colores</h3>
-              <ul class="listadiseño">
-                <li class="diseña__colores--option">
-                  <input id="azul" type="radio" class="diseña__colores--paleta diseña--radio" name="elección" />
-                  <div class="diseña__colores--colores1"></div>
-                  <div class="diseña__colores--colores2"></div>
-                  <div class="diseña__colores--colores3"></div>
-                </li>
-                <li class="diseña__colores--option">
-                  <input id="rojo" type="radio" class="diseña__colores--paleta diseña--radio" name="elección" />
-                  <div class="diseña__colores--colores4"></div>
-                  <div class="diseña__colores--colores5"></div>
-                  <div class="diseña__colores--colores6"></div>
-                </li>
-                <li class="diseña__colores--option">
-                  <input id="gris" type="radio" class="diseña__colores--paleta diseña--radio" name="elección" />
-                  <div class="diseña__colores--colores7"></div>
-                  <div class="diseña__colores--colores8"></div>
-                  <div class="diseña__colores--colores9"></div>
-                </li>
-              </ul>
-            </div>
-            <div class="diseña__colores">
-              <h3 class="diseña__coloresfuentes uppercase">Fuentes</h3>
-              <ul class="listadiseño">
-                <li class="diseña__colores--option-fuentes diseña--texto1">
-                  <input id="ubuntu" type="radio" class="diseña--radio" name="elecciónText" />Ubuntu</li>
-                <li class="diseña__colores--option-fuentes diseña--texto2">
-                  <input id="comicsans" type="radio" class="diseña--radio" name="elecciónText" />Comic Sans</li>
-                <li class="diseña__colores--option-fuentes diseña--texto3">
-                  <input id="montserrat" type="radio" class="diseña--radio" name="elecciónText" />Montserrat</li>
-              </ul>
-            </div>
-          </fieldset>
-        </div>
+          </div>
+          <div class="diseña__colores collapsible__content">
+            <h3 class="diseña__coloresfuentes uppercase">Colores</h3>
+            <ul class="listadiseño">
+              <li class="diseña__colores--option">
+                <input id="azul" type="radio" class="diseña__colores--paleta diseña--radio" name="elección" />
+                <div class="diseña__colores--colores1"></div>
+                <div class="diseña__colores--colores2"></div>
+                <div class="diseña__colores--colores3"></div>
+              </li>
+              <li class="diseña__colores--option">
+                <input id="rojo" type="radio" class="diseña__colores--paleta diseña--radio" name="elección" />
+                <div class="diseña__colores--colores4"></div>
+                <div class="diseña__colores--colores5"></div>
+                <div class="diseña__colores--colores6"></div>
+              </li>
+              <li class="diseña__colores--option">
+                <input id="gris" type="radio" class="diseña__colores--paleta diseña--radio" name="elección" />
+                <div class="diseña__colores--colores7"></div>
+                <div class="diseña__colores--colores8"></div>
+                <div class="diseña__colores--colores9"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="diseña__colores collapsible__content">
+            <h3 class="diseña__coloresfuentes uppercase">Fuentes</h3>
+            <ul class="listadiseño">
+              <li class="diseña__colores--option-fuentes diseña--texto1">
+                <input id="ubuntu" type="radio" class="diseña--radio" name="elecciónText" />Ubuntu</li>
+              <li class="diseña__colores--option-fuentes diseña--texto2">
+                <input id="comicsans" type="radio" class="diseña--radio" name="elecciónText" />Comic Sans</li>
+              <li class="diseña__colores--option-fuentes diseña--texto3">
+                <input id="montserrat" type="radio" class="diseña--radio" name="elecciónText" />Montserrat</li>
+            </ul>
+          </div>
+        </fieldset>
         <!-- Rellena -->
-        <div class="div__rellena">
-          <fieldset class="fieldset__rellena">
-            <div class="fieldset__container--title">
-              <span class="fieldset__rellena--keyboard">
+        <fieldset class="fieldset__rellena div__rellena collapsible fieldset--invisible">
+          <div class="fieldset__container--title">
+            <span class="fieldset__rellena--keyboard">
               <i class="far fa-keyboard"></i>
               <h2 class="fieldset__title">Rellena</h2>
             </span>
-              <span class="fieldset__rellena--arrow">
-              <i class="fas fa-angle-up"></i>
+            <span class="fieldset__rellena--arrow collapsible__label">
+              <i class="fas fa-angle-up rotate"></i>
             </span>
-            </div>
-            <div class="">
+          </div>
+          <div class="collapsible__content div__editor--inner">
+            <div class="formulario">
               <label class="fieldset__rellena--label" for="editor-name">Nombre completo</label>
               <input class="fieldset__rellena--input fieldset--name" type="text" name="editor-name" id="editor-name" placeholder="Ej: Sally Jill" data-donde="element-name">
             </div>
@@ -177,40 +177,40 @@
               <div class="fieldset__div--habilidades-new">
               </div>
             </div>
-          </fieldset>
+          </div>
+        </fieldset>
 
-        </div>
 
         <!-- Rellena -->
         <!-- Comparte -->
 
-        <div class="div__rellena">
-          <fieldset class="fieldset__rellena">
-            <div class="fieldset__container--title">
-              <span class="fieldset__rellena--keyboard">
+        <fieldset class="div__rellena collapsible fieldset__rellena fieldset--invisible">
+          <div class="fieldset__container--title">
+            <span class="fieldset__rellena--keyboard">
               <i class="fas fa-share-alt"></i>
               <h2 class="fieldset__title">Comparte</h2>
             </span>
-              <span class="fieldset__rellena--arrow">
-              <i class="fas fa-angle-up"></i>
+            <span class="fieldset__rellena--arrow collapsible__label">
+              <i class="fas fa-angle-up rotate"></i>
             </span>
-            </div>
+          </div>
+          <div class="collapsible__content div__editor--inner">
 
             <div class="fieldset__share--button">
-              <button type="button" class="fieldset__share--button">
+              <button id="submit" type="button" class="fieldset__share--button">
               <span class="fieldset__share--button--icon">
                 <i class="far fa-address-card"></i>
               </span>
               <span class="fieldset__share--button--text uppercase">Crear tarjeta</span>
             </button>
             </div>
-          </fieldset>
-        </div>
+          </div>
+        </fieldset>
       </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">Awesome profile-cards ©2018</p>
-      <img class="footer__logo--titanium" src="" alt="Logotipo de Titanium">
+      <!-- <img class="footer__logo--titanium" src="" alt="Logotipo de Titanium"> -->
       <a href="http://www.adalab.es" target="_Blank">
       <img class="footer__logo--adalab" src="images/logo-adalab-80px.png" alt="Logotipo de Adalab">
     </a>

@@ -1,11 +1,18 @@
+.editor {
+  margin: 30px 0;
+}
+
+.div__editor--inner {
+  margin-bottom: 30px;
+}
+
 .div__rellena {
-  margin-left   : 20px;
-  margin-right  : 20px;
-  padding-bottom: 30px;
-  padding-top   : 10px;
-  font-family   : $main;
-  font-size     : 14px;
-  border-bottom : solid 1px #d8d8d8;
+  margin-left  : 20px;
+  margin-right : 20px;
+  padding-top  : 10px;
+  font-family  : $main;
+  font-size    : 14px;
+  border-bottom: solid 1px #d8d8d8;
 }
 
 .fieldset__rellena {}
@@ -13,7 +20,7 @@
 .fieldset__container--title {
   display        : flex;
   align-items    : center;
-  margin-bottom  : 25px;
+  margin-bottom  : 14px;
   justify-content: space-between;
 }
 
@@ -230,4 +237,16 @@ input:-moz-placeholder {
 .fieldset__rellena--icon-arrow {
   margin-right: 20px;
   align-self  : flex-end;
+}
+
+.fieldset--invisible {
+  .collapsible__content {
+    display: none;
+  }
+
+  .rotate {
+    transform   : rotate(-180deg);
+    margin-right: 0;
+    margin-left : auto;
+  }
 }

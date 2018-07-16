@@ -99,8 +99,8 @@ function guardarDataLS() {
       'habilidade1': '',
       'habilidade2': '',
       'habilidade3': '',
-      'color': '',
-      'fuente': ''
+      'color': 'azul',
+      'fuente': 'ubuntu'
     }
 
   } else {
@@ -148,10 +148,10 @@ function recuperarDataLS() {
     inputLinkedin.value = infoTarjeta.linkedin;
     inputGithub.value = infoTarjeta.github;
 
-    // document.querySelector('#' + infoTarjeta.color).checked = true;
+    document.querySelector('#' + infoTarjeta.color).checked = true;
     aplicarColor(infoTarjeta.color);
 
-    // document.querySelector('#' + infoTarjeta.fuente).checked = true;
+    document.querySelector('#' + infoTarjeta.fuente).checked = true;
     aplicarFuente(infoTarjeta.fuente);
 
 

@@ -20,10 +20,10 @@ function cambiarColor(event) {
   colorTrigger = event.currentTarget.id;
   console.log('cambiarColor disparada: ' + colorTrigger);
   aplicarColor(colorTrigger);
+  guardarColoresLS(colorTrigger);
 }
 
 function aplicarColor(disparador) {
-  guardarColoresLS(colorTrigger);
   if (colorTrigger === 'rojo') {
     nombreVisor.classList.remove('gris');
     nombreVisor.classList.add('rojo');
@@ -97,10 +97,10 @@ function cambiarFuente(eventFuente) {
   fuenteTrigger = eventFuente.currentTarget.id;
   console.log('cambiarFuente disparada: ' + fuenteTrigger);
   aplicarFuente(fuenteTrigger);
+  guardarFuentesLS(fuenteTrigger);
 }
 
 function aplicarFuente(disparador) {
-  guardarFuentesLS(fuenteTrigger);
   if (fuenteTrigger === 'ubuntu') {
     nombreVisor.classList.remove('montserrat');
     nombreVisor.classList.add('ubuntu');

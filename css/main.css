@@ -191,15 +191,15 @@ table {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid rgba(67, 136, 147, 0.2);
+  border-bottom: 2px solid rgba(67, 136, 147, 0.2);
 }
 
 .card__foot--social.rojo {
-  border-bottom: 1px solid rgba(189, 16, 16, 0.2);
+  border-bottom: 2px solid rgba(189, 16, 16, 0.2);
 }
 
 .card__foot--social.gris {
-  border-bottom: 1px solid rgba(223, 229, 235, 0.2);
+  border-bottom: 2px solid rgba(223, 229, 235, 0.2);
 }
 
 .card__foot--icon {

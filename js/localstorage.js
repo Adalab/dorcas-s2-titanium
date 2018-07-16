@@ -124,6 +124,7 @@ function guardarDataLS() {
 }
 
 function guardarFuentesLS(idFuentes) {
+  console.log(idFuentes);
   fuenteSeleccionada = idFuentes;
   guardarDataLS();
 }
@@ -135,10 +136,23 @@ function guardarColoresLS(idColores) {
 
 
 function recuperarDataLS() {
+
   if (localStorage.getItem('Profile-Card')) {
     infoTarjeta = JSON.parse(localStorage.getItem('Profile-Card'));
-    verifySelectValues()
-    nameField.value = infoTarjeta.nombre;
+
+    document.querySelector('#' + infoTarjeta.color).checked = true;
+    aplicarColor(infoTarjeta.color);
+
+    document.querySelector('#' + infoTarjeta.fuente).checked = true;
+    aplicarFuente(infoTarjeta.fuente);
+
+    //
+    // document.querySelector('#' + JSON.parse(localStorage.getItem('Profile-Card')).color).checked = true;
+    // aplicarColor(JSON.parse(localStorage.getItem('Profile-Card')).color);
+    //
+    // document.querySelector('#' + JSON.parse(localStorage.getItem('Profile-Card')).fuente).checked = true;
+    // aplicarFuente(JSON.parse(localStorage.getItem('Profile-Card')).fuente);
+
     roleField.value = infoTarjeta.puesto;
     profileImage.style.backgroundImage = infoTarjeta.foto;
     miniBox.style.backgroundImage = infoTarjeta.foto;
@@ -147,12 +161,6 @@ function recuperarDataLS() {
     inputTelefono.value = infoTarjeta.telefono;
     inputLinkedin.value = infoTarjeta.linkedin;
     inputGithub.value = infoTarjeta.github;
-
-    document.querySelector('#' + infoTarjeta.color).checked = true;
-    aplicarColor(infoTarjeta.color);
-
-    document.querySelector('#' + infoTarjeta.fuente).checked = true;
-    aplicarFuente(infoTarjeta.fuente);
 
 
     if (inputEmail.value !== '') {
@@ -218,7 +226,7 @@ function determineSelectsValuesOnRecoverData() {
 }
 
 // -------------- Se ejecuta al iniciar la página
-recuperarDataLS()
+recuperarDataLS();
 
 
 

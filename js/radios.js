@@ -8,9 +8,8 @@ var fondoHabilidades = document.querySelectorAll('.card__foot--box');
 var colorVisor = document.querySelectorAll('.diseña__colores--paleta');
 var borderVisorHead = document.querySelector('.card__foot--social');
 var jobVisor = document.querySelector('.card__job--job');
-var fuenteVisor = document.querySelectorAll('.diseña--radio');
+var fuenteVisor = document.querySelectorAll('.diseña--fuentes');
 
-// TODO: añadir .card__foot--text y .card__job--job como querySelectors para el cambio de las fuentes
 
 function cambiarColor(event) {
   if (event.currentTarget.id === 'rojo') {

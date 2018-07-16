@@ -138,14 +138,14 @@
   justify-content: flex-start;
   padding        : 10px 62px 10px 20px;
   align-items    : center;
-  border-bottom  : 1px solid rgba(67, 136, 147, 0.2);
+  border-bottom  : 2px solid rgba(67, 136, 147, 0.2);
 
   &.rojo {
-    border-bottom: 1px solid rgba(189, 16, 16, 0.2);
+    border-bottom: 2px solid rgba(189, 16, 16, 0.2);
   }
 
   &.gris {
-    border-bottom: 1px solid rgba(223, 229, 235, 0.2);
+    border-bottom: 2px solid rgba(223, 229, 235, 0.2);
   }
 }
 

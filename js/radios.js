@@ -8,7 +8,7 @@ var fondoHabilidades = document.querySelectorAll('.card__foot--box');
 var colorVisor = document.querySelectorAll('.diseña__colores--paleta');
 var borderVisorHead = document.querySelector('.card__foot--social');
 var jobVisor = document.querySelector('.card__job--job');
-var fuenteVisor = document.querySelectorAll('.diseña--radio');
+var fuenteVisor = document.querySelectorAll('.diseña--fuentes');
 var colorTrigger;
 var fuenteTrigger;
 

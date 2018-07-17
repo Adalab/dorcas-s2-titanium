@@ -2,16 +2,18 @@
   text-transform: uppercase;
 }
 
+
+
 .icons {
-  position  : fixed;
-  left      : 50%;
-  transform : translate(-50%, 0);
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
   background: rgba(160, 233, 79, 0.2);
-  border    : 1px solid rgb(216, 231, 216);
+  border: 1px solid rgb(216, 231, 216);
 }
 
 .icon {
-  margin   : 15px 30px;
+  margin: 15px 30px;
   font-size: 28px;
 }
 

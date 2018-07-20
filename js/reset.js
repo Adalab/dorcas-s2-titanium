@@ -1,11 +1,10 @@
-'use strict';
+"use strict";
 /* global jobVisor iconBorderVisor profileImage miniBox nombreVisor */
 
-
-var resetButton = document.querySelector('.reset');
-var formRemove = document.querySelectorAll('.fieldset__rellena--input');
+const resetButton = document.querySelector(".reset");
+const formRemove = document.querySelectorAll(".fieldset__rellena--input");
 // var colorRemove = document.querySelector('#')
-function resetAll() {
+const resetAll = () => {
   // // paleta reset
   // card.classList.remove('paleta-azul', 'paleta-roja', 'paleta-gris');
   // card.classList.add('paleta-azul');
@@ -14,22 +13,21 @@ function resetAll() {
   // cardInfo.classList.add('font-card--comicsans');
 
   // reset nombre y role
-  nombreVisor.innerHTML = 'Nombre Apellido';
-  jobVisor.innerHTML = 'Descripcion';
+  nombreVisor.innerHTML = "Nombre Apellido";
+  jobVisor.innerHTML = "Descripcion";
 
   //reset pic
-  profileImage.style.backgroundImage = 'url(../images/pollito.png)';
-  miniBox.style.backgroundImage = 'url(../images/pollito.png)';
+  profileImage.style.backgroundImage = "url(../images/pollito.png)";
+  miniBox.style.backgroundImage = "url(../images/pollito.png)";
 
   // quitar iconos
-  for (var i = 0; i<iconBorderVisor.length; i++){
-    iconBorderVisor[i].style.display = 'none';
+  for (const ocult of iconBorderVisor) {
+    ocult.style.display = "none";
   }
-  //quitar vlaores introducidos en el formulario
+  //quitar valores introducidos en el formulario
 
-  for (var i = 0; i < formRemove.length; i++) {
-    formRemove[i].value = '';
+  for (const ocult2 of formRemove) {
+    ocult2.value = "";
   }
-}
-resetButton.addEventListener('click', resetAll);
-
+};
+resetButton.addEventListener("click", resetAll);

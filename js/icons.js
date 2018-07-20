@@ -21,8 +21,8 @@ contact.addEventListener('keyup', showIcon);
 function showIcon(event) {
   if (event.target !== event.currentTarget) {
 
-    var guilty = event.target.className;
-    var changeIcon;
+    const guilty = event.target.className;
+    let changeIcon;
 
     if (guilty.indexOf('email') >= 0) {
       var email2Link = event.target.value;

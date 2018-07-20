@@ -1,57 +1,57 @@
 'use strict';
 
-var mobileLink = document.querySelector('.mobileLink');
-var emailLink = document.querySelector('.emailLink');
-var linkedinLink = document.querySelector('.linkedinLink');
-var githubLink = document.querySelector('.githubLink');
+const MOBILELINK = document.querySelector('.mobileLink');
+const EMAILLINK = document.querySelector('.emailLink');
+const LINKEDINLINK = document.querySelector('.linkedinLink');
+const GITHUBLINK = document.querySelector('.githubLink');
 
-var inputEmail = document.querySelector('.fieldset__rellena--input-email');
-var inputTelefono = document.querySelector('.fieldset__rellena--input-mobile');
-var inputLinkedin = document.querySelector('.fieldset__rellena--input-linkedin');
-var inputGithub = document.querySelector('.fieldset__rellena--input-github');
+const INPUTEMAIL = document.querySelector('.fieldset__rellena--input-email');
+const INPUTELEFONO = document.querySelector('.fieldset__rellena--input-mobile');
+const INPUTLINKEDIN = document.querySelector('.fieldset__rellena--input-linkedin');
+const INPUTGITHUB = document.querySelector('.fieldset__rellena--input-github');
 
 
-var contact = document.querySelector('.contact');
+const CONTACT = document.querySelector('.contact');
 
-contact.addEventListener('keyup', showIcon);
+CONTACT.addEventListener('keyup', showIcon);
 
 // TODO: llamar localStorage //
 
 
-function showIcon(event) {
+const showIcon = event => {
   if (event.target !== event.currentTarget) {
 
-    var guilty = event.target.className;
-    var changeIcon;
+    const GUILTY = event.target.className;
+    let changeIcon;
 
-    if (guilty.indexOf('email') >= 0) {
-      var email2Link = event.target.value;
-      emailLink.href = 'mailto:' + email2Link;
+    if (GUILTY.indexOf('email') >= 0) {
+      const EMAIL2LINK = event.target.value;
+      EMAILLINK.href = `mailto:${EMAIL2LINK}`;
       changeIcon = 'email';
 
-    } else if (guilty.indexOf('mobile') >= 0) {
-      var mobile2Link = event.target.value;
-      mobileLink.href = 'tel:' + mobile2Link;
+    } else if (GUILTY.indexOf('mobile') >= 0) {
+      const MOBILE2LINK = event.target.value;
+      MOBILELINK.href = `tel:${MOBILE2LINK}`;
       changeIcon = 'mobile';
 
-    } else if (guilty.indexOf('linkedin') >= 0) {
-      var linkedin2Link = event.target.value;
-      linkedinLink.href = 'http://linkedin.com/in/' + linkedin2Link;
+    } else if (GUILTY.indexOf('linkedin') >= 0) {
+      const LINKEDIN2LINK = event.target.value;
+      LINKEDINLINK.href = `http://linkedin.com/in/${LINKEDIN2LINK}`;
       changeIcon = 'linkedin';
 
-    } else if (guilty.indexOf('github') >= 0) {
-      var github2Link = event.target.value;
-      githubLink.href = 'https://github.com/' + github2Link;
+    } else if (GUILTY.indexOf('github') >= 0) {
+      const GITHUB2LINK = event.target.value;
+      GITHUBLINK.href = `https://github.com/${GITHUB2LINK}`;
       changeIcon = 'github';
     }
 
-    var icon2Toggle = document.querySelector("." + changeIcon);
+    let ICON2TOGGLE = document.querySelector(`.${changeIcon}`);
 
-    if (event.target.value === "") {
-      icon2Toggle.style.display = 'none';
+    if (event.target.value === '') {
+      ICON2TOGGLE.style.display = 'none';
     } else {
-      icon2Toggle.style.display = 'flex';
+      ICON2TOGGLE.style.display = 'flex';
     }
     event.stopPropagation();
   }
-}
+};

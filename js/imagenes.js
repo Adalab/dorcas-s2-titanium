@@ -18,7 +18,7 @@ function writeImage() {
   fotoURL = 'url(' + fr.result + ')';
   profileImage.style.backgroundImage = 'url(' + fr.result + ')';
   miniBox.style.backgroundImage = 'url(' + fr.result + ' )';
-  guardarDataLS()
+  guardarDataLS();
 }
 
 function fakeFileClick() {

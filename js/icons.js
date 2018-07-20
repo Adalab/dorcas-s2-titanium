@@ -13,8 +13,6 @@ const INPUTGITHUB = document.querySelector('.fieldset__rellena--input-github');
 
 const CONTACT = document.querySelector('.contact');
 
-CONTACT.addEventListener('keyup', showIcon);
-
 // TODO: llamar localStorage //
 
 
@@ -55,3 +53,5 @@ const showIcon = event => {
     event.stopPropagation();
   }
 };
+
+CONTACT.addEventListener('keyup', showIcon);

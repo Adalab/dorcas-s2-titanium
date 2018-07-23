@@ -1,8 +1,8 @@
 "use strict";
 /* global jobVisor iconBorderVisor profileImage miniBox nombreVisor */
 
-const resetButton = document.querySelector(".reset");
-const formRemove = document.querySelectorAll(".fieldset__rellena--input");
+const RESETBUTTON = document.querySelector(".reset");
+const FORMREMOVE = document.querySelectorAll(".fieldset__rellena--input");
 // var colorRemove = document.querySelector('#')
 const resetAll = () => {
   // // paleta reset
@@ -26,8 +26,8 @@ const resetAll = () => {
   }
   //quitar valores introducidos en el formulario
 
-  for (const ocult2 of formRemove) {
+  for (const ocult2 of FORMREMOVE) {
     ocult2.value = "";
   }
 };
-resetButton.addEventListener("click", resetAll);
+RESETBUTTON.addEventListener("click", resetAll);

@@ -1,12 +1,12 @@
 'use strict';
 
-var nameField = document.querySelector('.fieldset--name');
-var roleField = document.querySelector('.fieldset--role');
+const NAMEFIELD = document.querySelector('.fieldset--name');
+const ROLEFIELD = document.querySelector('.fieldset--role');
 
-function writeData(event){
-  var guiltyElement = event.currentTarget;
-  var targetID = guiltyElement.getAttribute('data-donde');
- document.querySelector('#' + targetID).innerHTML = guiltyElement.value;
-}
-nameField.addEventListener('keyup', writeData);
-roleField.addEventListener('keyup', writeData);
+const writeData = event => {
+  const GUILTYELEMENT = event.currentTarget;
+  const TARGETID = GUILTYELEMENT.getAttribute('data-donde');
+  document.querySelector(`#${TARGETID}`).innerHTML = GUILTYELEMENT.value;
+};
+NAMEFIELD.addEventListener('keyup', writeData);
+ROLEFIELD.addEventListener('keyup', writeData);
